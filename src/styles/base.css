@@ -1,0 +1,21 @@
+:root {
+  color: #182522;
+  background: #f7f1e3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Yu Gothic UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#app {
+  width: min(100% - 2rem, 48rem);
+  margin-inline: auto;
+  padding: 4rem 0;
+}
