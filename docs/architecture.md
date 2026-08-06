@@ -128,6 +128,7 @@ IDA* は最適解と低メモリを両立する有力候補だが、初期版で
 - キャッシュ名にアプリ版を含め、activateで同接頭辞の旧キャッシュだけ削除する。
 - HTMLはnetwork-firstかつキャッシュfallback、版付きJS/CSS/問題データはcache-firstとする。
 - Service Worker更新でlocalStorageへ触れず、セーブを維持する。
+- アイコンは単純な幾何学図形で独自作成し、`scripts/generate-icons.ts`でPNGを依存パッケージなしに再生成する。SVGを含め、外部画像素材を使わない。
 
 ## 12. セキュリティとプライバシー
 

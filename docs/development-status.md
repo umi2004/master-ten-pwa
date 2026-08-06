@@ -52,14 +52,20 @@
   - 320px幅の9列標準表示と、パン可能な「大きく表示」を実装
   - 累計テスト: 155件成功（9テストファイル）
   - TypeScript + Vite本番ビルド: 成功
+- [x] フェーズ6: PWA、オフライン、オリジナルアイコン
+  - `/master-ten-pwa/`固定のmanifest、scope、start URL、Service Worker登録
+  - 初回にHTML・ハッシュ付きJS/CSS・問題データ・アイコンをプリキャッシュ
+  - HTMLはnetwork-first、静的資産はcache-first、旧Master Tenキャッシュだけを削除
+  - 180/192/512px PNGとSVGの独自「10」アイコンを依存なしで再生成可能
+  - 累計テスト: 163件成功（10テストファイル）
+  - TypeScript + Vite本番ビルド、配布物内サブパス検査: 成功
 
 ## 進行中
 
-- [ ] フェーズ6: PWA、オフライン、オリジナルアイコン
+- [ ] フェーズ7: GitHub Actions、GitHub Pages公開
 
 ## 未着手
 
-- [ ] GitHub Actions、GitHub Pages公開
 - [ ] 総合・ブラウザ・公開・オフライン検証
 - [ ] 最終ドキュメントとリリースチェック
 

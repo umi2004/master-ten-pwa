@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "generate:icons": "vite-node scripts/generate-icons.ts",
     "generate:puzzles": "vite-node scripts/generate-puzzles.ts",
     "preview": "vite preview",
     "test": "vitest run",
