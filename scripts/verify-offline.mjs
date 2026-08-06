@@ -220,12 +220,17 @@ try {
   const savedMoveCount = await evaluate(firstOfflinePage.cdp, `[...document.querySelectorAll('.stat-item')]
     .find((item) => item.querySelector('dt')?.textContent === '手数')?.querySelector('dd')?.textContent`);
   assert(savedMoveCount === '1', 'オフライン操作を自動保存できません');
+  await delay(650);
   await closePage(debugBaseUrl, firstOfflinePage);
 
   const reopenedOfflinePage = await openPage(debugBaseUrl, true);
   await navigate(reopenedOfflinePage.cdp, targetUrl);
   const hasContinue = await evaluate(reopenedOfflinePage.cdp, `document.body.innerText.includes('続きから')`);
   assert(hasContinue, 'オフライン再起動後に「続きから」がありません');
+  const persistedElapsedTime = await evaluate(reopenedOfflinePage.cdp, `JSON.parse(
+    localStorage.getItem('master-ten:session:v1')
+  ).elapsedTime`);
+  assert(persistedElapsedTime >= 500, 'ページを閉じる直前の経過時間が保存されていません');
   await evaluate(reopenedOfflinePage.cdp, `[...document.querySelectorAll('button')]
     .find((button) => button.textContent?.includes('続きから'))?.click()`);
   const restoredMoveCount = await evaluate(reopenedOfflinePage.cdp, `[...document.querySelectorAll('.stat-item')]
@@ -256,6 +261,7 @@ try {
     offlineListCount,
     initialCells,
     savedMoveCount,
+    persistedElapsedTime,
     restoredMoveCount,
     settingPersisted,
   }, null, 2));
