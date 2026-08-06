@@ -1,6 +1,8 @@
 import {
   applyGameMove,
+  applyKnownLegalPairMove,
   canAddNumbers,
+  countAlive,
   getLegalPairMoves,
   type GameMove,
   type GameState,
@@ -21,15 +23,31 @@ export function getSearchMoves(state: GameState): readonly GameMove[] {
   }
 
   const pairs = getLegalPairMoves(state.board);
-  if (pairs.length > 0) {
-    return pairs;
-  }
-  return canAddNumbers(state) ? [{ type: 'ADD_NUMBERS' }] : [];
+  return canAddNumbers(state)
+    ? [...pairs, { type: 'ADD_NUMBERS' }]
+    : pairs;
 }
 
 export function applySearchMove(state: GameState, move: GameMove): GameState {
   const stateWithoutHistory: GameState = { ...state, history: [] };
-  return { ...applyGameMove(stateWithoutHistory, move), history: [] };
+  if (move.type === 'ADD_NUMBERS') {
+    return { ...applyGameMove(stateWithoutHistory, move), history: [] };
+  }
+
+  // Search callers only pass moves returned by getSearchMoves. Avoid repeating the
+  // full legality scan already performed to obtain that move.
+  const board = applyKnownLegalPairMove(state.board, move);
+  const status = countAlive(board) === 0
+    ? 'WON'
+    : state.additionsRemaining === 0 && getLegalPairMoves(board).length === 0
+      ? 'LOST'
+      : 'PLAYING';
+  return {
+    ...stateWithoutHistory,
+    board,
+    moveCount: state.moveCount + 1,
+    status,
+  };
 }
 
 export function countSolutionAdditions(solution: readonly GameMove[]): number {
@@ -37,4 +55,15 @@ export function countSolutionAdditions(solution: readonly GameMove[]): number {
     (count, move) => count + (move.type === 'ADD_NUMBERS' ? 1 : 0),
     0,
   );
+}
+
+export function hasOddMatchClassWithoutAddition(state: GameState): boolean {
+  if (state.additionsRemaining > 0) return false;
+  const counts = [0, 0, 0, 0, 0];
+  for (const digit of state.board.cells) {
+    if (digit === 0) continue;
+    const matchClass = Math.min(digit, 10 - digit) - 1;
+    counts[matchClass] = (counts[matchClass] ?? 0) + 1;
+  }
+  return counts.some((count) => count % 2 === 1);
 }

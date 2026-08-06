@@ -21,10 +21,10 @@ describe('数字追加', () => {
     expect(result.logicalLength).toBe(5);
   });
 
-  it('合法手がある場合は追加できない', () => {
+  it('合法手がある場合も任意に追加できる', () => {
     const state = createGameState(createBoard([4, 4]), 3);
-    expect(canAddNumbers(state)).toBe(false);
-    expect(() => applyGameMove(state, { type: 'ADD_NUMBERS' })).toThrow(InvalidMoveError);
+    expect(canAddNumbers(state)).toBe(true);
+    expect(applyGameMove(state, { type: 'ADD_NUMBERS' }).additionsUsed).toBe(1);
   });
 
   it('合法手が0なら追加できる', () => {
@@ -40,11 +40,25 @@ describe('数字追加', () => {
     expect(next.moveCount).toBe(1);
   });
 
+  it('追加残数0では追加できない', () => {
+    const state = createGameState(createBoard([4, 4]), 0);
+    expect(canAddNumbers(state)).toBe(false);
+    expect(() => applyGameMove(state, { type: 'ADD_NUMBERS' })).toThrow(InvalidMoveError);
+  });
+
   it('元状態と元盤面を破壊しない', () => {
     const state = createGameState(createBoard([1, 2]), 3);
     applyGameMove(state, { type: 'ADD_NUMBERS' });
     expect(state.board.cells).toEqual([1, 2]);
     expect(state.additionsRemaining).toBe(3);
     expect(state.history).toEqual([]);
+  });
+  it('processes the fifth addition and reaches zero remaining additions', () => {
+    let state = createGameState(createBoard([1, 2]), 5);
+    for (let count = 0; count < 5; count += 1) {
+      state = applyGameMove(state, { type: 'ADD_NUMBERS' });
+    }
+    expect(state.additionsRemaining).toBe(0);
+    expect(state.additionsUsed).toBe(5);
   });
 });

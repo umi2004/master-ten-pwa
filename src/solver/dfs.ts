@@ -5,6 +5,7 @@ import {
   applySearchMove,
   createStateKey,
   getSearchMoves,
+  hasOddMatchClassWithoutAddition,
 } from './searchState';
 import type {
   SolverLimits,
@@ -36,6 +37,9 @@ export function solveWithDfs(
       return { status: 'SOLVED', solution: [] };
     }
     if (state.status === 'LOST') {
+      return { status: 'UNSOLVABLE' };
+    }
+    if (hasOddMatchClassWithoutAddition(state)) {
       return { status: 'UNSOLVABLE' };
     }
     if (elapsed() >= limits.timeLimitMs) {

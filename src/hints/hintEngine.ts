@@ -59,6 +59,10 @@ export class HintEngine {
     this.#cache.clear();
   }
 
+  public prime(state: GameState, solution: readonly GameMove[]): boolean {
+    return this.#verifyAndCache(state, solution);
+  }
+
   public getHint(state: GameState, limits?: SolverLimits): HintResult {
     if (state.status === 'WON') {
       return unavailable('SOLVED', 'この問題はすでにクリアしています');

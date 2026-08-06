@@ -1,5 +1,5 @@
 import { createBoard } from './board';
-import { getLegalPairMoves, InvalidMoveError } from './moves';
+import { InvalidMoveError } from './moves';
 import type { Board, Cell, GameState } from './types';
 import { MAX_BOARD_ROWS } from './version';
 
@@ -21,7 +21,6 @@ export function canAddNumbers(state: GameState): boolean {
   if (
     state.status !== 'PLAYING' ||
     state.additionsRemaining <= 0 ||
-    getLegalPairMoves(state.board).length > 0 ||
     !state.board.cells.some((cell) => cell !== 0)
   ) {
     return false;

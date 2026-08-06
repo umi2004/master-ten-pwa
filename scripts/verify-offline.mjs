@@ -210,7 +210,7 @@ try {
     [...document.querySelectorAll('button')].find((button) => button.textContent?.trim() === '問題一覧')?.click();
   })()`);
   const offlineListCount = await evaluate(firstOfflinePage.cdp, `document.querySelectorAll('.puzzle-card').length`);
-  assert(offlineListCount === 30, `オフライン問題一覧が${offlineListCount}件です`);
+  assert(offlineListCount === 5, `オフライン試作問題一覧が${offlineListCount}件です`);
 
   await evaluate(firstOfflinePage.cdp, `document.querySelector('.puzzle-card button')?.click()`);
   const initialCells = await evaluate(firstOfflinePage.cdp, `document.querySelectorAll('button.number-cell').length`);

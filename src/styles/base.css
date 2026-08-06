@@ -407,6 +407,7 @@ button:disabled {
 }
 
 .game-title { font-size: clamp(1.8rem, 8vw, 2.7rem); }
+.playtest-label { margin: 0.15rem 0 0; color: var(--coral-dark); font-size: 0.78rem; font-weight: 900; }
 .difficulty-badge { padding: 0.45rem 0.65rem; color: var(--paper-light); font-size: 0.72rem; font-weight: 850; background: var(--plum); border-radius: 999px; white-space: nowrap; }
 
 .stats-grid {
@@ -426,9 +427,15 @@ button:disabled {
 .save-state { margin: 0.55rem 0; color: var(--teal-dark); text-align: right; }
 
 .board-viewport {
+  --board-gap: 2px;
+  --board-padding: 0.7rem;
+  --board-border: 3px;
+
   width: 100%;
-  padding: 0.7rem;
+  block-size: calc((var(--cell-size) * 11) + (var(--board-gap) * 10) + (var(--board-padding) * 2) + (var(--board-border) * 2));
+  padding: var(--board-padding);
   overflow: auto;
+  box-sizing: border-box;
   overscroll-behavior: contain;
   background: #173532;
   border: 3px solid #0d2724;
@@ -439,7 +446,7 @@ button:disabled {
 .number-board {
   display: grid;
   grid-template-columns: repeat(9, var(--cell-size));
-  gap: 2px;
+  gap: var(--board-gap);
   width: max-content;
   min-width: 100%;
   justify-content: center;
@@ -586,8 +593,7 @@ button.number-cell:hover { background: #fff; }
 @media (min-width: 42rem) {
   .screen { padding-top: 2rem; }
   .game-controls { grid-template-columns: repeat(4, 1fr); }
-  .number-board { gap: 3px; }
-  .board-viewport { width: fit-content; max-width: 100%; margin-inline: auto; padding: 1rem; }
+  .board-viewport { --board-gap: 3px; --board-padding: 1rem; width: fit-content; max-width: 100%; margin-inline: auto; }
   .rule-list { grid-template-columns: repeat(2, 1fr); }
   .rule-card:last-child { grid-column: 1 / -1; }
 }
@@ -595,8 +601,7 @@ button.number-cell:hover { background: #fff; }
 @media (max-width: 22rem) {
   :root:not([data-board-size="large"]) { --cell-size: clamp(28px, calc((100vw - 52px) / 9), 32px); }
   .screen { width: min(100% - 0.75rem, 52rem); }
-  .board-viewport { padding: 0.35rem; border-width: 2px; }
-  .number-board { gap: 1px; }
+  .board-viewport { --board-gap: 1px; --board-padding: 0.35rem; --board-border: 2px; border-width: var(--board-border); }
   .stats-grid { padding-inline: 0.25rem; }
 }
 

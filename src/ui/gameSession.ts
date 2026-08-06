@@ -4,6 +4,7 @@ import {
   createGameState,
   isPairMoveLegal,
   positionToIndex,
+  RULE_VERSION,
   undoLastMove,
   type GameState,
   type PairMove,
@@ -31,7 +32,7 @@ function restoredState(session: SavedSession): GameState {
     additionsUsed: session.additionsUsed,
     moveCount: session.moveCount,
     status: session.completionStatus,
-    ruleVersion: '1.0.0',
+    ruleVersion: RULE_VERSION,
     history: session.history,
     hintCount: session.hintCount,
     undoCount: session.undoCount,
@@ -88,13 +89,16 @@ export class GameSession {
   ): GameSession {
     const now = options.now ?? Date.now;
     const startedAt = now();
+    const state = createGameState(puzzle.initialBoard, puzzle.additionsAllowed);
+    const hintEngine = options.hintEngine ?? new HintEngine();
+    hintEngine.prime(state, puzzle.verifiedSolution);
     const session = new GameSession({
       puzzle,
-      state: createGameState(puzzle.initialBoard, puzzle.additionsAllowed),
+      state,
       settings,
       progress,
       repository,
-      hintEngine: options.hintEngine ?? new HintEngine(),
+      hintEngine,
       now,
       startedAt,
       elapsedTime: 0,
@@ -112,13 +116,18 @@ export class GameSession {
     repository: SaveRepository,
     options: { hintEngine?: HintEngine; now?: () => number } = {},
   ): GameSession {
+    const hintEngine = options.hintEngine ?? new HintEngine();
+    hintEngine.prime(
+      createGameState(puzzle.initialBoard, puzzle.additionsAllowed),
+      puzzle.verifiedSolution,
+    );
     return new GameSession({
       puzzle,
       state: restoredState(saved),
       settings,
       progress,
       repository,
-      hintEngine: options.hintEngine ?? new HintEngine(),
+      hintEngine,
       now: options.now ?? Date.now,
       startedAt: saved.startedAt,
       elapsedTime: saved.elapsedTime,
@@ -191,7 +200,9 @@ export class GameSession {
     if (!canAddNumbers(this.#state)) {
       return {
         changed: false,
-        message: '消せるペアが残っているため、数字は追加できません',
+        message: this.#state.additionsRemaining === 0
+          ? '数字追加の残り回数がありません'
+          : '盤面の高さ上限により、これ以上数字を追加できません',
       };
     }
     this.#tick();

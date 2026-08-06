@@ -14,6 +14,8 @@ export function hashBoard(board: Board): string {
 }
 
 export function structureSignature(board: Board): string {
-  const occupancy = board.cells.map((cell) => (cell === 0 ? '0' : '1')).join('');
-  return fnv1a(`${board.width}|${board.logicalLength}|${occupancy}`);
+  const matchClasses = board.cells
+    .map((cell) => cell === 0 ? 0 : Math.min(cell, 10 - cell))
+    .join('');
+  return fnv1a(`${board.width}|${board.logicalLength}|${matchClasses}`);
 }

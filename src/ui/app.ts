@@ -42,6 +42,10 @@ function moveContains(move: GameMove | undefined, position: Position): boolean {
   );
 }
 
+function masterLabel(displayNumber: number): string {
+  return `Master ${displayNumber.toString().padStart(2, '0')}`;
+}
+
 export class MasterTenApp {
   readonly #root: HTMLElement;
   readonly #repository: SaveRepository;
@@ -51,6 +55,7 @@ export class MasterTenApp {
   #session?: GameSession;
   #screen: Screen = 'home';
   #notice = '';
+  #scrollBoardToEnd = false;
 
   public constructor(root: HTMLElement) {
     this.#root = root;
@@ -143,7 +148,7 @@ export class MasterTenApp {
     const main = this.#main();
     const hero = el('section', 'hero');
     hero.append(
-      el('p', 'eyebrow', '静かに深く考える、30の難問'),
+      el('p', 'eyebrow', 'V5-Lite・Master 01 試遊版'),
       el('h1', 'hero-title', 'MASTER TEN'),
       el('p', 'hero-copy', '同じ数字、または合計10になる数字を見つけて、盤面を空にする高難易度パズルです。'),
     );
@@ -171,16 +176,16 @@ export class MasterTenApp {
     const progress = el('section', 'progress-card');
     progress.append(
       el('p', 'card-kicker', 'あなたの記録'),
-      el('strong', 'progress-number', `${this.#progress.completedPuzzles.length} / 30`),
+      el('strong', 'progress-number', `${this.#progress.completedPuzzles.length} / ${PUZZLES.length}`),
       el('span', 'progress-label', 'クリア済み'),
     );
     const meter = el('div', 'progress-meter');
     meter.setAttribute('role', 'progressbar');
     meter.setAttribute('aria-valuemin', '0');
-    meter.setAttribute('aria-valuemax', '30');
+    meter.setAttribute('aria-valuemax', String(PUZZLES.length));
     meter.setAttribute('aria-valuenow', String(this.#progress.completedPuzzles.length));
     const fill = el('span', 'progress-fill');
-    fill.style.width = `${(this.#progress.completedPuzzles.length / 30) * 100}%`;
+    fill.style.width = `${(this.#progress.completedPuzzles.length / PUZZLES.length) * 100}%`;
     meter.append(fill);
     progress.append(meter);
 
@@ -193,7 +198,7 @@ export class MasterTenApp {
   #renderPuzzleList(): void {
     this.#root.append(this.#brandHeader(() => this.#go('home')));
     const main = this.#main('問題一覧');
-    main.append(el('p', 'screen-intro', '30問すべてソルバー検証済みです。難度と盤面構造が少しずつ異なります。'));
+    main.append(el('p', 'screen-intro', '42数字のMaster 01試遊版を1問だけ表示します。正式認定前のローカル候補です。'));
     const grid = el('div', 'puzzle-grid');
     for (const puzzle of PUZZLES) {
       const completed = this.#progress.completedPuzzles.includes(puzzle.puzzleId);
@@ -205,8 +210,8 @@ export class MasterTenApp {
       const status = noAssist ? 'ノーアシスト' : completed ? 'クリア済み' : active ? '進行中' : '未挑戦';
       card.append(
         number,
-        el('h2', 'puzzle-title', `Master ${puzzle.displayNumber}`),
-        el('p', 'puzzle-meta', `難度 ${puzzle.difficultyScore}・${puzzle.initialRows}行`),
+        el('h2', 'puzzle-title', masterLabel(puzzle.displayNumber)),
+        el('p', 'puzzle-meta', `試遊版・${puzzle.initialAliveCount}数字`),
         el('p', 'puzzle-status', status),
         this.#button(completed ? '再プレイ' : active ? '続ける' : '開始', 'small-button', () => {
           if (active) this.#resumeSaved();
@@ -236,8 +241,9 @@ export class MasterTenApp {
     const gameHeading = el('section', 'game-heading');
     const headingText = el('div');
     headingText.append(
-      el('p', 'eyebrow', `MASTER ${session.puzzle.displayNumber}`),
-      el('h1', 'game-title', `問題 ${session.puzzle.displayNumber}`),
+      el('p', 'eyebrow', masterLabel(session.puzzle.displayNumber).toUpperCase()),
+      el('h1', 'game-title', masterLabel(session.puzzle.displayNumber)),
+      el('p', 'playtest-label', '試遊版'),
     );
     const difficulty = el('span', 'difficulty-badge', `難度 ${session.puzzle.difficultyScore}`);
     gameHeading.append(headingText, difficulty);
@@ -265,7 +271,15 @@ export class MasterTenApp {
     board.setAttribute('aria-label', `問題${session.puzzle.displayNumber}の9列盤面`);
     const hintMove = session.hint?.status === 'SAFE_MOVE' ? session.hint.move : undefined;
     let firstFocusable = true;
-    for (let index = 0; index < session.state.board.logicalLength; index += 1) {
+    const displayLength = Math.max(session.state.board.logicalLength, 9 * 11);
+    for (let index = 0; index < displayLength; index += 1) {
+      if (index >= session.state.board.logicalLength) {
+        const displayEmpty = el('span', 'number-cell is-empty is-display-empty');
+        displayEmpty.setAttribute('role', 'presentation');
+        displayEmpty.setAttribute('aria-hidden', 'true');
+        board.append(displayEmpty);
+        continue;
+      }
       const value = session.state.board.cells[index] ?? 0;
       const position = indexToPosition(index);
       if (value === 0) {
@@ -308,7 +322,10 @@ export class MasterTenApp {
     const add = this.#button('数字追加', 'control-button is-add', () => {
       const result = session.addNumbers();
       this.#notice = result.message;
-      if (result.changed) this.#feedback(true);
+      if (result.changed) {
+        this.#feedback(true);
+        this.#scrollBoardToEnd = true;
+      }
       this.render();
     });
     add.disabled = addDisabled;
@@ -338,13 +355,19 @@ export class MasterTenApp {
       addDisabled
         ? session.state.additionsRemaining === 0
           ? '数字追加の残り回数がありません。'
-          : '消せるペアが残っている間は数字を追加できません。'
-        : '手詰まりです。残った数字を末尾へ追加できます。',
+          : '盤面の高さ上限により、これ以上追加できません。'
+        : '合法ペアが残っていても追加できます。タイミングを選んでください。',
     );
     addReason.id = 'add-reason';
 
     main.append(gameHeading, stats, saveState, boardViewport, controls, addReason, this.#noticeRegion());
     this.#root.append(main);
+    if (this.#scrollBoardToEnd) {
+      this.#scrollBoardToEnd = false;
+      requestAnimationFrame(() => {
+        boardViewport.scrollTop = boardViewport.scrollHeight;
+      });
+    }
   }
 
   #renderClear(): void {
@@ -360,7 +383,7 @@ export class MasterTenApp {
     seal.setAttribute('aria-hidden', 'true');
     panel.append(
       seal,
-      el('p', 'eyebrow', `MASTER ${session.puzzle.displayNumber}`),
+      el('p', 'eyebrow', masterLabel(session.puzzle.displayNumber).toUpperCase()),
       el('h1', 'clear-title', '盤面クリア'),
       el('p', 'clear-copy', session.state.hintCount === 0 && session.state.undoCount === 0
         ? 'ノーアシストで解き切りました。見事です。'
@@ -380,7 +403,8 @@ export class MasterTenApp {
       results.append(item);
     }
     const actions = el('div', 'clear-actions');
-    const next = PUZZLES[session.puzzle.displayNumber];
+    const currentIndex = PUZZLES.findIndex((puzzle) => puzzle.puzzleId === session.puzzle.puzzleId);
+    const next = PUZZLES[currentIndex + 1];
     if (next) {
       actions.append(this.#button('次の問題', 'accent-button', () => this.#startPuzzle(next)));
     }
@@ -401,7 +425,7 @@ export class MasterTenApp {
       ['01', '数字の組み合わせ', '同じ数字、または合計が10になる2数字を選びます。5と5も1組です。'],
       ['02', 'つながる方向', '横・縦・斜めの直線上で、途中が空所なら離れた数字もつながります。途中に数字があれば、その先には届きません。'],
       ['03', '行をまたぐ接続', '左上から右下への読み順で、間がすべて空所なら前の行から次の行へつながります。'],
-      ['04', '数字追加', '消せるペアがなくなったときだけ、残った数字を読み順のまま盤面末尾へ追加できます。'],
+      ['04', '数字追加', '合法ペアが残っていても、残った数字を読み順のまま盤面末尾へ追加できます。全問題5回までで、早すぎる追加が不利になる場合もあります。'],
       ['05', '困ったとき', 'Undoは直前の盤面へ戻します。ヒントは完走できると検証した手だけを示し、安全性を確認できないときは何も勧めません。'],
     ] as const;
     const list = el('div', 'rule-list');

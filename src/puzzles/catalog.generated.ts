@@ -5,3855 +5,3878 @@ import type { VerifiedPuzzle } from './types';
 
 export const PUZZLES: readonly VerifiedPuzzle[] = [
   {
-    "puzzleId": "master-r1-g1-d1-mt-0001-0",
+    "puzzleId": "master-r2-g3-d3-master-v5-lite-67",
     "displayNumber": 1,
     "mode": "master",
-    "designFamily": "trap-cascade",
-    "seed": "mt-0001-0",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
+    "designFamily": "timing-crossroads",
+    "seed": "master-v5-lite-67",
+    "ruleVersion": "2.0.0",
+    "generatorVersion": "3.0.0",
+    "difficultyVersion": "3.0.0",
     "initialBoard": {
       "width": 9,
       "cells": [
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        9,
         2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        6,
-        0,
-        6,
-        0,
-        2,
-        0,
-        0,
-        6,
-        0,
-        0,
-        6,
-        0,
         7,
-        7,
-        0,
-        2,
-        0
-      ],
-      "logicalLength": 72
-    },
-    "initialRows": 8,
-    "initialBoardHash": "1bbd4c25",
-    "additionsAllowed": 0,
-    "initialAliveCount": 20,
-    "initialMoveCount": 12,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 10,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 10,
-    "averageBranching": 6.5,
-    "maximumBranching": 12,
-    "forcedMoveRatio": 0.2,
-    "trapMoveCount": 2,
-    "estimatedSolutionCount": 10,
-    "maximumRowsDuringSolution": 8,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 75,
-      "late": 45
-    },
-    "difficultyScore": 71,
-    "structureSignature": "a314a689",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0002--pzg20d",
-    "displayNumber": 2,
-    "mode": "master",
-    "designFamily": "double-trap",
-    "seed": "mt-0002--pzg20d",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         4,
+        5,
+        1,
+        8,
+        3,
+        6,
         4,
-        0,
         5,
-        0,
-        5,
-        0,
         1,
-        0,
-        0,
-        5,
-        0,
-        0,
-        5,
-        0,
+        8,
+        3,
         6,
-        6,
-        0,
-        1,
-        0,
-        2,
-        0,
-        0,
-        6,
-        0,
-        2,
-        0,
-        2,
-        0,
-        0,
-        6,
-        0,
-        5,
-        5,
-        0,
-        2,
-        0,
-        0
-      ],
-      "logicalLength": 81
-    },
-    "initialRows": 9,
-    "initialBoardHash": "676f83ff",
-    "additionsAllowed": 0,
-    "initialAliveCount": 26,
-    "initialMoveCount": 16,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 13,
-    "averageBranching": 8.15,
-    "maximumBranching": 16,
-    "forcedMoveRatio": 0.1538,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 16,
-    "maximumRowsDuringSolution": 9,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 83,
-      "late": 47
-    },
-    "difficultyScore": 68,
-    "structureSignature": "a11831f9",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0003-j0w6g2",
-    "displayNumber": 3,
-    "mode": "master",
-    "designFamily": "add-one",
-    "seed": "mt-0003-j0w6g2",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
         5,
         9,
-        4,
         2,
-        4,
         9,
-        5
-      ],
-      "logicalLength": 89
-    },
-    "initialRows": 10,
-    "initialBoardHash": "377e7cec",
-    "additionsAllowed": 1,
-    "initialAliveCount": 26,
-    "initialMoveCount": 10,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 18,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 18,
-    "averageBranching": 4.83,
-    "maximumBranching": 10,
-    "forcedMoveRatio": 0.1667,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 10,
-    "maximumRowsDuringSolution": 10,
-    "phaseDifficulty": {
-      "early": 91,
-      "middle": 67,
-      "late": 58
-    },
-    "difficultyScore": 74,
-    "structureSignature": "3ce39595",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0004--6yjvkb",
-    "displayNumber": 4,
-    "mode": "master",
-    "designFamily": "add-two",
-    "seed": "mt-0004--6yjvkb",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        2,
-        4,
-        5,
-        1
-      ],
-      "logicalLength": 94
-    },
-    "initialRows": 11,
-    "initialBoardHash": "0ca966d7",
-    "additionsAllowed": 2,
-    "initialAliveCount": 24,
-    "initialMoveCount": 10,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 15,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 418,
-    "averageBranching": 4.53,
-    "maximumBranching": 10,
-    "forcedMoveRatio": 0.2667,
-    "trapMoveCount": 10,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 11,
-    "phaseDifficulty": {
-      "early": 97,
-      "middle": 63,
-      "late": 49
-    },
-    "difficultyScore": 85,
-    "structureSignature": "2ad5ec9f",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0005--wzbs58",
-    "displayNumber": 5,
-    "mode": "master",
-    "designFamily": "add-three",
-    "seed": "mt-0005--wzbs58",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        8,
-        5
-      ],
-      "logicalLength": 101
-    },
-    "initialRows": 12,
-    "initialBoardHash": "f3dda4e3",
-    "additionsAllowed": 3,
-    "initialAliveCount": 24,
-    "initialMoveCount": 11,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 16,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 3906,
-    "averageBranching": 5.25,
-    "maximumBranching": 11,
-    "forcedMoveRatio": 0.1875,
-    "trapMoveCount": 11,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 12,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 64,
-      "late": 52
-    },
-    "difficultyScore": 88,
-    "structureSignature": "74451e5c",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0006-c2c7mf",
-    "displayNumber": 6,
-    "mode": "master",
-    "designFamily": "trap-cascade",
-    "seed": "mt-0006-c2c7mf",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        5,
-        0,
-        5,
-        0,
-        3,
-        0,
-        0,
-        5,
-        0,
-        0,
-        5,
-        0,
-        1,
-        1,
-        0,
-        3,
-        0
-      ],
-      "logicalLength": 81
-    },
-    "initialRows": 9,
-    "initialBoardHash": "b3ebb7f7",
-    "additionsAllowed": 0,
-    "initialAliveCount": 22,
-    "initialMoveCount": 14,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 11,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 11,
-    "averageBranching": 7.27,
-    "maximumBranching": 14,
-    "forcedMoveRatio": 0.1818,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 14,
-    "maximumRowsDuringSolution": 9,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 89,
-      "late": 47
-    },
-    "difficultyScore": 67,
-    "structureSignature": "9e99b895",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0007--dyfmhm",
-    "displayNumber": 7,
-    "mode": "master",
-    "designFamily": "double-trap",
-    "seed": "mt-0007--dyfmhm",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        6,
-        0,
-        6,
-        0,
-        5,
-        0,
-        0,
-        6,
-        0,
-        0,
-        6,
-        0,
-        8,
-        8,
-        0,
-        5,
-        0,
-        5,
-        0,
-        0,
-        3,
-        0,
-        5,
-        0,
-        5,
-        0,
-        0,
-        3,
-        0,
-        2,
-        2,
-        0,
-        5,
-        0,
-        0
-      ],
-      "logicalLength": 90
-    },
-    "initialRows": 10,
-    "initialBoardHash": "5e877791",
-    "additionsAllowed": 0,
-    "initialAliveCount": 28,
-    "initialMoveCount": 23,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 14,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 14,
-    "averageBranching": 11.57,
-    "maximumBranching": 23,
-    "forcedMoveRatio": 0.0714,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 23,
-    "maximumRowsDuringSolution": 10,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 100,
-      "late": 52
-    },
-    "difficultyScore": 70,
-    "structureSignature": "70358731",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0008-uy8kl5",
-    "displayNumber": 8,
-    "mode": "master",
-    "designFamily": "add-one",
-    "seed": "mt-0008-uy8kl5",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        3,
-        1,
-        6,
-        8,
-        5,
-        8,
-        6,
-        1
-      ],
-      "logicalLength": 98
-    },
-    "initialRows": 11,
-    "initialBoardHash": "1a237ba7",
-    "additionsAllowed": 1,
-    "initialAliveCount": 28,
-    "initialMoveCount": 11,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 19,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 19,
-    "averageBranching": 5.16,
-    "maximumBranching": 11,
-    "forcedMoveRatio": 0.1579,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 11,
-    "maximumRowsDuringSolution": 11,
-    "phaseDifficulty": {
-      "early": 94,
-      "middle": 69,
-      "late": 53
-    },
-    "difficultyScore": 76,
-    "structureSignature": "5f74c7b9",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0009-4xgr60",
-    "displayNumber": 9,
-    "mode": "master",
-    "designFamily": "add-two",
-    "seed": "mt-0009-4xgr60",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        6,
-        3,
-        2,
-        5
-      ],
-      "logicalLength": 103
-    },
-    "initialRows": 12,
-    "initialBoardHash": "35447bbc",
-    "additionsAllowed": 2,
-    "initialAliveCount": 26,
-    "initialMoveCount": 12,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 16,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 252,
-    "averageBranching": 5.19,
-    "maximumBranching": 12,
-    "forcedMoveRatio": 0.25,
-    "trapMoveCount": 12,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 12,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 59,
-      "late": 50
-    },
-    "difficultyScore": 88,
-    "structureSignature": "3e689ff6",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0010--m5xrj9",
-    "displayNumber": 10,
-    "mode": "master",
-    "designFamily": "add-three",
-    "seed": "mt-0010--m5xrj9",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        5,
-        1
-      ],
-      "logicalLength": 65
-    },
-    "initialRows": 8,
-    "initialBoardHash": "3f9ac705",
-    "additionsAllowed": 3,
-    "initialAliveCount": 16,
-    "initialMoveCount": 7,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 10,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 95,
-    "averageBranching": 3.5,
-    "maximumBranching": 7,
-    "forcedMoveRatio": 0.3,
-    "trapMoveCount": 7,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 8,
-    "phaseDifficulty": {
-      "early": 78,
-      "middle": 56,
-      "late": 45
-    },
-    "difficultyScore": 78,
-    "structureSignature": "9c078283",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0011-muegx6",
-    "displayNumber": 11,
-    "mode": "master",
-    "designFamily": "trap-cascade",
-    "seed": "mt-0011-muegx6",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        2,
-        0,
-        2,
-        0,
         7,
-        0,
-        0,
-        2,
-        0,
-        0,
-        2,
-        0,
+        4,
+        5,
+        1,
+        8,
+        3,
+        6,
+        5,
+        4,
+        1,
+        8,
+        3,
+        6,
+        5,
         9,
+        2,
+        8,
+        3,
+        6,
+        5,
         9,
-        0,
-        7,
-        0
-      ],
-      "logicalLength": 90
-    },
-    "initialRows": 10,
-    "initialBoardHash": "9a877311",
-    "additionsAllowed": 0,
-    "initialAliveCount": 24,
-    "initialMoveCount": 14,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 12,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 12,
-    "averageBranching": 7.17,
-    "maximumBranching": 14,
-    "forcedMoveRatio": 0.1667,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 14,
-    "maximumRowsDuringSolution": 10,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 91,
-      "late": 54
-    },
-    "difficultyScore": 68,
-    "structureSignature": "3c3312e9",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0012--351l37",
-    "displayNumber": 12,
-    "mode": "master",
-    "designFamily": "double-trap",
-    "seed": "mt-0012--351l37",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        0,
-        5,
-        0,
-        1,
-        0,
-        0,
-        5,
-        0,
-        0,
-        5,
-        0,
-        6,
-        6,
-        0,
-        1,
-        0,
-        1,
-        0,
-        0,
-        2,
-        0,
-        1,
-        0,
-        1,
-        0,
-        0,
-        2,
-        0,
-        6,
-        6,
-        0,
-        1,
-        0,
-        0
-      ],
-      "logicalLength": 99
-    },
-    "initialRows": 11,
-    "initialBoardHash": "2a91e9da",
-    "additionsAllowed": 0,
-    "initialAliveCount": 30,
-    "initialMoveCount": 24,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 15,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 15,
-    "averageBranching": 12.13,
-    "maximumBranching": 24,
-    "forcedMoveRatio": 0.0667,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 24,
-    "maximumRowsDuringSolution": 11,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 100,
-      "late": 58
-    },
-    "difficultyScore": 71,
-    "structureSignature": "92783adc",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0013--t5tfas",
-    "displayNumber": 13,
-    "mode": "master",
-    "designFamily": "add-one",
-    "seed": "mt-0013--t5tfas",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        7,
-        5,
-        8,
-        4,
-        8,
-        5,
-        7
-      ],
-      "logicalLength": 107
-    },
-    "initialRows": 12,
-    "initialBoardHash": "7b37381d",
-    "additionsAllowed": 1,
-    "initialAliveCount": 30,
-    "initialMoveCount": 13,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 20,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 20,
-    "averageBranching": 6.05,
-    "maximumBranching": 13,
-    "forcedMoveRatio": 0.15,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 13,
-    "maximumRowsDuringSolution": 12,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 72,
-      "late": 58
-    },
-    "difficultyScore": 79,
-    "structureSignature": "d24c1d78",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0014-fvukgv",
-    "displayNumber": 14,
-    "mode": "master",
-    "designFamily": "add-two",
-    "seed": "mt-0014-fvukgv",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        7,
-        4,
-        5,
-        9
-      ],
-      "logicalLength": 67
-    },
-    "initialRows": 8,
-    "initialBoardHash": "58f7c702",
-    "additionsAllowed": 2,
-    "initialAliveCount": 18,
-    "initialMoveCount": 10,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 479,
-    "averageBranching": 3.77,
-    "maximumBranching": 10,
-    "forcedMoveRatio": 0.3077,
-    "trapMoveCount": 10,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 8,
-    "phaseDifficulty": {
-      "early": 87,
-      "middle": 52,
-      "late": 47
-    },
-    "difficultyScore": 81,
-    "structureSignature": "89ca80dd",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0015--a4xc0i",
-    "displayNumber": 15,
-    "mode": "master",
-    "designFamily": "add-three",
-    "seed": "mt-0015--a4xc0i",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        6,
-        5
-      ],
-      "logicalLength": 74
-    },
-    "initialRows": 9,
-    "initialBoardHash": "f43cb3ee",
-    "additionsAllowed": 3,
-    "initialAliveCount": 18,
-    "initialMoveCount": 8,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 445,
-    "averageBranching": 3.85,
-    "maximumBranching": 8,
-    "forcedMoveRatio": 0.3077,
-    "trapMoveCount": 8,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 9,
-    "phaseDifficulty": {
-      "early": 83,
-      "middle": 58,
-      "late": 47
-    },
-    "difficultyScore": 81,
-    "structureSignature": "d9a8663f",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0016-yr4dy9",
-    "displayNumber": 16,
-    "mode": "master",
-    "designFamily": "trap-cascade",
-    "seed": "mt-0016-yr4dy9",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        5,
-        0,
-        5,
-        0,
-        7,
-        0,
-        0,
-        5,
-        0,
-        0,
-        5,
-        0,
-        2,
-        2,
-        0,
-        7,
-        0
-      ],
-      "logicalLength": 99
-    },
-    "initialRows": 11,
-    "initialBoardHash": "f4ef1a4a",
-    "additionsAllowed": 0,
-    "initialAliveCount": 26,
-    "initialMoveCount": 15,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 13,
-    "averageBranching": 8.31,
-    "maximumBranching": 15,
-    "forcedMoveRatio": 0.1538,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 15,
-    "maximumRowsDuringSolution": 11,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 93,
-      "late": 47
-    },
-    "difficultyScore": 70,
-    "structureSignature": "3924c194",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0017-8rlisw",
-    "displayNumber": 17,
-    "mode": "master",
-    "designFamily": "double-trap",
-    "seed": "mt-0017-8rlisw",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        0,
-        5,
-        0,
-        3,
-        0,
-        0,
-        5,
-        0,
-        0,
-        5,
-        0,
-        2,
-        2,
-        0,
-        3,
-        0,
-        3,
-        0,
-        0,
-        8,
-        0,
-        3,
-        0,
-        3,
-        0,
-        0,
-        8,
-        0,
-        5,
-        5,
-        0,
-        3,
-        0,
-        0
-      ],
-      "logicalLength": 108
-    },
-    "initialRows": 12,
-    "initialBoardHash": "a8c13bfb",
-    "additionsAllowed": 0,
-    "initialAliveCount": 32,
-    "initialMoveCount": 26,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 16,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 16,
-    "averageBranching": 13.56,
-    "maximumBranching": 26,
-    "forcedMoveRatio": 0.0625,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 26,
-    "maximumRowsDuringSolution": 12,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 100,
-      "late": 52
-    },
-    "difficultyScore": 73,
-    "structureSignature": "0264663f",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0018--z0dhz1",
-    "displayNumber": 18,
-    "mode": "master",
-    "designFamily": "add-one",
-    "seed": "mt-0018--z0dhz1",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        2,
-        3,
-        4,
-        5,
-        1,
-        5,
-        4,
-        3
-      ],
-      "logicalLength": 71
-    },
-    "initialRows": 8,
-    "initialBoardHash": "53de3e99",
-    "additionsAllowed": 1,
-    "initialAliveCount": 22,
-    "initialMoveCount": 7,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 16,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 16,
-    "averageBranching": 3.81,
-    "maximumBranching": 8,
-    "forcedMoveRatio": 0.25,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 7,
-    "maximumRowsDuringSolution": 8,
-    "phaseDifficulty": {
-      "early": 70,
-      "middle": 70,
-      "late": 50
-    },
-    "difficultyScore": 70,
-    "structureSignature": "d4d06018",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0019-8x97yq",
-    "displayNumber": 19,
-    "mode": "master",
-    "designFamily": "add-two",
-    "seed": "mt-0019-8x97yq",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        7,
-        4,
-        5,
         2
       ],
-      "logicalLength": 76
+      "logicalLength": 42
     },
-    "initialRows": 9,
-    "initialBoardHash": "5e818f9d",
-    "additionsAllowed": 2,
-    "initialAliveCount": 20,
-    "initialMoveCount": 8,
+    "initialRows": 5,
+    "initialBoardHash": "8f7c78af",
+    "additionsAllowed": 5,
+    "additionsAvailable": 5,
+    "initialAliveCount": 42,
+    "initialMoveCount": 3,
     "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
+    "verifiedSolution": [
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 8
+        },
+        "second": {
+          "row": 9,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 2
+        },
+        "second": {
+          "row": 11,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 1
+        },
+        "second": {
+          "row": 9,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 5
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 5
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 8
+        },
+        "second": {
+          "row": 9,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 1
+        },
+        "second": {
+          "row": 10,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 3
+        },
+        "second": {
+          "row": 10,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 11,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 4
+        },
+        "second": {
+          "row": 11,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 2
+        },
+        "second": {
+          "row": 12,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 11,
+          "column": 0
+        },
+        "second": {
+          "row": 12,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 11,
+          "column": 1
+        },
+        "second": {
+          "row": 12,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 8
+        },
+        "second": {
+          "row": 11,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 11,
+          "column": 5
+        },
+        "second": {
+          "row": 12,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 12,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 10,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 11,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 1
+        }
+      }
+    ],
+    "minimumAdditionSolution": [
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 0,
+          "column": 8
+        }
+      }
+    ],
+    "minimumMoveSolutionAtMinimumAdditions": [
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 0,
+          "column": 8
+        }
+      }
+    ],
+    "lowHeightSolution": [
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 0,
+          "column": 8
+        }
+      }
+    ],
+    "recommendedHumanSolution": [
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 8
+        },
+        "second": {
+          "row": 9,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 2
+        },
+        "second": {
+          "row": 11,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 1
+        },
+        "second": {
+          "row": 9,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 5
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 5
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 8
+        },
+        "second": {
+          "row": 9,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 1
+        },
+        "second": {
+          "row": 10,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 3
+        },
+        "second": {
+          "row": 10,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 11,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 4
+        },
+        "second": {
+          "row": 11,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 2
+        },
+        "second": {
+          "row": 12,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 11,
+          "column": 0
+        },
+        "second": {
+          "row": 12,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 11,
+          "column": 1
+        },
+        "second": {
+          "row": 12,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 10,
+          "column": 8
+        },
+        "second": {
+          "row": 11,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 11,
+          "column": 5
+        },
+        "second": {
+          "row": 12,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 12,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 10,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 11,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 1
+        }
+      }
+    ],
+    "bestKnownSolutionLength": 105,
     "provenOptimal": false,
     "minimumAdditions": 1,
     "minimumAdditionsProven": true,
-    "nodesExpanded": 384,
-    "averageBranching": 3.69,
-    "maximumBranching": 8,
-    "forcedMoveRatio": 0.3077,
-    "trapMoveCount": 8,
+    "nodesExpanded": 105,
+    "averageBranching": 10.7,
+    "maximumBranching": 30,
+    "forcedMoveRatio": 0.0571,
+    "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 9,
+    "maximumRowsDuringSolution": 15,
     "phaseDifficulty": {
-      "early": 84,
-      "middle": 53,
-      "late": 47
+      "early": 91,
+      "middle": 100,
+      "late": 56
     },
-    "difficultyScore": 81,
-    "structureSignature": "db916511",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0020--h3ft0b",
-    "displayNumber": 20,
-    "mode": "master",
-    "designFamily": "add-three",
-    "seed": "mt-0020--h3ft0b",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+    "humanStrategyMetrics": [
+      {
+        "strategy": "random",
+        "trials": 500,
+        "clears": 10,
+        "clearRate": 0.02,
+        "clearRate95": {
+          "lower": 0.0109,
+          "upper": 0.0364
+        },
+        "averageMoves": 185.974,
+        "averageAdditions": 5,
+        "averageMaximumRows": 36.512,
+        "failures": 490,
+        "earlyCollapseRate": 0,
+        "lateNearMissRate": 0.13,
+        "lateLargeRemainderRate": 0.85,
+        "heightOverflowRate": 0,
+        "unknownFailureRate": 0,
+        "nearMissRouteCount": 65,
+        "nearMissRate": 0.13,
+        "failureResidualAliveCount": 25.9673,
+        "meanResidualAliveOnFailure": 25.9673,
+        "medianResidualAliveOnFailure": 24,
+        "failureResidualAliveDistribution": {
+          "4": 4,
+          "6": 17,
+          "8": 21,
+          "10": 23,
+          "12": 26,
+          "14": 28,
+          "16": 31,
+          "18": 27,
+          "20": 35,
+          "22": 24,
+          "24": 25,
+          "26": 28,
+          "28": 23,
+          "30": 25,
+          "32": 22,
+          "34": 15,
+          "36": 18,
+          "38": 13,
+          "40": 16,
+          "42": 7,
+          "44": 9,
+          "46": 9,
+          "48": 12,
+          "50": 3,
+          "52": 7,
+          "54": 2,
+          "56": 6,
+          "58": 1,
+          "60": 4,
+          "62": 1,
+          "64": 1,
+          "66": 1,
+          "68": 2,
+          "74": 1,
+          "76": 1,
+          "78": 1,
+          "84": 1
+        },
+        "residualAliveHistogram": {
+          "4": 4,
+          "6": 17,
+          "8": 21,
+          "10": 23,
+          "12": 26,
+          "14": 28,
+          "16": 31,
+          "18": 27,
+          "20": 35,
+          "22": 24,
+          "24": 25,
+          "26": 28,
+          "28": 23,
+          "30": 25,
+          "32": 22,
+          "34": 15,
+          "36": 18,
+          "38": 13,
+          "40": 16,
+          "42": 7,
+          "44": 9,
+          "46": 9,
+          "48": 12,
+          "50": 3,
+          "52": 7,
+          "54": 2,
+          "56": 6,
+          "58": 1,
+          "60": 4,
+          "62": 1,
+          "64": 1,
+          "66": 1,
+          "68": 2,
+          "74": 1,
+          "76": 1,
+          "78": 1,
+          "84": 1
+        },
+        "failureRemainingAdditionsDistribution": {
+          "0": 490
+        }
+      },
+      {
+        "strategy": "proximity",
+        "trials": 300,
+        "clears": 11,
+        "clearRate": 0.0367,
+        "clearRate95": {
+          "lower": 0.0206,
+          "upper": 0.0645
+        },
+        "averageMoves": 83.3933,
+        "averageAdditions": 5,
+        "averageMaximumRows": 12.0333,
+        "failures": 289,
+        "earlyCollapseRate": 0,
+        "lateNearMissRate": 0.1667,
+        "lateLargeRemainderRate": 0.7967,
+        "heightOverflowRate": 0,
+        "unknownFailureRate": 0,
+        "nearMissRouteCount": 50,
+        "nearMissRate": 0.1667,
+        "failureResidualAliveCount": 19.3841,
+        "meanResidualAliveOnFailure": 19.3841,
+        "medianResidualAliveOnFailure": 18,
+        "failureResidualAliveDistribution": {
+          "4": 7,
+          "6": 8,
+          "8": 12,
+          "10": 23,
+          "12": 26,
+          "14": 22,
+          "16": 23,
+          "18": 35,
+          "20": 24,
+          "22": 12,
+          "24": 29,
+          "26": 15,
+          "28": 7,
+          "30": 10,
+          "32": 15,
+          "34": 12,
+          "36": 2,
+          "38": 3,
+          "42": 1,
+          "44": 1,
+          "48": 2
+        },
+        "residualAliveHistogram": {
+          "4": 7,
+          "6": 8,
+          "8": 12,
+          "10": 23,
+          "12": 26,
+          "14": 22,
+          "16": 23,
+          "18": 35,
+          "20": 24,
+          "22": 12,
+          "24": 29,
+          "26": 15,
+          "28": 7,
+          "30": 10,
+          "32": 15,
+          "34": 12,
+          "36": 2,
+          "38": 3,
+          "42": 1,
+          "44": 1,
+          "48": 2
+        },
+        "failureRemainingAdditionsDistribution": {
+          "0": 289
+        }
+      },
+      {
+        "strategy": "row-clear",
+        "trials": 300,
+        "clears": 52,
+        "clearRate": 0.1733,
+        "clearRate95": {
+          "lower": 0.1347,
+          "upper": 0.2202
+        },
+        "averageMoves": 72.34,
+        "averageAdditions": 4.9133,
+        "averageMaximumRows": 10.12,
+        "failures": 248,
+        "earlyCollapseRate": 0,
+        "lateNearMissRate": 0.4267,
+        "lateLargeRemainderRate": 0.4,
+        "heightOverflowRate": 0,
+        "unknownFailureRate": 0,
+        "nearMissRouteCount": 128,
+        "nearMissRate": 0.4267,
+        "failureResidualAliveCount": 12.9355,
+        "meanResidualAliveOnFailure": 12.9355,
+        "medianResidualAliveOnFailure": 10,
+        "failureResidualAliveDistribution": {
+          "4": 74,
+          "6": 18,
+          "8": 19,
+          "10": 17,
+          "12": 6,
+          "14": 9,
+          "16": 23,
+          "18": 19,
+          "20": 8,
+          "22": 10,
+          "24": 24,
+          "26": 3,
+          "28": 3,
+          "30": 13,
+          "32": 1,
+          "34": 1
+        },
+        "residualAliveHistogram": {
+          "4": 74,
+          "6": 18,
+          "8": 19,
+          "10": 17,
+          "12": 6,
+          "14": 9,
+          "16": 23,
+          "18": 19,
+          "20": 8,
+          "22": 10,
+          "24": 24,
+          "26": 3,
+          "28": 3,
+          "30": 13,
+          "32": 1,
+          "34": 1
+        },
+        "failureRemainingAdditionsDistribution": {
+          "0": 248
+        }
+      },
+      {
+        "strategy": "lookahead-2",
+        "trials": 100,
+        "clears": 91,
+        "clearRate": 0.91,
+        "clearRate95": {
+          "lower": 0.8377,
+          "upper": 0.9519
+        },
+        "averageMoves": 56.72,
+        "averageAdditions": 3.44,
+        "averageMaximumRows": 9.36,
+        "failures": 9,
+        "earlyCollapseRate": 0,
+        "lateNearMissRate": 0.08,
+        "lateLargeRemainderRate": 0.01,
+        "heightOverflowRate": 0,
+        "unknownFailureRate": 0,
+        "nearMissRouteCount": 8,
+        "nearMissRate": 0.08,
+        "failureResidualAliveCount": 8.2222,
+        "meanResidualAliveOnFailure": 8.2222,
+        "medianResidualAliveOnFailure": 8,
+        "failureResidualAliveDistribution": {
+          "4": 3,
+          "8": 3,
+          "10": 2,
+          "18": 1
+        },
+        "residualAliveHistogram": {
+          "4": 3,
+          "8": 3,
+          "10": 2,
+          "18": 1
+        },
+        "failureRemainingAdditionsDistribution": {
+          "0": 9
+        }
+      }
+    ],
+    "mostFailureProneStrategy": "random",
+    "mostSuccessfulSimpleStrategy": "row-clear",
+    "visualDifficulty": {
+      "initialDensity": 1,
+      "digitCounts": [
         4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         5,
         5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
         4,
+        7,
+        5,
+        2,
+        5,
         5
       ],
-      "logicalLength": 83
-    },
-    "initialRows": 10,
-    "initialBoardHash": "cb29ca6a",
-    "additionsAllowed": 3,
-    "initialAliveCount": 20,
-    "initialMoveCount": 9,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 18,
-    "provenOptimal": false,
-    "minimumAdditions": 2,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 584,
-    "averageBranching": 4.5,
-    "maximumBranching": 9,
-    "forcedMoveRatio": 0.2222,
-    "trapMoveCount": 9,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 10,
-    "phaseDifficulty": {
-      "early": 85,
-      "middle": 63,
-      "late": 61
-    },
-    "difficultyScore": 90,
-    "structureSignature": "77c7adef",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0021-ry6s6s",
-    "displayNumber": 21,
-    "mode": "master",
-    "designFamily": "trap-cascade",
-    "seed": "mt-0021-ry6s6s",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        0,
-        5,
-        0,
-        7,
-        0,
-        0,
-        5,
-        0,
-        0,
-        5,
-        0,
-        8,
-        8,
-        0,
-        7,
-        0
-      ],
-      "logicalLength": 108
-    },
-    "initialRows": 12,
-    "initialBoardHash": "027c6c5b",
-    "additionsAllowed": 0,
-    "initialAliveCount": 28,
-    "initialMoveCount": 15,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 14,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 14,
-    "averageBranching": 8.14,
-    "maximumBranching": 15,
-    "forcedMoveRatio": 0.1429,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 15,
-    "maximumRowsDuringSolution": 12,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 94,
-      "late": 54
-    },
-    "difficultyScore": 71,
-    "structureSignature": "e54c54e7",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0022-1xeyrr",
-    "displayNumber": 22,
-    "mode": "master",
-    "designFamily": "double-trap",
-    "seed": "mt-0022-1xeyrr",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        7,
-        0,
-        7,
-        0,
-        8,
-        0,
-        0,
-        7,
-        0,
-        0,
-        7,
-        0,
-        6,
-        6,
-        0,
-        8,
-        0,
+      "matchClassCounts": [
         9,
-        0,
-        0,
-        4,
-        0,
-        9,
-        0,
-        9,
-        0,
-        0,
-        4,
-        0,
-        8,
-        8,
-        0,
-        9,
-        0,
-        0
-      ],
-      "logicalLength": 72
-    },
-    "initialRows": 8,
-    "initialBoardHash": "4c0087dd",
-    "additionsAllowed": 0,
-    "initialAliveCount": 24,
-    "initialMoveCount": 16,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 12,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 12,
-    "averageBranching": 7.58,
-    "maximumBranching": 16,
-    "forcedMoveRatio": 0.1667,
-    "trapMoveCount": 1,
-    "estimatedSolutionCount": 15,
-    "maximumRowsDuringSolution": 8,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 87,
-      "late": 52
-    },
-    "difficultyScore": 69,
-    "structureSignature": "f624e4d7",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0023--o70vxm",
-    "displayNumber": 23,
-    "mode": "master",
-    "designFamily": "add-one",
-    "seed": "mt-0023--o70vxm",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        5,
-        4,
-        1,
-        7,
-        2,
-        7,
-        1,
-        4
-      ],
-      "logicalLength": 80
-    },
-    "initialRows": 9,
-    "initialBoardHash": "19747fed",
-    "additionsAllowed": 1,
-    "initialAliveCount": 24,
-    "initialMoveCount": 10,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 17,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 17,
-    "averageBranching": 4.71,
-    "maximumBranching": 10,
-    "forcedMoveRatio": 0.1765,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 10,
-    "maximumRowsDuringSolution": 9,
-    "phaseDifficulty": {
-      "early": 87,
-      "middle": 70,
-      "late": 53
-    },
-    "difficultyScore": 73,
-    "structureSignature": "8d6e597c",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0024-ktb9d5",
-    "displayNumber": 24,
-    "mode": "master",
-    "designFamily": "add-two",
-    "seed": "mt-0024-ktb9d5",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        1,
-        7,
-        4,
-        5
-      ],
-      "logicalLength": 85
-    },
-    "initialRows": 10,
-    "initialBoardHash": "455f6582",
-    "additionsAllowed": 2,
-    "initialAliveCount": 22,
-    "initialMoveCount": 10,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 15,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 269,
-    "averageBranching": 4,
-    "maximumBranching": 10,
-    "forcedMoveRatio": 0.2,
-    "trapMoveCount": 10,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 10,
-    "phaseDifficulty": {
-      "early": 90,
-      "middle": 56,
-      "late": 52
-    },
-    "difficultyScore": 85,
-    "structureSignature": "dd933b8d",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0025--564snc",
-    "displayNumber": 25,
-    "mode": "master",
-    "designFamily": "add-three",
-    "seed": "mt-0025--564snc",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        8,
-        1
-      ],
-      "logicalLength": 92
-    },
-    "initialRows": 11,
-    "initialBoardHash": "e3a9b2c8",
-    "additionsAllowed": 3,
-    "initialAliveCount": 22,
-    "initialMoveCount": 11,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 1584,
-    "averageBranching": 5.08,
-    "maximumBranching": 11,
-    "forcedMoveRatio": 0.2308,
-    "trapMoveCount": 11,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 11,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 62,
-      "late": 45
-    },
-    "difficultyScore": 85,
-    "structureSignature": "5761d20f",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0026--v6wmut",
-    "displayNumber": 26,
-    "mode": "master",
-    "designFamily": "trap-cascade",
-    "seed": "mt-0026--v6wmut",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        4,
-        0,
-        4,
-        0,
-        5,
-        0,
-        0,
-        4,
-        0,
-        0,
-        4,
-        0,
-        1,
-        1,
-        0,
-        5,
-        0
-      ],
-      "logicalLength": 72
-    },
-    "initialRows": 8,
-    "initialBoardHash": "11c9f895",
-    "additionsAllowed": 0,
-    "initialAliveCount": 20,
-    "initialMoveCount": 14,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 10,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 10,
-    "averageBranching": 7.1,
-    "maximumBranching": 14,
-    "forcedMoveRatio": 0.2,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 14,
-    "maximumRowsDuringSolution": 8,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 77,
-      "late": 45
-    },
-    "difficultyScore": 65,
-    "structureSignature": "1ae7f703",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0027-durcwq",
-    "displayNumber": 27,
-    "mode": "master",
-    "designFamily": "double-trap",
-    "seed": "mt-0027-durcwq",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1,
-        0,
-        5,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        2,
-        2,
-        0,
-        5,
-        0,
-        1,
-        0,
-        0,
-        2,
-        0,
-        1,
-        0,
-        1,
-        0,
-        0,
-        2,
-        0,
-        7,
-        7,
-        0,
-        1,
-        0,
-        0
-      ],
-      "logicalLength": 81
-    },
-    "initialRows": 9,
-    "initialBoardHash": "f4a9e27f",
-    "additionsAllowed": 0,
-    "initialAliveCount": 26,
-    "initialMoveCount": 19,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 13,
-    "provenOptimal": false,
-    "minimumAdditions": 0,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 13,
-    "averageBranching": 8.46,
-    "maximumBranching": 19,
-    "forcedMoveRatio": 0.1538,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 19,
-    "maximumRowsDuringSolution": 9,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 83,
-      "late": 47
-    },
-    "difficultyScore": 68,
-    "structureSignature": "c1ca4b67",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0028--d9ytxv",
-    "displayNumber": 28,
-    "mode": "master",
-    "designFamily": "add-one",
-    "seed": "mt-0028--d9ytxv",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        8,
-        5,
-        6,
+        10,
         7,
         9,
-        7,
-        6,
-        5
-      ],
-      "logicalLength": 89
-    },
-    "initialRows": 10,
-    "initialBoardHash": "965465c4",
-    "additionsAllowed": 1,
-    "initialAliveCount": 26,
-    "initialMoveCount": 12,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 18,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 18,
-    "averageBranching": 5.44,
-    "maximumBranching": 12,
-    "forcedMoveRatio": 0.1667,
-    "trapMoveCount": 0,
-    "estimatedSolutionCount": 12,
-    "maximumRowsDuringSolution": 10,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 68,
-      "late": 58
-    },
-    "difficultyScore": 75,
-    "structureSignature": "b174a62f",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0029-vrp2nw",
-    "displayNumber": 29,
-    "mode": "master",
-    "designFamily": "add-two",
-    "seed": "mt-0029-vrp2nw",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        8,
-        5,
-        6,
         7
       ],
-      "logicalLength": 94
+      "obviousPairCount": 3,
+      "hiddenPairCountOnSolution": 49,
+      "crossRowPairCount": 3,
+      "competingCellCount": 0,
+      "candidateDispersion": 0.2707,
+      "maximumRecheckRowSpan": 7,
+      "candidateIncreaseAfterAdditions": 95,
+      "safetySwitchCount": 3,
+      "simpleStrategyFailureRate": 0.895
     },
-    "initialRows": 11,
-    "initialBoardHash": "ff0897e9",
-    "additionsAllowed": 2,
-    "initialAliveCount": 24,
-    "initialMoveCount": 10,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 15,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 344,
-    "averageBranching": 4.47,
-    "maximumBranching": 10,
-    "forcedMoveRatio": 0.2667,
-    "trapMoveCount": 10,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 11,
-    "phaseDifficulty": {
-      "early": 95,
-      "middle": 63,
-      "late": 49
-    },
-    "difficultyScore": 85,
-    "structureSignature": "822f9f4d",
-    "reviewed": true
-  },
-  {
-    "puzzleId": "master-r1-g1-d1-mt-0030-5qx98v",
-    "displayNumber": 30,
-    "mode": "master",
-    "designFamily": "add-three",
-    "seed": "mt-0030-5qx98v",
-    "ruleVersion": "1.0.0",
-    "generatorVersion": "1.0.0",
-    "difficultyVersion": "1.0.0",
-    "initialBoard": {
-      "width": 9,
-      "cells": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        5,
-        5,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        8,
-        5
-      ],
-      "logicalLength": 101
-    },
-    "initialRows": 12,
-    "initialBoardHash": "a5ba9ceb",
-    "additionsAllowed": 3,
-    "initialAliveCount": 24,
-    "initialMoveCount": 11,
-    "solutionStatus": "SOLVED",
-    "bestKnownSolutionLength": 16,
-    "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 4234,
-    "averageBranching": 5.25,
-    "maximumBranching": 11,
-    "forcedMoveRatio": 0.25,
-    "trapMoveCount": 11,
-    "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 12,
-    "phaseDifficulty": {
-      "early": 100,
-      "middle": 63,
-      "late": 52
-    },
-    "difficultyScore": 87,
-    "structureSignature": "fb02d8c2",
-    "reviewed": true
+    "estimatedPlayMinutes": 44,
+    "allPathHintsVerified": true,
+    "prototypeBand": "MASTER_01_10",
+    "acceptanceNotes": [
+      "V5-Lite local playtest only; the verified recommended route uses all five additions.",
+      "Minimum additions is proven to be one; Critical Decisions and traps are not audited; reviewed remains false."
+    ],
+    "difficultyScore": 86,
+    "structureSignature": "9177d003",
+    "reviewed": false
   }
 ];

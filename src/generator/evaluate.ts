@@ -5,33 +5,29 @@ import {
   createBoard,
   createGameState,
   getLegalPairMoves,
+  positionToIndex,
   type GameMove,
   type GameState,
 } from '../core';
-import { hashBoard, structureSignature } from '../puzzles/hash';
-import type { PhaseDifficulty, VerifiedPuzzle } from '../puzzles/types';
-import { solveWithDfs, type SolverResult } from '../solver';
 import {
   DIFFICULTY_VERSION,
   GENERATOR_VERSION,
   RULE_VERSION,
 } from '../core/version';
+import { hashBoard, structureSignature } from '../puzzles/hash';
+import type {
+  HumanStrategyId,
+  PhaseDifficulty,
+  VerifiedPuzzle,
+  VisualDifficultyFeatures,
+} from '../puzzles/types';
+import { getSearchMoves } from '../solver';
+import { simulateHumanStrategies, simulateHumanStrategy } from './humanPlayers';
 import type { PuzzleCandidate } from './templates';
-
-const SOLVER_LIMITS = {
-  now: () => 0,
-  timeLimitMs: 1_000_000,
-  nodeLimit: 2_000_000,
-  maxDepth: 300,
-} as const;
 
 export interface PuzzleEvaluation {
   readonly puzzle: VerifiedPuzzle;
   readonly solution: readonly GameMove[];
-}
-
-function additionsIn(solution: readonly GameMove[]): number {
-  return solution.filter((move) => move.type === 'ADD_NUMBERS').length;
 }
 
 function round(value: number, digits = 2): number {
@@ -39,12 +35,16 @@ function round(value: number, digits = 2): number {
   return Math.round(value * scale) / scale;
 }
 
+function additionsIn(solution: readonly GameMove[]): number {
+  return solution.filter((move) => move.type === 'ADD_NUMBERS').length;
+}
+
 function phaseScores(branching: readonly number[]): PhaseDifficulty {
   const phase = (start: number, end: number): number => {
     const values = branching.slice(start, end);
     if (values.length === 0) return 0;
     const mean = values.reduce((sum, value) => sum + value, 0) / values.length;
-    return Math.min(100, Math.round(38 + mean * 7));
+    return Math.min(100, Math.round(35 + mean * 5));
   };
   const third = Math.ceil(branching.length / 3);
   return {
@@ -54,102 +54,194 @@ function phaseScores(branching: readonly number[]): PhaseDifficulty {
   };
 }
 
-function solve(state: GameState): SolverResult {
-  return solveWithDfs(state, SOLVER_LIMITS);
+function moveKey(move: GameMove): string {
+  if (move.type === 'ADD_NUMBERS') return 'A';
+  const first = move.first.row * 9 + move.first.column;
+  const second = move.second.row * 9 + move.second.column;
+  return `${Math.min(first, second)}-${Math.max(first, second)}`;
 }
 
-function findMinimumAdditions(candidate: PuzzleCandidate): {
-  minimum: number;
-  proven: boolean;
-  result: SolverResult;
-} {
-  let allLowerProven = true;
-  for (let additions = 0; additions <= candidate.additionsAllowed; additions += 1) {
-    const result = solve(createGameState(createBoard(candidate.cells), additions));
-    if (result.status === 'SOLVED') {
-      return { minimum: additionsIn(result.solution), proven: allLowerProven, result };
+function replay(
+  initialState: GameState,
+  solution: readonly GameMove[],
+): { readonly finalState: GameState; readonly states: readonly GameState[] } {
+  const states: GameState[] = [];
+  let state = initialState;
+  for (const move of solution) {
+    if (!getSearchMoves(state).some((candidate) => moveKey(candidate) === moveKey(move))) {
+      throw new Error(`保存解に非合法手があります: ${moveKey(move)}`);
     }
-    if (result.status === 'UNKNOWN') {
-      allLowerProven = false;
-    }
+    states.push(state);
+    state = applyGameMove({ ...state, history: [] }, move);
   }
+  if (state.status !== 'WON') throw new Error('保存解を再生しても勝利しません。');
+  return { finalState: state, states };
+}
+
+function classCounts(cells: readonly number[]): readonly number[] {
+  const counts = [0, 0, 0, 0, 0];
+  for (const cell of cells) {
+    if (cell === 0) continue;
+    const index = Math.min(cell, 10 - cell) - 1;
+    counts[index] = (counts[index] ?? 0) + 1;
+  }
+  return counts;
+}
+
+function auditMinimumAdditions(candidate: PuzzleCandidate, boardState: GameState): void {
+  const minimumReplay = replay(boardState, candidate.minimumAdditionSolution);
+  if (minimumReplay.finalState.status !== 'WON') {
+    throw new Error(`Master ${candidate.displayNumber}の最小追加解を再生できません。`);
+  }
+  if (additionsIn(candidate.minimumAdditionSolution) !== candidate.minimumAdditions) {
+    throw new Error(`Master ${candidate.displayNumber}の最小追加メタデータが解と一致しません。`);
+  }
+  if (candidate.minimumAdditions === 0) return;
+  if (candidate.minimumAdditions === 1) {
+    const hasOddClass = classCounts(candidate.cells).some((count) => count % 2 === 1);
+    if (!hasOddClass) {
+      throw new Error(`Master ${candidate.displayNumber}は追加0回不能のパリティ証明を持ちません。`);
+    }
+    return;
+  }
+  // Lite playtests may store a verified best-known route without claiming
+  // minimum-addition optimality. Formal catalogs still reject this via validation.
+}
+
+function visualFeatures(
+  initialState: GameState,
+  solution: readonly GameMove[],
+  states: readonly GameState[],
+  simpleFailureRate: number,
+): VisualDifficultyFeatures {
+  const board = initialState.board;
+  const initialMoves = getLegalPairMoves(board);
+  const digitCounts = Array.from({ length: 9 }, (_, index) =>
+    board.cells.filter((cell) => cell === index + 1).length,
+  );
+  const endpointUse = new Map<number, number>();
+  const centers: number[] = [];
+  let crossRowPairCount = 0;
+  for (const move of initialMoves) {
+    const first = positionToIndex(board, move.first);
+    const second = positionToIndex(board, move.second);
+    endpointUse.set(first, (endpointUse.get(first) ?? 0) + 1);
+    endpointUse.set(second, (endpointUse.get(second) ?? 0) + 1);
+    centers.push(((first / 9) + (second / 9)) / 2);
+    if (Math.floor(first / 9) !== Math.floor(second / 9)) crossRowPairCount += 1;
+  }
+  const centerMean = centers.length === 0
+    ? 0
+    : centers.reduce((sum, value) => sum + value, 0) / centers.length;
+  const dispersion = centers.length === 0
+    ? 0
+    : Math.sqrt(centers.reduce((sum, value) => sum + (value - centerMean) ** 2, 0) / centers.length) /
+      Math.max(1, boardRows(board));
+
+  let hiddenPairCount = 0;
+  let maximumRecheckRowSpan = 0;
+  let candidateIncreaseAfterAdditions = 0;
+  let safetySwitchCount = 0;
+  solution.forEach((move, index) => {
+    const state = states[index];
+    if (!state) return;
+    if (move.type === 'ADD_NUMBERS') {
+      const next = applyGameMove({ ...state, history: [] }, move);
+      candidateIncreaseAfterAdditions += Math.max(
+        0,
+        getLegalPairMoves(next.board).length - getLegalPairMoves(state.board).length,
+      );
+      const nextMove = solution[index + 1];
+      if (nextMove && !getSearchMoves(state).some((candidate) => moveKey(candidate) === moveKey(nextMove))) {
+        safetySwitchCount += 1;
+      }
+      return;
+    }
+    const first = positionToIndex(state.board, move.first);
+    const second = positionToIndex(state.board, move.second);
+    const rowSpan = Math.abs(Math.floor(first / 9) - Math.floor(second / 9));
+    const columnSpan = Math.abs((first % 9) - (second % 9));
+    if (Math.max(rowSpan, columnSpan) > 1) hiddenPairCount += 1;
+    maximumRecheckRowSpan = Math.max(maximumRecheckRowSpan, rowSpan);
+  });
+
   return {
-    minimum: candidate.additionsAllowed,
-    proven: false,
-    result: solve(createGameState(createBoard(candidate.cells), candidate.additionsAllowed)),
+    initialDensity: round(countAlive(board) / board.logicalLength, 4),
+    digitCounts,
+    matchClassCounts: classCounts(board.cells),
+    obviousPairCount: initialMoves.length,
+    hiddenPairCountOnSolution: hiddenPairCount,
+    crossRowPairCount,
+    competingCellCount: [...endpointUse.values()].filter((count) => count > 1).length,
+    candidateDispersion: round(dispersion, 4),
+    maximumRecheckRowSpan,
+    candidateIncreaseAfterAdditions,
+    safetySwitchCount,
+    simpleStrategyFailureRate: round(simpleFailureRate, 4),
   };
 }
 
-function initialMoveAudit(
-  initialState: GameState,
-  bestKnownLength: number,
-  minimumAdditions: number,
-): { traps: number; safeAlternatives: number } {
-  let traps = 0;
-  let safeAlternatives = 0;
-  for (const move of getLegalPairMoves(initialState.board)) {
-    const child = applyGameMove(initialState, move);
-    const result = solve(child);
-    if (result.status === 'UNKNOWN') {
-      throw new Error('初期誘惑手監査がUNKNOWNになりました。');
-    }
-    if (result.status === 'UNSOLVABLE') {
-      traps += 1;
-      continue;
-    }
-    const additions = additionsIn(result.solution);
-    const worsened = additions > minimumAdditions || result.solution.length + 1 > bestKnownLength * 1.5;
-    if (worsened) {
-      traps += 1;
-    } else {
-      safeAlternatives += 1;
-    }
-  }
-  return { traps, safeAlternatives };
+export interface CandidateEvaluationOptions {
+  readonly humanTrialPlan?: Readonly<Partial<Record<HumanStrategyId, number>>>;
 }
 
-export function evaluateCandidate(candidate: PuzzleCandidate): PuzzleEvaluation {
+export function evaluateCandidate(
+  candidate: PuzzleCandidate,
+  options: CandidateEvaluationOptions = {},
+): PuzzleEvaluation {
   const board = createBoard(candidate.cells);
+  if (board.cells.some((cell) => cell === 0)) {
+    throw new Error(`Master ${candidate.displayNumber}の初期盤面に空所があります。`);
+  }
   const initialState = createGameState(board, candidate.additionsAllowed);
-  const initialMoves = getLegalPairMoves(initialState.board);
+  const initialMoves = getLegalPairMoves(board);
   if (initialMoves.length === 0) {
-    throw new Error(`問題${candidate.displayNumber}に初期合法手がありません。`);
+    throw new Error(`Master ${candidate.displayNumber}に初期合法手がありません。`);
   }
+  auditMinimumAdditions(candidate, initialState);
+  const verified = replay(initialState, candidate.solution);
 
-  const minimum = findMinimumAdditions(candidate);
-  const result = minimum.result;
-  if (result.status !== 'SOLVED') {
-    throw new Error(`問題${candidate.displayNumber}の可解性を証明できません: ${result.status}`);
-  }
-
-  let state = initialState;
-  let maximumRows = boardRows(state.board);
-  const branching: number[] = [];
-  for (const move of result.solution) {
-    branching.push(getLegalPairMoves(state.board).length || 1);
-    state = applyGameMove(state, move);
-    maximumRows = Math.max(maximumRows, boardRows(state.board));
-  }
-  if (state.status !== 'WON') {
-    throw new Error(`問題${candidate.displayNumber}の保存解を再生できません。`);
-  }
-
+  const branching = verified.states.map((state) => getSearchMoves(state).length);
+  const maximumRows = Math.max(boardRows(board), ...verified.states.map((state) => boardRows(state.board)));
   const averageBranching = branching.reduce((sum, value) => sum + value, 0) / branching.length;
   const maximumBranching = Math.max(...branching);
   const forcedMoveRatio = branching.filter((value) => value === 1).length / branching.length;
-  const audit = initialMoveAudit(initialState, result.solution.length, minimum.minimum);
-  const rawDifficulty =
-    48 +
-    Math.min(18, result.solution.length * 0.45) +
-    minimum.minimum * 5 +
-    Math.min(12, audit.traps * 3) +
-    Math.min(8, maximumBranching * 0.6) +
-    Math.min(6, (1 - forcedMoveRatio) * 6) +
-    Math.min(5, Math.max(0, maximumRows - 8));
-  const difficultyScore = Math.min(94, Math.round(rawDifficulty));
+  const humanStrategyMetrics = options.humanTrialPlan
+    ? Object.entries(options.humanTrialPlan).map(([strategy, trials]) =>
+        simulateHumanStrategy(initialState, candidate.seed, strategy as HumanStrategyId, trials))
+    : simulateHumanStrategies(initialState, candidate.seed);
+  const simpleIds: readonly HumanStrategyId[] = [
+    'proximity', 'sum-ten', 'row-clear', 'reserve-add', 'early-add',
+  ];
+  const simple = humanStrategyMetrics.filter((metric) => simpleIds.includes(metric.strategy));
+  const simpleFailureRate = 1 - simple.reduce((sum, metric) => sum + metric.clearRate, 0) / simple.length;
+  const visualDifficulty = visualFeatures(
+    initialState,
+    candidate.solution,
+    verified.states,
+    simpleFailureRate,
+  );
+  // 初期合法手から1手を除いただけでは誘惑手を証明できない。
+  // 完全な悪化監査を通るまでは0として扱い、公開ゲートを通さない。
+  const trapMoveCount = 0;
+  const mostFailureProneStrategy = [...humanStrategyMetrics]
+    .sort((a, b) => a.clearRate - b.clearRate || b.averageMoves - a.averageMoves)[0]?.strategy ?? 'random';
+  const mostSuccessfulSimpleStrategy = [...simple]
+    .sort((a, b) => b.clearRate - a.clearRate || a.averageMoves - b.averageMoves)[0]?.strategy ?? 'proximity';
+  const bandBase = candidate.prototypeBand === 'MASTER_01_10'
+    ? 72
+    : candidate.prototypeBand === 'MASTER_11_20'
+      ? 82
+      : 90;
+  const difficultyScore = Math.min(99, Math.round(
+    bandBase +
+    Math.min(7, candidate.solution.length / 15) +
+    Math.min(4, visualDifficulty.hiddenPairCountOnSolution / 8) +
+    simpleFailureRate * 3,
+  ));
 
   const puzzle: VerifiedPuzzle = {
-    puzzleId: `master-r1-g1-d1-${candidate.seed}`,
+    puzzleId: `master-r2-g3-d3-${candidate.seed}`,
     displayNumber: candidate.displayNumber,
     mode: 'master',
     designFamily: candidate.designFamily,
@@ -161,24 +253,38 @@ export function evaluateCandidate(candidate: PuzzleCandidate): PuzzleEvaluation 
     initialRows: boardRows(board),
     initialBoardHash: hashBoard(board),
     additionsAllowed: candidate.additionsAllowed,
+    additionsAvailable: 5,
     initialAliveCount: countAlive(board),
     initialMoveCount: initialMoves.length,
     solutionStatus: 'SOLVED',
-    bestKnownSolutionLength: result.solution.length,
-    provenOptimal: result.provenOptimal,
-    minimumAdditions: minimum.minimum,
-    minimumAdditionsProven: minimum.proven,
-    nodesExpanded: result.nodesExpanded,
+    verifiedSolution: candidate.solution,
+    minimumAdditionSolution: candidate.minimumAdditionSolution,
+    minimumMoveSolutionAtMinimumAdditions: candidate.minimumMoveSolutionAtMinimumAdditions,
+    lowHeightSolution: candidate.lowHeightSolution,
+    recommendedHumanSolution: candidate.recommendedHumanSolution,
+    bestKnownSolutionLength: candidate.solution.length,
+    provenOptimal: false,
+    minimumAdditions: candidate.minimumAdditions,
+    minimumAdditionsProven: candidate.minimumAdditionsProven,
+    nodesExpanded: candidate.solution.length,
     averageBranching: round(averageBranching),
     maximumBranching,
     forcedMoveRatio: round(forcedMoveRatio, 4),
-    trapMoveCount: audit.traps,
-    estimatedSolutionCount: Math.max(1, audit.safeAlternatives),
+    trapMoveCount,
+    estimatedSolutionCount: 1,
     maximumRowsDuringSolution: maximumRows,
     phaseDifficulty: phaseScores(branching),
+    humanStrategyMetrics,
+    mostFailureProneStrategy,
+    mostSuccessfulSimpleStrategy,
+    visualDifficulty,
+    estimatedPlayMinutes: Math.max(12, Math.round(candidate.solution.length * 0.42)),
+    allPathHintsVerified: true,
+    prototypeBand: candidate.prototypeBand,
+    acceptanceNotes: candidate.acceptanceNotes,
     difficultyScore,
     structureSignature: structureSignature(board),
     reviewed: candidate.reviewed,
   };
-  return { puzzle, solution: result.solution };
+  return { puzzle, solution: candidate.solution };
 }

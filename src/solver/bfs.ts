@@ -5,6 +5,7 @@ import {
   applySearchMove,
   createStateKey,
   getSearchMoves,
+  hasOddMatchClassWithoutAddition,
 } from './searchState';
 import type { SolverLimits, SolverResult } from './types';
 
@@ -69,6 +70,7 @@ export function solveWithBfs(
         provenOptimal: true,
       });
     }
+    if (hasOddMatchClassWithoutAddition(node.state)) continue;
 
     if (elapsed() >= limits.timeLimitMs) {
       return createSolverResult({

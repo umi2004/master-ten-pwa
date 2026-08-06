@@ -5,9 +5,9 @@ import type { VerifiedPuzzle } from '../src/puzzles/types';
 
 function requestedCount(): number {
   const argument = process.argv.find((value) => value.startsWith('--count='));
-  const count = Number(argument?.split('=')[1] ?? 30);
-  if (!Number.isInteger(count) || count < 1 || count > 30) {
-    throw new RangeError('--countは1から30の整数で指定してください。');
+  const count = Number(argument?.split('=')[1] ?? 1);
+  if (count !== 1) {
+    throw new RangeError('V5-Liteでは--count=1だけを許可します。2問目は生成しません。');
   }
   return count;
 }
@@ -16,7 +16,14 @@ const count = requestedCount();
 const puzzles: VerifiedPuzzle[] = [];
 
 for (let index = 0; index < count; index += 1) {
-  const evaluation = evaluateCandidate(generateCandidate(index));
+  const evaluation = evaluateCandidate(generateCandidate(index), {
+    humanTrialPlan: {
+      random: 500,
+      proximity: 300,
+      'row-clear': 300,
+      'lookahead-2': 100,
+    },
+  });
   puzzles.push(evaluation.puzzle);
   console.log(
     `#${evaluation.puzzle.displayNumber}: ${evaluation.puzzle.designFamily}, ` +
@@ -32,7 +39,7 @@ if (ids.size !== puzzles.length || seeds.size !== puzzles.length) {
   throw new Error('問題IDまたはseedが重複しています。');
 }
 if (structures.size !== puzzles.length) {
-  throw new Error('占有構造が重複する候補があります。');
+  throw new Error('数字クラス構造が重複する候補があります。');
 }
 
 const file = `// このファイルは npm run generate:puzzles で生成されます。\n` +

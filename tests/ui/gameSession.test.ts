@@ -85,8 +85,8 @@ describe('ゲーム操作統合', () => {
     expect(session.state.undoCount).toBe(1);
   });
 
-  it('手詰まり時だけ数字追加できる', () => {
-    const puzzle = customPuzzle([1, 2, 3, 4, 5, 6, 7, 8], 1);
+  it('合法ペアが残っていても数字追加できる', () => {
+    const puzzle = customPuzzle([5, 5], 1);
     const session = GameSession.create(
       puzzle,
       DEFAULT_SETTINGS,

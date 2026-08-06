@@ -1,8 +1,8 @@
 import { evaluateCandidate, generateCandidate } from '../src/generator';
 import { PUZZLES } from '../src/puzzles/catalog.generated';
 
-if (PUZZLES.length !== 30) {
-  throw new Error(`公開カタログは30問でなければなりません: ${PUZZLES.length}`);
+if (PUZZLES.length !== 1) {
+  throw new Error(`V4のローカルカタログは試作1問だけでなければなりません: ${PUZZLES.length}`);
 }
 
 for (const field of ['puzzleId', 'seed', 'structureSignature'] as const) {
@@ -11,8 +11,25 @@ for (const field of ['puzzleId', 'seed', 'structureSignature'] as const) {
   }
 }
 
-for (const puzzle of PUZZLES) {
-  const regenerated = evaluateCandidate(generateCandidate(puzzle.displayNumber - 1)).puzzle;
+for (const [index, puzzle] of PUZZLES.entries()) {
+  const rate = (strategy: string): number =>
+    puzzle.humanStrategyMetrics.find((metric) => metric.strategy === strategy)?.clearRate ?? 1;
+  const simpleStrategies = ['proximity', 'sum-ten'] as const;
+  if (
+    rate('random') > 0.01 ||
+    simpleStrategies.some((strategy) => rate(strategy) > 0.1) ||
+    rate('row-clear') > 0.2 ||
+    rate('lookahead-2') > 0.5
+  ) {
+    throw new Error(
+      `Master ${puzzle.displayNumber}は人間向け初期ゲート不合格です: ` +
+      `random=${rate('random')}, ` +
+      `simple=${simpleStrategies.map((strategy) => `${strategy}:${rate(strategy)}`).join(',')}, ` +
+      `row-clear=${rate('row-clear')}, ` +
+      `lookahead-2=${rate('lookahead-2')}`,
+    );
+  }
+  const regenerated = evaluateCandidate(generateCandidate(index)).puzzle;
   if (JSON.stringify(regenerated) !== JSON.stringify(puzzle)) {
     throw new Error(`問題${puzzle.displayNumber}の固定データが再評価結果と一致しません。`);
   }
@@ -20,10 +37,14 @@ for (const puzzle of PUZZLES) {
     puzzle.solutionStatus !== 'SOLVED' ||
     !puzzle.minimumAdditionsProven ||
     puzzle.initialMoveCount < 1 ||
-    puzzle.initialRows < 8 ||
-    puzzle.initialRows > 12 ||
+    puzzle.initialAliveCount < 54 ||
+    puzzle.initialBoard.cells.some((cell) => cell === 0) ||
+    puzzle.additionsAllowed !== 5 ||
+    puzzle.additionsAvailable !== 5 ||
+    puzzle.minimumAdditions !== 5 ||
     puzzle.difficultyScore < 65 ||
     puzzle.maximumRowsDuringSolution > 48 ||
+    !puzzle.allPathHintsVerified ||
     !puzzle.reviewed
   ) {
     throw new Error(`問題${puzzle.displayNumber}が公開品質ゲートを満たしません。`);

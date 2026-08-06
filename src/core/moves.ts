@@ -28,15 +28,17 @@ export function valuesMatch(first: Cell, second: Cell): boolean {
   return first !== 0 && second !== 0 && (first === second || first + second === 10);
 }
 
-function pairKey(first: number, second: number): string {
-  return first < second ? `${first}:${second}` : `${second}:${first}`;
+function pairKey(first: number, second: number, logicalLength: number): number {
+  const low = Math.min(first, second);
+  const high = Math.max(first, second);
+  return low * logicalLength + high;
 }
 
 function addCandidate(
   board: Board,
   firstIndex: number,
   secondIndex: number,
-  candidates: Map<string, PairMove>,
+  candidates: Map<number, PairMove>,
 ): void {
   const first = Math.min(firstIndex, secondIndex);
   const second = Math.max(firstIndex, secondIndex);
@@ -47,7 +49,7 @@ function addCandidate(
     return;
   }
 
-  candidates.set(pairKey(first, second), {
+  candidates.set(pairKey(first, second, board.logicalLength), {
     type: 'PAIR',
     first: indexToPosition(first),
     second: indexToPosition(second),
@@ -55,7 +57,7 @@ function addCandidate(
 }
 
 export function getLegalPairMoves(board: Board): readonly PairMove[] {
-  const candidates = new Map<string, PairMove>();
+  const candidates = new Map<number, PairMove>();
   const rowCount = Math.ceil(board.logicalLength / board.width);
 
   for (let index = 0; index < board.logicalLength; index += 1) {
@@ -105,11 +107,7 @@ export function getLegalPairMoves(board: Board): readonly PairMove[] {
   }
 
   return [...candidates.entries()]
-    .sort(([firstKey], [secondKey]) => {
-      const [firstA = 0, firstB = 0] = firstKey.split(':').map(Number);
-      const [secondA = 0, secondB = 0] = secondKey.split(':').map(Number);
-      return firstA - secondA || firstB - secondB;
-    })
+    .sort(([firstKey], [secondKey]) => firstKey - secondKey)
     .map(([, move]) => move);
 }
 
@@ -126,12 +124,20 @@ export function isPairMoveLegal(board: Board, move: PairMove): boolean {
   if (firstIndex === secondIndex) {
     return false;
   }
-  const targetKey = pairKey(firstIndex, secondIndex);
+  const targetKey = pairKey(firstIndex, secondIndex, board.logicalLength);
   return getLegalPairMoves(board).some((candidate) => {
     const candidateFirst = positionToIndex(board, candidate.first);
     const candidateSecond = positionToIndex(board, candidate.second);
-    return pairKey(candidateFirst, candidateSecond) === targetKey;
+    return pairKey(candidateFirst, candidateSecond, board.logicalLength) === targetKey;
   });
+}
+
+/** Apply a pair already returned by getLegalPairMoves. Callers must enforce that precondition. */
+export function applyKnownLegalPairMove(board: Board, move: PairMove): Board {
+  const nextCells = [...board.cells];
+  nextCells[positionToIndex(board, move.first)] = 0;
+  nextCells[positionToIndex(board, move.second)] = 0;
+  return normalizeBoard(createBoard(nextCells));
 }
 
 export function applyPairMove(board: Board, move: PairMove): Board {
@@ -139,8 +145,5 @@ export function applyPairMove(board: Board, move: PairMove): Board {
     throw new InvalidMoveError('この2つの数字は消去できません。');
   }
 
-  const nextCells = [...board.cells];
-  nextCells[positionToIndex(board, move.first)] = 0;
-  nextCells[positionToIndex(board, move.second)] = 0;
-  return normalizeBoard(createBoard(nextCells));
+  return applyKnownLegalPairMove(board, move);
 }
