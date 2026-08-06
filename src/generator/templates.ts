@@ -65,12 +65,13 @@ function mirrorRows(cells: readonly Cell[]): Cell[] {
 function simpleShellRow(
   rowIndex: number,
   column: number,
+  gap = 1,
 ): Cell[] {
   const row = Array<Cell>(9).fill(0);
   const pair = CLASS_PAIRS[rowIndex % CLASS_PAIRS.length] ?? CLASS_PAIRS[0];
   const value = pair[0];
   row[column] = value;
-  row[column + 1] = value;
+  row[column + gap] = value;
   return row;
 }
 
@@ -121,9 +122,17 @@ export function generateCandidate(index: number): PuzzleCandidate {
   const simpleColumn = family === 'add-two' || family === 'add-three'
     ? 6
     : prng.integer(8);
+  const generationGroup = Math.floor(index / FAMILY_ORDER.length);
 
   for (let row = 0; row < shellRows; row += 1) {
-    shell.push(...simpleShellRow(row, simpleColumn));
+    const isStructuralMarker = generationGroup > 0 && row === 0;
+    shell.push(
+      ...simpleShellRow(
+        row,
+        isStructuralMarker ? 0 : simpleColumn,
+        isStructuralMarker ? generationGroup + 1 : 1,
+      ),
+    );
   }
 
   return {
