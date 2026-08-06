@@ -6,13 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "generate:puzzles": "vite-node scripts/generate-puzzles.ts",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "validate:puzzles": "vite-node scripts/validate-puzzles.ts"
   },
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "typescript": "^5.9.3",
     "vite": "^7.1.1",
+    "vite-node": "^3.2.4",
     "vitest": "^3.2.4"
   }
 }
