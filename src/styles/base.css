@@ -16,7 +16,8 @@
   --gold: #bd8728;
   --line: #bba98a;
   --shadow: 0 14px 38px rgb(42 54 48 / 12%);
-  --cell-size: clamp(29px, calc((100vw - 48px) / 9), 42px);
+  /* 画面余白、盤面枠、内側余白、8個のgapを差し引いて9列を収める。 */
+  --cell-size: clamp(25px, calc((100vw - 82px) / 9), 42px);
 }
 
 :root[data-font-size="large"] {
@@ -594,6 +595,7 @@ button.number-cell:hover { background: #fff; }
 }
 
 @media (max-width: 22rem) {
+  :root:not([data-board-size="large"]) { --cell-size: clamp(28px, calc((100vw - 52px) / 9), 32px); }
   .screen { width: min(100% - 0.75rem, 52rem); }
   .board-viewport { padding: 0.35rem; border-width: 2px; }
   .number-board { gap: 1px; }
