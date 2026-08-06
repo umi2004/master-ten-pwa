@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:puzzles": "vite-node scripts/validate-puzzles.ts"
+    "validate:puzzles": "vite-node scripts/validate-puzzles.ts",
+    "verify:offline": "node scripts/verify-offline.mjs"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
