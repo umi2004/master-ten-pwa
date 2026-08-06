@@ -64,6 +64,7 @@ export class MasterTenApp {
       this.#notice = loaded.message;
     }
     this.#applySettings();
+    window.addEventListener('pagehide', () => this.#session?.leave());
     this.render();
   }
 
