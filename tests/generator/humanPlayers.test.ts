@@ -47,4 +47,29 @@ describe('human player audit boundary', () => {
     expect(result.residualAliveHistogram).toEqual({ '2': 5 });
     expect(result.failureRemainingAdditionsDistribution).toEqual({ '0': 5 });
   });
+
+  it('keeps analysis off by default and records only bounded successful traces when requested', () => {
+    const state = createGameState(createBoard([1, 1]), 0);
+    const normal = simulateHumanStrategy(state, 'trace', 'proximity', 2);
+    expect('successfulTraces' in normal).toBe(false);
+
+    const analyzed = simulateHumanStrategy(
+      state,
+      'trace',
+      'proximity',
+      2,
+      10,
+      { analysis: true, maxSuccessfulTraces: 1 },
+    );
+    expect(analyzed.metrics.clears).toBe(2);
+    expect(analyzed.successfulTraces).toHaveLength(1);
+    expect(analyzed.successfulTraces[0]?.steps[0]).toMatchObject({
+      strategy: 'proximity',
+      trial: 0,
+      ply: 0,
+      legalTransitionCount: 1,
+      additionsRemaining: 0,
+      additionsUsed: 0,
+    });
+  });
 });

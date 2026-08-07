@@ -54,6 +54,13 @@ describe('V8-Lite bounded local catalog', () => {
   });
 
   it.each(PUZZLES)('replays $difficultyTier and verifies every cached hint', (puzzle) => {
+    let verifiedState: GameState = createGameState(puzzle.initialBoard, puzzle.additionsAllowed);
+    for (const move of puzzle.verifiedSolution) {
+      verifiedState = applyGameMove(verifiedState, move);
+    }
+    expect(verifiedState.status).toBe('WON');
+    expect(verifiedState.additionsUsed).toBe(5);
+
     let state: GameState = createGameState(puzzle.initialBoard, puzzle.additionsAllowed);
     const engine = new HintEngine();
     expect(engine.prime(state, puzzle.recommendedHumanSolution)).toBe(true);

@@ -7,7 +7,7 @@ import {
   type GameState,
 } from '../core';
 import type { HumanStrategyId, StrategyTrialMetrics } from '../puzzles/types';
-import { applySearchMove, getSearchMoves } from '../solver/searchState';
+import { applySearchMove, createStateKey, getSearchMoves } from '../solver/searchState';
 import { createPrng, type Prng } from './prng';
 import { classifyHumanFailure } from './failureAnalysis';
 
@@ -44,6 +44,34 @@ export interface HumanPlayerAuditDefinition {
   readonly evaluation: string;
   readonly tieBreak: string;
   readonly usesCompleteSolver: false;
+}
+
+export interface HumanTraceStep {
+  readonly strategy: HumanStrategyId;
+  readonly trial: number;
+  readonly ply: number;
+  readonly stateKey: string;
+  readonly legalTransitionCount: number;
+  readonly legalMoves: readonly GameMove[];
+  readonly selectedMove: GameMove;
+  readonly additionsRemaining: number;
+  readonly additionsUsed: number;
+}
+
+export interface SuccessfulHumanTrace {
+  readonly strategy: HumanStrategyId;
+  readonly trial: number;
+  readonly steps: readonly HumanTraceStep[];
+}
+
+export interface HumanSimulationAnalysisOptions {
+  readonly analysis: true;
+  readonly maxSuccessfulTraces?: number;
+}
+
+export interface HumanStrategyAnalysisResult {
+  readonly metrics: StrategyTrialMetrics;
+  readonly successfulTraces: readonly SuccessfulHumanTrace[];
 }
 
 const COMMON_INPUTS = [
@@ -256,8 +284,25 @@ export function simulateHumanStrategy(
   seed: string,
   strategy: HumanStrategyId,
   trials: number,
+  maxSteps: number,
+  options: HumanSimulationAnalysisOptions,
+): HumanStrategyAnalysisResult;
+export function simulateHumanStrategy(
+  initialState: GameState,
+  seed: string,
+  strategy: HumanStrategyId,
+  trials: number,
+  maxSteps?: number,
+  options?: undefined,
+): StrategyTrialMetrics;
+export function simulateHumanStrategy(
+  initialState: GameState,
+  seed: string,
+  strategy: HumanStrategyId,
+  trials: number,
   maxSteps = 300,
-): StrategyTrialMetrics {
+  options?: HumanSimulationAnalysisOptions,
+): StrategyTrialMetrics | HumanStrategyAnalysisResult {
   let cleared = 0;
   let totalMoves = 0;
   let totalAdditions = 0;
@@ -274,14 +319,31 @@ export function simulateHumanStrategy(
   const residualHistogram: Record<string, number> = {};
   const remainingAdditionsHistogram: Record<string, number> = {};
   const successfulAdditionsHistogram: Record<string, number> = {};
+  const successfulTraces: SuccessfulHumanTrace[] = [];
+  const traceLimit = Math.min(3, Math.max(0, options?.maxSuccessfulTraces ?? 1));
   for (let trial = 0; trial < trials; trial += 1) {
     const prng = createPrng(humanTrialSeed(seed, strategy, trial));
     let state = initialState;
     let maximumRows = boardRows(state.board);
     let steps = 0;
+    const trialTrace: HumanTraceStep[] | undefined = options ? [] : undefined;
     for (; steps < maxSteps && state.status === 'PLAYING'; steps += 1) {
+      const legalMoves = trialTrace ? getSearchMoves(state) : undefined;
       const move = chooseMove(state, strategy, prng);
       if (!move) break;
+      if (trialTrace && legalMoves) {
+        trialTrace.push({
+          strategy,
+          trial,
+          ply: steps,
+          stateKey: createStateKey(state),
+          legalTransitionCount: legalMoves.length,
+          legalMoves,
+          selectedMove: move,
+          additionsRemaining: state.additionsRemaining,
+          additionsUsed: state.additionsUsed,
+        });
+      }
       state = applySearchMove(state, move);
       maximumRows = Math.max(maximumRows, boardRows(state.board));
     }
@@ -290,6 +352,9 @@ export function simulateHumanStrategy(
       successfulAdditions.push(state.additionsUsed);
       const additions = String(state.additionsUsed);
       successfulAdditionsHistogram[additions] = (successfulAdditionsHistogram[additions] ?? 0) + 1;
+      if (trialTrace && successfulTraces.length < traceLimit) {
+        successfulTraces.push({ strategy, trial, steps: trialTrace });
+      }
     } else {
       const failure = classifyHumanFailure(state, steps >= maxSteps);
       failureCounts[failure] = (failureCounts[failure] ?? 0) + 1;
@@ -326,7 +391,7 @@ export function simulateHumanStrategy(
   const meanSuccessfulAdditions = cleared === 0
     ? 0
     : successfulAdditions.reduce((sum, additions) => sum + additions, 0) / cleared;
-  return {
+  const metrics: StrategyTrialMetrics = {
     strategy,
     trials,
     clears: cleared,
@@ -356,6 +421,7 @@ export function simulateHumanStrategy(
     residualAliveHistogram: residualHistogram,
     failureRemainingAdditionsDistribution: remainingAdditionsHistogram,
   };
+  return options ? { metrics, successfulTraces } : metrics;
 }
 
 export function simulateHumanStrategies(

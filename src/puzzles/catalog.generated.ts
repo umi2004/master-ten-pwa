@@ -1,6 +1,4 @@
-// このファイルは npm run generate:puzzles で生成されます。
-// 手作業で問題配置を編集しないでください。
-
+// Generated catalog; run npm run generate:puzzles for a full metric refresh.
 import type { VerifiedPuzzle } from './types';
 
 export const PUZZLES: readonly VerifiedPuzzle[] = [
@@ -11,7 +9,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_158_79622587",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -73,12 +71,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 4,
-          "column": 2
+          "row": 1,
+          "column": 0
         }
       },
       {
@@ -107,22 +105,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 1
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -134,6 +132,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
         }
       },
       {
@@ -153,6 +162,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 5,
           "column": 8
         },
@@ -169,106 +255,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
           "row": 6,
           "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
@@ -279,131 +277,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 6,
+          "column": 0
         },
         "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 7
+          "row": 5,
+          "column": 0
         }
       },
       {
@@ -414,105 +321,6 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
           "column": 0
         }
       },
@@ -522,116 +330,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 7,
+          "column": 3
         },
         "second": {
-          "row": 4,
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
           "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 6,
           "column": 7
-        },
-        "second": {
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 8
         }
       },
@@ -639,10 +386,101 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 1
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -650,88 +488,201 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 2
+          "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 4
         },
         "second": {
           "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 5
+          "row": 7,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 1,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 2
         },
         "second": {
-          "row": 4,
-          "column": 7
+          "row": 7,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 7
+          "row": 6,
+          "column": 4
         },
         "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
+          "row": 6,
+          "column": 7
         },
         "second": {
-          "row": 4,
+          "row": 7,
           "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 6
         }
       },
       {
@@ -741,51 +692,87 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 6,
           "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 1
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 3
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 1,
+          "row": 3,
           "column": 7
         }
       },
@@ -796,8 +783,41 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 6
         },
         "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       }
     ],
@@ -806,6 +826,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 1
         },
         "second": {
@@ -817,44 +848,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 0,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
         },
         "second": {
           "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
+          "column": 3
         }
       },
       {
@@ -871,8 +869,636 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 3,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
@@ -885,298 +1511,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -1186,8 +1526,52 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
-          "column": 8
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       }
     ],
@@ -1196,6 +1580,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 1
         },
         "second": {
@@ -1207,44 +1602,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 0,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
         },
         "second": {
           "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
+          "column": 3
         }
       },
       {
@@ -1261,8 +1623,636 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 3,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
@@ -1275,298 +2265,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -1576,8 +2280,52 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
-          "column": 8
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       }
     ],
@@ -1586,6 +2334,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 1
         },
         "second": {
@@ -1597,44 +2356,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 0,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
         },
         "second": {
           "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
+          "column": 3
         }
       },
       {
@@ -1651,8 +2377,636 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 3,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 3
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
@@ -1665,298 +3019,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -1966,8 +3034,52 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
-          "column": 8
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       }
     ],
@@ -1975,12 +3087,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 4,
-          "column": 2
+          "row": 1,
+          "column": 0
         }
       },
       {
@@ -2009,22 +3121,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 1
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -2036,6 +3148,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 0
         }
       },
       {
@@ -2055,6 +3178,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 5,
           "column": 8
         },
@@ -2071,106 +3271,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
           "row": 6,
           "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
@@ -2181,131 +3293,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 6,
+          "column": 0
         },
         "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 7
+          "row": 5,
+          "column": 0
         }
       },
       {
@@ -2316,105 +3337,6 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
           "column": 0
         }
       },
@@ -2424,116 +3346,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 7,
+          "column": 3
         },
         "second": {
-          "row": 4,
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
           "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 6,
           "column": 7
-        },
-        "second": {
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 8
         }
       },
@@ -2541,10 +3402,101 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 1
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -2552,88 +3504,201 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 2
+          "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 4
         },
         "second": {
           "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 5
+          "row": 7,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 1,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 2
         },
         "second": {
-          "row": 4,
-          "column": 7
+          "row": 7,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 7
+          "row": 6,
+          "column": 4
         },
         "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
+          "row": 6,
+          "column": 7
         },
         "second": {
-          "row": 4,
+          "row": 7,
           "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 6
         }
       },
       {
@@ -2643,51 +3708,87 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 6,
           "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 1
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 3
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 1,
+          "row": 3,
           "column": 7
         }
       },
@@ -2698,16 +3799,49 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 6
         },
         "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       }
     ],
-    "bestKnownSolutionLength": 70,
+    "bestKnownSolutionLength": 72,
     "provenOptimal": false,
-    "minimumAdditions": 1,
-    "minimumAdditionsProven": true,
-    "nodesExpanded": 70,
+    "minimumAdditions": 5,
+    "minimumAdditionsProven": false,
+    "nodesExpanded": 72,
     "averageBranching": 6.9,
     "maximumBranching": 20,
     "forcedMoveRatio": 0.0714,
@@ -3188,7 +4322,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.01, P=0.08, Row=0.2333, D2=0.6875, nearMiss=0.34992679355783307.",
-      "Successful simple-AI additions mean=4.307142857142857, median=5."
+      "Successful simple-AI additions mean=4.307142857142857, median=5.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "b0da5eda",
@@ -3201,7 +4336,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_212_79622583",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -3264,11 +4399,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 5
         },
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -3286,387 +4454,354 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 3
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
           "row": 0,
           "column": 6
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 7
         },
         "second": {
           "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 7
         }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
+          "column": 0
         },
         "second": {
           "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 3
+          "column": 2
         },
         "second": {
           "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 6
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 2
+          "column": 7
         },
         "second": {
           "row": 7,
-          "column": 1
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 6,
           "column": 5
         },
         "second": {
           "row": 7,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
           "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
         },
         "second": {
           "row": 6,
@@ -3676,81 +4811,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "row": 5,
+          "column": 8
         },
         "second": {
           "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
+          "column": 5
         }
       },
       {
@@ -3759,111 +4858,114 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 4
         },
         "second": {
           "row": 3,
-          "column": 1
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
           "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 1,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 4
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 3,
-          "column": 8
+          "row": 4,
+          "column": 4
         }
       },
       {
@@ -3884,99 +4986,99 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 0
         },
         "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 3
         }
       },
       {
@@ -3987,7 +5089,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 4
         }
       }
     ],
@@ -3996,11 +5098,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 5
         },
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -4018,387 +5153,354 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 3
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
           "row": 0,
           "column": 6
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 7
         },
         "second": {
           "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 7
         }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
+          "column": 0
         },
         "second": {
           "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 3
+          "column": 2
         },
         "second": {
           "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 6
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 2
+          "column": 7
         },
         "second": {
           "row": 7,
-          "column": 1
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 6,
           "column": 5
         },
         "second": {
           "row": 7,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
           "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
         },
         "second": {
           "row": 6,
@@ -4408,81 +5510,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "row": 5,
+          "column": 8
         },
         "second": {
           "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
+          "column": 5
         }
       },
       {
@@ -4491,111 +5557,114 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 4
         },
         "second": {
           "row": 3,
-          "column": 1
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
           "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 1,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 4
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 3,
-          "column": 8
+          "row": 4,
+          "column": 4
         }
       },
       {
@@ -4616,99 +5685,99 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 0
         },
         "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 3
         }
       },
       {
@@ -4719,7 +5788,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 4
         }
       }
     ],
@@ -4728,11 +5797,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 5
         },
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -4750,387 +5852,354 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 3
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
           "row": 0,
           "column": 6
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 7
         },
         "second": {
           "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 7
         }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
+          "column": 0
         },
         "second": {
           "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 3
+          "column": 2
         },
         "second": {
           "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 6
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 2
+          "column": 7
         },
         "second": {
           "row": 7,
-          "column": 1
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 6,
           "column": 5
         },
         "second": {
           "row": 7,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
           "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
         },
         "second": {
           "row": 6,
@@ -5140,81 +6209,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "row": 5,
+          "column": 8
         },
         "second": {
           "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
+          "column": 5
         }
       },
       {
@@ -5223,111 +6256,114 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 4
         },
         "second": {
           "row": 3,
-          "column": 1
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
           "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 1,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 4
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 3,
-          "column": 8
+          "row": 4,
+          "column": 4
         }
       },
       {
@@ -5348,99 +6384,99 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 0
         },
         "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 3
         }
       },
       {
@@ -5451,7 +6487,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 4
         }
       }
     ],
@@ -5460,11 +6496,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 5
         },
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -5482,387 +6551,354 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 3
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
           "row": 0,
           "column": 6
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 7
         },
         "second": {
           "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 7
         }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
+          "column": 0
         },
         "second": {
           "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 3
+          "column": 2
         },
         "second": {
           "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 6
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 2
+          "column": 7
         },
         "second": {
           "row": 7,
-          "column": 1
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 6,
           "column": 5
         },
         "second": {
           "row": 7,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
           "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
         },
         "second": {
           "row": 6,
@@ -5872,81 +6908,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "row": 5,
+          "column": 8
         },
         "second": {
           "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
+          "column": 5
         }
       },
       {
@@ -5955,111 +6955,114 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 4
         },
         "second": {
           "row": 3,
-          "column": 1
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
           "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 1,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 4
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 3,
-          "column": 8
+          "row": 4,
+          "column": 4
         }
       },
       {
@@ -6080,99 +7083,99 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 0
         },
         "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 3
         }
       },
       {
@@ -6183,7 +7186,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 4
         }
       }
     ],
@@ -6192,11 +7195,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 5
         },
         "second": {
           "row": 1,
           "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -6214,387 +7250,354 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 3
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
           "row": 0,
           "column": 6
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 7
         },
         "second": {
           "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 7
         }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
+          "column": 0
         },
         "second": {
           "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 3
+          "column": 2
         },
         "second": {
           "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 6
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 2
+          "column": 7
         },
         "second": {
           "row": 7,
-          "column": 1
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 6,
           "column": 5
         },
         "second": {
           "row": 7,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
           "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
         },
         "second": {
           "row": 6,
@@ -6604,81 +7607,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "row": 5,
+          "column": 8
         },
         "second": {
           "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
+          "column": 5
         }
       },
       {
@@ -6687,111 +7654,114 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 4,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 4
         },
         "second": {
           "row": 3,
-          "column": 1
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
           "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 1,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 4
         }
+      },
+      {
+        "type": "ADD_NUMBERS"
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 2
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
-          "row": 3,
-          "column": 8
+          "row": 4,
+          "column": 4
         }
       },
       {
@@ -6812,99 +7782,99 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 0
         },
         "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 3
         }
       },
       {
@@ -6915,21 +7885,21 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 4
         }
       }
     ],
-    "bestKnownSolutionLength": 70,
+    "bestKnownSolutionLength": 67,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 70,
+    "nodesExpanded": 67,
     "averageBranching": 6.36,
     "maximumBranching": 22,
     "forcedMoveRatio": 0.0857,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 10,
+    "maximumRowsDuringSolution": 9,
     "phaseDifficulty": {
       "early": 77,
       "middle": 65,
@@ -7405,7 +8375,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.035, P=0.12, Row=0.26, D2=0.7375, nearMiss=0.36642335766423356.",
-      "Successful simple-AI additions mean=4.333333333333333, median=5."
+      "Successful simple-AI additions mean=4.333333333333333, median=5.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "b0da5eda",
@@ -7418,7 +8389,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_078_79622587",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -7761,45 +8732,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 4,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
+          "column": 5
         }
       },
       {
@@ -7811,61 +8749,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 6,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 1
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 2
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
+          "row": 6,
+          "column": 5
         }
       },
       {
@@ -7876,14 +8781,69 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
         },
         "second": {
           "row": 5,
@@ -7893,23 +8853,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 7
+          "row": 4,
+          "column": 1
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
         }
       },
       {
@@ -7919,22 +8868,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 5
         }
       },
       {
@@ -7951,8 +8900,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
         },
         "second": {
           "row": 4,
@@ -7962,12 +8933,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
+          "row": 1,
+          "column": 5
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -7976,33 +8958,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
+          "row": 2,
           "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
           "row": 5,
-          "column": 6
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
         },
         "second": {
           "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
           "column": 5
         }
       },
@@ -8010,10 +9025,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 6
         }
       },
@@ -8024,128 +9039,95 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
           "column": 0
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 2
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 4,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 3,
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 4
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
@@ -8155,8 +9137,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
@@ -8166,56 +9170,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
+          "row": 0,
           "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 3
         }
       },
       {
@@ -8225,19 +9218,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 1
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -8526,45 +9519,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 4,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
+          "column": 5
         }
       },
       {
@@ -8576,61 +9536,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 6,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 1
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 2
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
+          "row": 6,
+          "column": 5
         }
       },
       {
@@ -8641,14 +9568,69 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
         },
         "second": {
           "row": 5,
@@ -8658,23 +9640,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 7
+          "row": 4,
+          "column": 1
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
         }
       },
       {
@@ -8684,22 +9655,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 5
         }
       },
       {
@@ -8716,8 +9687,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
         },
         "second": {
           "row": 4,
@@ -8727,12 +9720,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
+          "row": 1,
+          "column": 5
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -8741,33 +9745,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
+          "row": 2,
           "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
           "row": 5,
-          "column": 6
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
         },
         "second": {
           "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
           "column": 5
         }
       },
@@ -8775,10 +9812,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 6
         }
       },
@@ -8789,128 +9826,95 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
           "column": 0
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 2
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 4,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 3,
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 4
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
@@ -8920,8 +9924,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
@@ -8931,56 +9957,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
+          "row": 0,
           "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 3
         }
       },
       {
@@ -8990,19 +10005,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 1
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -9291,45 +10306,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 4,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
+          "column": 5
         }
       },
       {
@@ -9341,61 +10323,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 6,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 1
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 2
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
+          "row": 6,
+          "column": 5
         }
       },
       {
@@ -9406,14 +10355,69 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
         },
         "second": {
           "row": 5,
@@ -9423,23 +10427,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 7
+          "row": 4,
+          "column": 1
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
         }
       },
       {
@@ -9449,22 +10442,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 5
         }
       },
       {
@@ -9481,8 +10474,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
         },
         "second": {
           "row": 4,
@@ -9492,12 +10507,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
+          "row": 1,
+          "column": 5
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -9506,33 +10532,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
+          "row": 2,
           "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
           "row": 5,
-          "column": 6
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
         },
         "second": {
           "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
           "column": 5
         }
       },
@@ -9540,10 +10599,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 6
         }
       },
@@ -9554,128 +10613,95 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
           "column": 0
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 2
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 4,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 3,
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 4
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
@@ -9685,8 +10711,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
@@ -9696,56 +10744,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
+          "row": 0,
           "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 3
         }
       },
       {
@@ -9755,19 +10792,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 1
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -10056,45 +11093,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 4,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
+          "column": 5
         }
       },
       {
@@ -10106,61 +11110,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 6,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 1
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 2
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
+          "row": 6,
+          "column": 5
         }
       },
       {
@@ -10171,14 +11142,69 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
         },
         "second": {
           "row": 5,
@@ -10188,23 +11214,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 7
+          "row": 4,
+          "column": 1
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
         }
       },
       {
@@ -10214,22 +11229,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 5
         }
       },
       {
@@ -10246,8 +11261,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
         },
         "second": {
           "row": 4,
@@ -10257,12 +11294,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
+          "row": 1,
+          "column": 5
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -10271,33 +11319,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
+          "row": 2,
           "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
           "row": 5,
-          "column": 6
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
         },
         "second": {
           "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
           "column": 5
         }
       },
@@ -10305,10 +11386,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 6
         }
       },
@@ -10319,128 +11400,95 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
           "column": 0
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 2
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 4,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 3,
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 4
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
@@ -10450,8 +11498,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
@@ -10461,56 +11531,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
+          "row": 0,
           "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 3
         }
       },
       {
@@ -10520,19 +11579,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 1
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -10821,45 +11880,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 4,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
+          "column": 5
         }
       },
       {
@@ -10871,61 +11897,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "second": {
           "row": 6,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 1
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 2
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 2
+          "row": 6,
+          "column": 5
         }
       },
       {
@@ -10936,14 +11929,69 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 3
         },
         "second": {
           "row": 5,
@@ -10953,23 +12001,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 7
+          "row": 4,
+          "column": 1
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
         }
       },
       {
@@ -10979,22 +12016,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 5
         }
       },
       {
@@ -11011,8 +12048,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
         },
         "second": {
           "row": 4,
@@ -11022,12 +12081,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
+          "row": 1,
+          "column": 5
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -11036,33 +12106,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
+          "row": 2,
           "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
           "row": 5,
-          "column": 6
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
         },
         "second": {
           "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
           "column": 5
         }
       },
@@ -11070,10 +12173,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 7
+          "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 6
         }
       },
@@ -11084,128 +12187,95 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
           "column": 0
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 3
+          "column": 7
         },
         "second": {
           "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 2
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 2
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 6,
+          "row": 4,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 3,
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 4
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
@@ -11215,8 +12285,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
@@ -11226,56 +12318,45 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 3,
+          "row": 0,
           "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 3
         }
       },
       {
@@ -11285,33 +12366,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 2,
-          "column": 8
+          "row": 1,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 4
+          "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 1
+          "row": 0,
+          "column": 7
         }
       }
     ],
-    "bestKnownSolutionLength": 73,
+    "bestKnownSolutionLength": 75,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 73,
+    "nodesExpanded": 75,
     "averageBranching": 7.51,
     "maximumBranching": 22,
     "forcedMoveRatio": 0.0959,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 10,
+    "maximumRowsDuringSolution": 9,
     "phaseDifficulty": {
       "early": 84,
       "middle": 65,
@@ -11778,7 +12859,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.03, P=0.0333, Row=0.26, D2=0.7375, nearMiss=0.35555555555555557.",
-      "Successful simple-AI additions mean=4.107142857142857, median=4."
+      "Successful simple-AI additions mean=4.107142857142857, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "b0da5eda",
@@ -11791,7 +12873,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_074_79622583",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -11857,19 +12939,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 3
+          "row": 0,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 3,
           "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -11886,11 +12979,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
+          "row": 0,
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 1,
           "column": 0
         }
       },
@@ -11908,22 +13001,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 0,
+          "row": 2,
           "column": 6
         }
       },
@@ -11933,72 +13015,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 5,
           "column": 7
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
           "column": 5
         },
@@ -12010,78 +13103,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 3
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 1
+          "column": 4
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 8
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -12090,106 +13172,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 3
+          "row": 9,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 2
+        },
+        "second": {
+          "row": 9,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 4
         },
         "second": {
@@ -12201,189 +13261,142 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
         },
         "second": {
           "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
           "row": 7,
-          "column": 2
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
         },
         "second": {
           "row": 8,
-          "column": 2
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
         },
         "second": {
           "row": 7,
@@ -12393,11 +13406,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
         }
       },
@@ -12405,208 +13440,21 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 7
         },
         "second": {
           "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
           "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 0,
           "column": 7
         }
       },
@@ -12617,10 +13465,343 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
           "column": 7
         }
       },
@@ -12628,40 +13809,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
         },
         "second": {
           "row": 1,
@@ -12672,11 +13820,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 1,
-          "column": 2
+          "column": 5
         }
       }
     ],
@@ -12688,19 +13836,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 3
+          "row": 0,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 3,
           "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -12717,11 +13876,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
+          "row": 0,
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 1,
           "column": 0
         }
       },
@@ -12739,22 +13898,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 0,
+          "row": 2,
           "column": 6
         }
       },
@@ -12764,72 +13912,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 5,
           "column": 7
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
           "column": 5
         },
@@ -12841,78 +14000,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 3
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 1
+          "column": 4
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 8
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -12921,106 +14069,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 3
+          "row": 9,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 2
+        },
+        "second": {
+          "row": 9,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 4
         },
         "second": {
@@ -13032,189 +14158,142 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
         },
         "second": {
           "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
           "row": 7,
-          "column": 2
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
         },
         "second": {
           "row": 8,
-          "column": 2
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
         },
         "second": {
           "row": 7,
@@ -13224,11 +14303,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
         }
       },
@@ -13236,208 +14337,21 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 7
         },
         "second": {
           "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
           "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 0,
           "column": 7
         }
       },
@@ -13448,10 +14362,343 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
           "column": 7
         }
       },
@@ -13459,40 +14706,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
         },
         "second": {
           "row": 1,
@@ -13503,11 +14717,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 1,
-          "column": 2
+          "column": 5
         }
       }
     ],
@@ -13519,19 +14733,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 3
+          "row": 0,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 3,
           "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -13548,11 +14773,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
+          "row": 0,
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 1,
           "column": 0
         }
       },
@@ -13570,22 +14795,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 0,
+          "row": 2,
           "column": 6
         }
       },
@@ -13595,72 +14809,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 5,
           "column": 7
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
           "column": 5
         },
@@ -13672,78 +14897,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 3
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 1
+          "column": 4
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 8
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -13752,106 +14966,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 3
+          "row": 9,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 2
+        },
+        "second": {
+          "row": 9,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 4
         },
         "second": {
@@ -13863,189 +15055,142 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
         },
         "second": {
           "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
           "row": 7,
-          "column": 2
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
         },
         "second": {
           "row": 8,
-          "column": 2
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
         },
         "second": {
           "row": 7,
@@ -14055,11 +15200,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
         }
       },
@@ -14067,208 +15234,21 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 7
         },
         "second": {
           "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
           "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 0,
           "column": 7
         }
       },
@@ -14279,10 +15259,343 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
           "column": 7
         }
       },
@@ -14290,40 +15603,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
         },
         "second": {
           "row": 1,
@@ -14334,11 +15614,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 1,
-          "column": 2
+          "column": 5
         }
       }
     ],
@@ -14350,19 +15630,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 3
+          "row": 0,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 3,
           "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -14379,11 +15670,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
+          "row": 0,
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 1,
           "column": 0
         }
       },
@@ -14401,22 +15692,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 0,
+          "row": 2,
           "column": 6
         }
       },
@@ -14426,72 +15706,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 5,
           "column": 7
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
           "column": 5
         },
@@ -14503,78 +15794,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 3
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 1
+          "column": 4
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 8
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -14583,106 +15863,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 3
+          "row": 9,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 2
+        },
+        "second": {
+          "row": 9,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 4
         },
         "second": {
@@ -14694,189 +15952,142 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
         },
         "second": {
           "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
           "row": 7,
-          "column": 2
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
         },
         "second": {
           "row": 8,
-          "column": 2
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
         },
         "second": {
           "row": 7,
@@ -14886,11 +16097,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
         }
       },
@@ -14898,208 +16131,21 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 7
         },
         "second": {
           "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
           "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 0,
           "column": 7
         }
       },
@@ -15110,10 +16156,343 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
           "column": 7
         }
       },
@@ -15121,40 +16500,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
         },
         "second": {
           "row": 1,
@@ -15165,11 +16511,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 1,
-          "column": 2
+          "column": 5
         }
       }
     ],
@@ -15181,19 +16527,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 1,
-          "column": 3
+          "row": 0,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 3,
           "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
@@ -15210,11 +16567,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
+          "row": 0,
           "column": 8
         },
         "second": {
-          "row": 4,
+          "row": 1,
           "column": 0
         }
       },
@@ -15232,22 +16589,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 1
+          "row": 0,
+          "column": 6
         },
         "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 0,
+          "row": 2,
           "column": 6
         }
       },
@@ -15257,72 +16603,83 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 5,
           "column": 7
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 0
         },
         "second": {
-          "row": 6,
+          "row": 5,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 5
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
           "column": 5
         },
@@ -15334,78 +16691,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 4
+          "row": 3,
+          "column": 3
         },
         "second": {
           "row": 5,
-          "column": 3
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 1
+          "column": 4
         },
         "second": {
           "row": 7,
-          "column": 2
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 8
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -15414,106 +16760,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 3
+          "row": 9,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 0
+        },
+        "second": {
+          "row": 10,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
+          "column": 2
+        },
+        "second": {
+          "row": 9,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 4
         },
         "second": {
@@ -15525,189 +16849,142 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 2
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 9,
+          "column": 3
+        },
+        "second": {
+          "row": 9,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
         },
         "second": {
           "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 4
+        },
+        "second": {
           "row": 7,
-          "column": 2
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
         },
         "second": {
           "row": 8,
-          "column": 2
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
         },
         "second": {
           "row": 7,
@@ -15717,11 +16994,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 2
         },
         "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 7
         }
       },
@@ -15729,208 +17028,21 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 7
         },
         "second": {
           "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
           "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 6
-        },
-        "second": {
-          "row": 4,
           "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 4,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 5
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 0,
           "column": 7
         }
       },
@@ -15941,10 +17053,343 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
           "column": 7
         }
       },
@@ -15952,40 +17397,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 1,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
         },
         "second": {
           "row": 1,
@@ -15996,25 +17408,25 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 1,
-          "column": 2
+          "column": 5
         }
       }
     ],
-    "bestKnownSolutionLength": 79,
+    "bestKnownSolutionLength": 85,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 79,
+    "nodesExpanded": 85,
     "averageBranching": 8.77,
     "maximumBranching": 22,
     "forcedMoveRatio": 0.0506,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 10,
+    "maximumRowsDuringSolution": 11,
     "phaseDifficulty": {
       "early": 79,
       "middle": 78,
@@ -16491,7 +17903,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.03, P=0.0933, Row=0.2, D2=0.75, nearMiss=0.34699853587115664.",
-      "Successful simple-AI additions mean=4.183206106870229, median=4."
+      "Successful simple-AI additions mean=4.183206106870229, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 84,
     "structureSignature": "b0da5eda",
@@ -16504,7 +17917,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_222_79482523",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -16836,30 +18249,85 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 4
+          "row": 5,
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 5,
-          "column": 4
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
           "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
         },
         "second": {
           "row": 7,
@@ -16870,7 +18338,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 6,
@@ -16880,111 +18348,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
           "row": 5,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
+          "row": 5,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
-          "column": 1
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 5
         }
       },
       {
@@ -16993,67 +18384,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 3
+          "row": 5,
+          "column": 6
         },
         "second": {
           "row": 6,
-          "column": 4
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 6
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 8
+          "row": 6,
+          "column": 4
         }
       },
       {
@@ -17063,10 +18476,76 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
+          "column": 5
         },
         "second": {
-          "row": 8,
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 7
         }
       },
@@ -17077,106 +18556,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 9,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 6
+          "row": 3,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 6,
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 3
+          "row": 2,
+          "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
+          "row": 3,
           "column": 1
         }
       },
@@ -17184,44 +18641,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
           "row": 4,
           "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
+          "row": 3,
           "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 1
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -17230,33 +18687,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
           "column": 5
         }
       },
@@ -17264,17 +18743,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
           "row": 2,
-          "column": 4
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
@@ -17285,45 +18764,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 1
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 1
         }
       },
       {
@@ -17333,8 +18779,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -17612,30 +19069,85 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 4
+          "row": 5,
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 5,
-          "column": 4
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
           "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
         },
         "second": {
           "row": 7,
@@ -17646,7 +19158,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 6,
@@ -17656,111 +19168,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
           "row": 5,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
+          "row": 5,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
-          "column": 1
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 5
         }
       },
       {
@@ -17769,67 +19204,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 3
+          "row": 5,
+          "column": 6
         },
         "second": {
           "row": 6,
-          "column": 4
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 6
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 8
+          "row": 6,
+          "column": 4
         }
       },
       {
@@ -17839,10 +19296,76 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
+          "column": 5
         },
         "second": {
-          "row": 8,
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 7
         }
       },
@@ -17853,106 +19376,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 9,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 6
+          "row": 3,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 6,
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 3
+          "row": 2,
+          "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
+          "row": 3,
           "column": 1
         }
       },
@@ -17960,44 +19461,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
           "row": 4,
           "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
+          "row": 3,
           "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 1
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -18006,33 +19507,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
           "column": 5
         }
       },
@@ -18040,17 +19563,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
           "row": 2,
-          "column": 4
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
@@ -18061,45 +19584,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 1
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 1
         }
       },
       {
@@ -18109,8 +19599,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -18388,30 +19889,85 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 4
+          "row": 5,
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 5,
-          "column": 4
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
           "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
         },
         "second": {
           "row": 7,
@@ -18422,7 +19978,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 6,
@@ -18432,111 +19988,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
           "row": 5,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
+          "row": 5,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
-          "column": 1
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 5
         }
       },
       {
@@ -18545,67 +20024,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 3
+          "row": 5,
+          "column": 6
         },
         "second": {
           "row": 6,
-          "column": 4
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 6
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 8
+          "row": 6,
+          "column": 4
         }
       },
       {
@@ -18615,10 +20116,76 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
+          "column": 5
         },
         "second": {
-          "row": 8,
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 7
         }
       },
@@ -18629,106 +20196,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 9,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 6
+          "row": 3,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 6,
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 3
+          "row": 2,
+          "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
+          "row": 3,
           "column": 1
         }
       },
@@ -18736,44 +20281,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
           "row": 4,
           "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
+          "row": 3,
           "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 1
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -18782,33 +20327,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
           "column": 5
         }
       },
@@ -18816,17 +20383,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
           "row": 2,
-          "column": 4
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
@@ -18837,45 +20404,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 1
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 1
         }
       },
       {
@@ -18885,8 +20419,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -19164,30 +20709,85 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 4
+          "row": 5,
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 5,
-          "column": 4
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
           "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
         },
         "second": {
           "row": 7,
@@ -19198,7 +20798,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 6,
@@ -19208,111 +20808,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
           "row": 5,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
+          "row": 5,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
-          "column": 1
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 5
         }
       },
       {
@@ -19321,67 +20844,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 3
+          "row": 5,
+          "column": 6
         },
         "second": {
           "row": 6,
-          "column": 4
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 6
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 8
+          "row": 6,
+          "column": 4
         }
       },
       {
@@ -19391,10 +20936,76 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
+          "column": 5
         },
         "second": {
-          "row": 8,
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 7
         }
       },
@@ -19405,106 +21016,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 9,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 6
+          "row": 3,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 6,
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 3
+          "row": 2,
+          "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
+          "row": 3,
           "column": 1
         }
       },
@@ -19512,44 +21101,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
           "row": 4,
           "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
+          "row": 3,
           "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 1
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -19558,33 +21147,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
           "column": 5
         }
       },
@@ -19592,17 +21203,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
           "row": 2,
-          "column": 4
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
@@ -19613,45 +21224,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 1
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 1
         }
       },
       {
@@ -19661,8 +21239,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 0,
+          "column": 7
         }
       }
     ],
@@ -19940,30 +21529,85 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 4
+          "row": 5,
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 2
+          "row": 6,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 5,
-          "column": 4
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
           "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 2
         },
         "second": {
           "row": 7,
@@ -19974,7 +21618,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 3
+          "column": 8
         },
         "second": {
           "row": 6,
@@ -19984,111 +21628,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 5,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
           "row": 5,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
         },
         "second": {
-          "row": 4,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
+          "row": 5,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
+          "row": 4,
           "column": 8
         },
         "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
-          "column": 1
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 5
         }
       },
       {
@@ -20097,67 +21664,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 3
+          "row": 5,
+          "column": 6
         },
         "second": {
           "row": 6,
-          "column": 4
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 6
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 8
+          "row": 6,
+          "column": 4
         }
       },
       {
@@ -20167,10 +21756,76 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
+          "column": 5
         },
         "second": {
-          "row": 8,
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 5
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 7
         }
       },
@@ -20181,106 +21836,84 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
-          "row": 8,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 9,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 6
+          "row": 3,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 8
+          "column": 7
         },
         "second": {
-          "row": 6,
+          "row": 3,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
           "column": 4
+        },
+        "second": {
+          "row": 2,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
+          "column": 0
         },
         "second": {
           "row": 4,
-          "column": 3
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 3
+          "row": 2,
+          "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
+          "row": 3,
           "column": 1
         }
       },
@@ -20288,44 +21921,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 0
+          "row": 4,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 5
+        },
+        "second": {
+          "row": 3,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
           "row": 4,
           "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
+          "row": 3,
           "column": 6
         },
         "second": {
-          "row": 5,
-          "column": 1
+          "row": 3,
+          "column": 8
         }
       },
       {
@@ -20334,33 +21967,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
+          "row": 0,
           "column": 8
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 3
         },
         "second": {
           "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
           "column": 5
         }
       },
@@ -20368,17 +22023,17 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
           "row": 2,
-          "column": 4
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
@@ -20389,45 +22044,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 1
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 2,
-          "column": 1
         }
       },
       {
@@ -20437,22 +22059,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 1,
-          "column": 2
+          "row": 0,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 6
+        },
+        "second": {
+          "row": 0,
+          "column": 7
         }
       }
     ],
-    "bestKnownSolutionLength": 74,
+    "bestKnownSolutionLength": 78,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 74,
+    "nodesExpanded": 78,
     "averageBranching": 7.28,
     "maximumBranching": 20,
     "forcedMoveRatio": 0.1081,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 11,
+    "maximumRowsDuringSolution": 10,
     "phaseDifficulty": {
       "early": 80,
       "middle": 72,
@@ -20923,7 +22556,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.015, P=0.06, Row=0.2267, D2=0.7625, nearMiss=0.369472182596291.",
-      "Successful simple-AI additions mean=4.104347826086957, median=4."
+      "Successful simple-AI additions mean=4.104347826086957, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "b0da5eda",
@@ -20936,7 +22570,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_178_79628523",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -21235,11 +22869,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
+          "row": 6,
           "column": 3
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 3
         }
       },
@@ -21247,33 +22881,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 6
+          "column": 5
         },
         "second": {
           "row": 7,
-          "column": 7
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
           "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 5
+          "column": 4
         }
       },
       {
@@ -21283,85 +22928,96 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 4
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 8,
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
         },
         "second": {
-          "row": 8,
-          "column": 4
+          "row": 7,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
+          "column": 6
         },
         "second": {
           "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 7,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 3,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 6
+          "row": 4,
+          "column": 3
         }
       },
       {
@@ -21370,89 +23026,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 10,
-          "column": 5
-        },
-        "second": {
-          "row": 11,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 2
-        },
-        "second": {
-          "row": 11,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 1
-        },
-        "second": {
-          "row": 11,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 11,
+          "row": 7,
           "column": 3
         },
         "second": {
-          "row": 11,
-          "column": 5
+          "row": 8,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
           "column": 6
-        },
-        "second": {
-          "row": 10,
-          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 7,
+          "column": 2
         },
         "second": {
-          "row": 9,
-          "column": 7
+          "row": 8,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 6,
           "column": 1
         },
         "second": {
-          "row": 12,
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 1
+          "row": 6,
+          "column": 0
         },
         "second": {
-          "row": 9,
-          "column": 2
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 5
         }
       },
       {
@@ -21461,155 +23117,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
           "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 3
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 7
-        },
-        "second": {
-          "row": 11,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 6
-        },
-        "second": {
-          "row": 11,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 8
-        },
-        "second": {
-          "row": 12,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 4
         }
       },
       {
@@ -21619,19 +23143,74 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 4,
-          "column": 4
+          "row": 2,
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 6
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 5
         }
       },
       {
@@ -21639,6 +23218,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "first": {
           "row": 3,
           "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 7,
@@ -21648,11 +23249,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 8
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 8,
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
           "column": 5
         }
       },
@@ -21660,10 +23272,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 0
         }
       },
@@ -21671,11 +23283,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 7
         }
       },
       {
@@ -21685,30 +23297,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
+          "row": 6,
+          "column": 0
         }
       },
       {
@@ -21718,36 +23308,14 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 3,
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
           "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 0
         },
         "second": {
@@ -21758,51 +23326,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
+          "row": 5,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
+          "row": 0,
           "column": 0
         },
         "second": {
@@ -21813,28 +23348,94 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 2
         },
         "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 7
         },
@@ -21847,11 +23448,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 0
         }
       },
       {
@@ -21861,18 +23473,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 1,
-          "column": 5
+          "row": 2,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 5
+          "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 0,
           "column": 5
         }
       },
@@ -21883,30 +23495,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 0,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 0,
+          "column": 7
         }
       },
       {
@@ -21915,155 +23527,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 3,
+          "row": 1,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 7
         }
       }
     ],
@@ -22308,11 +23832,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
+          "row": 6,
           "column": 3
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 3
         }
       },
@@ -22320,33 +23844,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 6
+          "column": 5
         },
         "second": {
           "row": 7,
-          "column": 7
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
           "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 5
+          "column": 4
         }
       },
       {
@@ -22356,85 +23891,96 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 4
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 8,
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
         },
         "second": {
-          "row": 8,
-          "column": 4
+          "row": 7,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
+          "column": 6
         },
         "second": {
           "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 7,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 3,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 6
+          "row": 4,
+          "column": 3
         }
       },
       {
@@ -22443,89 +23989,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 10,
-          "column": 5
-        },
-        "second": {
-          "row": 11,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 2
-        },
-        "second": {
-          "row": 11,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 1
-        },
-        "second": {
-          "row": 11,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 11,
+          "row": 7,
           "column": 3
         },
         "second": {
-          "row": 11,
-          "column": 5
+          "row": 8,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
           "column": 6
-        },
-        "second": {
-          "row": 10,
-          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 7,
+          "column": 2
         },
         "second": {
-          "row": 9,
-          "column": 7
+          "row": 8,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 6,
           "column": 1
         },
         "second": {
-          "row": 12,
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 1
+          "row": 6,
+          "column": 0
         },
         "second": {
-          "row": 9,
-          "column": 2
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 5
         }
       },
       {
@@ -22534,155 +24080,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
           "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 3
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 7
-        },
-        "second": {
-          "row": 11,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 6
-        },
-        "second": {
-          "row": 11,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 8
-        },
-        "second": {
-          "row": 12,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 4
         }
       },
       {
@@ -22692,19 +24106,74 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 4,
-          "column": 4
+          "row": 2,
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 6
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 5
         }
       },
       {
@@ -22712,6 +24181,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "first": {
           "row": 3,
           "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 7,
@@ -22721,11 +24212,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 8
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 8,
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
           "column": 5
         }
       },
@@ -22733,10 +24235,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 0
         }
       },
@@ -22744,11 +24246,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 7
         }
       },
       {
@@ -22758,30 +24260,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
+          "row": 6,
+          "column": 0
         }
       },
       {
@@ -22791,36 +24271,14 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 3,
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
           "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 0
         },
         "second": {
@@ -22831,51 +24289,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
+          "row": 5,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
+          "row": 0,
           "column": 0
         },
         "second": {
@@ -22886,28 +24311,94 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 2
         },
         "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 7
         },
@@ -22920,11 +24411,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 0
         }
       },
       {
@@ -22934,18 +24436,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 1,
-          "column": 5
+          "row": 2,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 5
+          "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 0,
           "column": 5
         }
       },
@@ -22956,30 +24458,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 0,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 0,
+          "column": 7
         }
       },
       {
@@ -22988,155 +24490,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 3,
+          "row": 1,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 7
         }
       }
     ],
@@ -23381,11 +24795,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
+          "row": 6,
           "column": 3
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 3
         }
       },
@@ -23393,33 +24807,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 6
+          "column": 5
         },
         "second": {
           "row": 7,
-          "column": 7
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
           "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 5
+          "column": 4
         }
       },
       {
@@ -23429,85 +24854,96 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 4
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 8,
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
         },
         "second": {
-          "row": 8,
-          "column": 4
+          "row": 7,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
+          "column": 6
         },
         "second": {
           "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 7,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 3,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 6
+          "row": 4,
+          "column": 3
         }
       },
       {
@@ -23516,89 +24952,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 10,
-          "column": 5
-        },
-        "second": {
-          "row": 11,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 2
-        },
-        "second": {
-          "row": 11,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 1
-        },
-        "second": {
-          "row": 11,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 11,
+          "row": 7,
           "column": 3
         },
         "second": {
-          "row": 11,
-          "column": 5
+          "row": 8,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
           "column": 6
-        },
-        "second": {
-          "row": 10,
-          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 7,
+          "column": 2
         },
         "second": {
-          "row": 9,
-          "column": 7
+          "row": 8,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 6,
           "column": 1
         },
         "second": {
-          "row": 12,
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 1
+          "row": 6,
+          "column": 0
         },
         "second": {
-          "row": 9,
-          "column": 2
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 5
         }
       },
       {
@@ -23607,155 +25043,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
           "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 3
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 7
-        },
-        "second": {
-          "row": 11,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 6
-        },
-        "second": {
-          "row": 11,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 8
-        },
-        "second": {
-          "row": 12,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 4
         }
       },
       {
@@ -23765,19 +25069,74 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 4,
-          "column": 4
+          "row": 2,
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 6
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 5
         }
       },
       {
@@ -23785,6 +25144,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "first": {
           "row": 3,
           "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 7,
@@ -23794,11 +25175,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 8
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 8,
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
           "column": 5
         }
       },
@@ -23806,10 +25198,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 0
         }
       },
@@ -23817,11 +25209,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 7
         }
       },
       {
@@ -23831,30 +25223,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
+          "row": 6,
+          "column": 0
         }
       },
       {
@@ -23864,36 +25234,14 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 3,
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
           "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 0
         },
         "second": {
@@ -23904,51 +25252,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
+          "row": 5,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
+          "row": 0,
           "column": 0
         },
         "second": {
@@ -23959,28 +25274,94 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 2
         },
         "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 7
         },
@@ -23993,11 +25374,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 0
         }
       },
       {
@@ -24007,18 +25399,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 1,
-          "column": 5
+          "row": 2,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 5
+          "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 0,
           "column": 5
         }
       },
@@ -24029,30 +25421,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 0,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 0,
+          "column": 7
         }
       },
       {
@@ -24061,155 +25453,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 3,
+          "row": 1,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 7
         }
       }
     ],
@@ -24454,11 +25758,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
+          "row": 6,
           "column": 3
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 3
         }
       },
@@ -24466,33 +25770,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 6
+          "column": 5
         },
         "second": {
           "row": 7,
-          "column": 7
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
           "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 5
+          "column": 4
         }
       },
       {
@@ -24502,85 +25817,96 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 4
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 8,
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
         },
         "second": {
-          "row": 8,
-          "column": 4
+          "row": 7,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
+          "column": 6
         },
         "second": {
           "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 7,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 3,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 6
+          "row": 4,
+          "column": 3
         }
       },
       {
@@ -24589,89 +25915,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 10,
-          "column": 5
-        },
-        "second": {
-          "row": 11,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 2
-        },
-        "second": {
-          "row": 11,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 1
-        },
-        "second": {
-          "row": 11,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 11,
+          "row": 7,
           "column": 3
         },
         "second": {
-          "row": 11,
-          "column": 5
+          "row": 8,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
           "column": 6
-        },
-        "second": {
-          "row": 10,
-          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 7,
+          "column": 2
         },
         "second": {
-          "row": 9,
-          "column": 7
+          "row": 8,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 6,
           "column": 1
         },
         "second": {
-          "row": 12,
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 1
+          "row": 6,
+          "column": 0
         },
         "second": {
-          "row": 9,
-          "column": 2
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 5
         }
       },
       {
@@ -24680,155 +26006,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
           "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 3
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 7
-        },
-        "second": {
-          "row": 11,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 6
-        },
-        "second": {
-          "row": 11,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 8
-        },
-        "second": {
-          "row": 12,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 4
         }
       },
       {
@@ -24838,19 +26032,74 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 4,
-          "column": 4
+          "row": 2,
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 6
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 5
         }
       },
       {
@@ -24858,6 +26107,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "first": {
           "row": 3,
           "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 7,
@@ -24867,11 +26138,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 8
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 8,
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
           "column": 5
         }
       },
@@ -24879,10 +26161,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 0
         }
       },
@@ -24890,11 +26172,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 7
         }
       },
       {
@@ -24904,30 +26186,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
+          "row": 6,
+          "column": 0
         }
       },
       {
@@ -24937,36 +26197,14 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 3,
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
           "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 0
         },
         "second": {
@@ -24977,51 +26215,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
+          "row": 5,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
+          "row": 0,
           "column": 0
         },
         "second": {
@@ -25032,28 +26237,94 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 2
         },
         "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 7
         },
@@ -25066,11 +26337,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 0
         }
       },
       {
@@ -25080,18 +26362,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 1,
-          "column": 5
+          "row": 2,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 5
+          "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 0,
           "column": 5
         }
       },
@@ -25102,30 +26384,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 0,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 0,
+          "column": 7
         }
       },
       {
@@ -25134,155 +26416,67 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 3,
+          "row": 1,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 7
         }
       }
     ],
@@ -25527,11 +26721,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
+          "row": 6,
           "column": 3
         },
         "second": {
-          "row": 8,
+          "row": 7,
           "column": 3
         }
       },
@@ -25539,33 +26733,44 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 6
+          "column": 5
         },
         "second": {
           "row": 7,
-          "column": 7
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 5
+        },
+        "second": {
           "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 5
+          "column": 4
         }
       },
       {
@@ -25575,85 +26780,96 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 2
         },
         "second": {
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 7,
+          "column": 0
+        },
+        "second": {
+          "row": 8,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 4
+          "row": 5,
+          "column": 2
         },
         "second": {
-          "row": 8,
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 7
+        },
+        "second": {
+          "row": 7,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
         },
         "second": {
-          "row": 8,
-          "column": 4
+          "row": 7,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 3
+          "column": 6
         },
         "second": {
           "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 0
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 7,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 3,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 6
+          "row": 4,
+          "column": 3
         }
       },
       {
@@ -25662,89 +26878,89 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 10,
-          "column": 5
-        },
-        "second": {
-          "row": 11,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 2
-        },
-        "second": {
-          "row": 11,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 1
-        },
-        "second": {
-          "row": 11,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 11,
+          "row": 7,
           "column": 3
         },
         "second": {
-          "row": 11,
-          "column": 5
+          "row": 8,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 8,
           "column": 6
-        },
-        "second": {
-          "row": 10,
-          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 7,
+          "column": 2
         },
         "second": {
-          "row": 9,
-          "column": 7
+          "row": 8,
+          "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 9,
+          "row": 6,
           "column": 1
         },
         "second": {
-          "row": 12,
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
           "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 1
+          "row": 6,
+          "column": 0
         },
         "second": {
-          "row": 9,
-          "column": 2
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 5
         }
       },
       {
@@ -25753,155 +26969,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
           "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 3
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 7
-        },
-        "second": {
-          "row": 11,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 9,
-          "column": 6
-        },
-        "second": {
-          "row": 11,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 10,
-          "column": 8
-        },
-        "second": {
-          "row": 12,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 10,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 4
         }
       },
       {
@@ -25911,19 +26995,74 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 4,
-          "column": 4
+          "row": 2,
+          "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 6
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
         },
         "second": {
           "row": 5,
-          "column": 8
+          "column": 5
         }
       },
       {
@@ -25931,6 +27070,28 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "first": {
           "row": 3,
           "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 7,
@@ -25940,11 +27101,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 8
+          "row": 0,
+          "column": 7
         },
         "second": {
-          "row": 8,
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
           "column": 5
         }
       },
@@ -25952,10 +27124,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 5,
+          "row": 4,
           "column": 0
         }
       },
@@ -25963,11 +27135,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 4
         },
         "second": {
           "row": 5,
-          "column": 5
+          "column": 7
         }
       },
       {
@@ -25977,30 +27149,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
+          "row": 6,
+          "column": 0
         }
       },
       {
@@ -26010,36 +27160,14 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 3,
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
           "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 0
         },
         "second": {
@@ -26050,51 +27178,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
+          "row": 1,
           "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 3
+          "row": 5,
+          "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
+          "row": 0,
           "column": 0
         },
         "second": {
@@ -26105,28 +27200,94 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 0
+          "row": 3,
+          "column": 5
         },
         "second": {
           "row": 4,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 2
         },
         "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 7
         },
@@ -26139,11 +27300,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 0
         }
       },
       {
@@ -26153,18 +27325,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 1,
-          "column": 5
+          "row": 2,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 5
+          "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 0,
           "column": 5
         }
       },
@@ -26175,30 +27347,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 8
+          "column": 2
         },
         "second": {
-          "row": 1,
-          "column": 0
+          "row": 0,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 6
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 0,
+          "column": 7
         }
       },
       {
@@ -26207,169 +27379,81 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 0,
+          "column": 8
         },
         "second": {
-          "row": 3,
+          "row": 1,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 2,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
+          "row": 0,
           "column": 7
         },
         "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 2
-        },
-        "second": {
-          "row": 3,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 1,
-          "column": 7
         }
       }
     ],
-    "bestKnownSolutionLength": 101,
+    "bestKnownSolutionLength": 91,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 101,
+    "nodesExpanded": 91,
     "averageBranching": 12.81,
     "maximumBranching": 36,
     "forcedMoveRatio": 0.0495,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 18,
+    "maximumRowsDuringSolution": 14,
     "phaseDifficulty": {
       "early": 76,
       "middle": 100,
@@ -26836,7 +27920,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.025, P=0.16, Row=0.2133, D2=0.7875, nearMiss=0.38244047619047616.",
-      "Successful simple-AI additions mean=4.4, median=5."
+      "Successful simple-AI additions mean=4.4, median=5.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 85,
     "structureSignature": "b0da5eda",
@@ -26849,7 +27934,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_054_79622583",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -27171,40 +28256,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
         },
         "second": {
           "row": 8,
@@ -27215,66 +28267,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 7
         }
       },
       {
@@ -27284,15 +28292,15 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 8,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 5
         },
         "second": {
           "row": 7,
@@ -27302,34 +28310,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
-          "row": 2,
+          "row": 7,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
         }
       },
       {
@@ -27340,18 +28326,106 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 5
         }
       },
       {
@@ -27360,67 +28434,56 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
+          "row": 6,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 3
+          "row": 7,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 5
+          "row": 6,
+          "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 7,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 1
         },
         "second": {
-          "row": 6,
+          "row": 7,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -27430,6 +28493,50 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
         },
         "second": {
@@ -27440,30 +28547,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 1,
+          "column": 3
         },
         "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 4,
-          "column": 1
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 6,
@@ -27473,88 +28580,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
+          "row": 2,
+          "column": 6
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 6
         },
         "second": {
-          "row": 2,
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
           "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 8
         }
       },
@@ -27564,11 +28638,88 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 4,
+          "column": 2
         },
         "second": {
-          "row": 2,
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
           "column": 1
         }
       },
@@ -27576,66 +28727,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
           "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 0,
+          "row": 1,
           "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
         }
       },
       {
@@ -27645,8 +28796,41 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -27914,40 +29098,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
         },
         "second": {
           "row": 8,
@@ -27958,66 +29109,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 7
         }
       },
       {
@@ -28027,15 +29134,15 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 8,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 5
         },
         "second": {
           "row": 7,
@@ -28045,34 +29152,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
-          "row": 2,
+          "row": 7,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
         }
       },
       {
@@ -28083,18 +29168,106 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 5
         }
       },
       {
@@ -28103,67 +29276,56 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
+          "row": 6,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 3
+          "row": 7,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 5
+          "row": 6,
+          "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 7,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 1
         },
         "second": {
-          "row": 6,
+          "row": 7,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -28173,6 +29335,50 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
         },
         "second": {
@@ -28183,30 +29389,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 1,
+          "column": 3
         },
         "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 4,
-          "column": 1
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 6,
@@ -28216,88 +29422,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
+          "row": 2,
+          "column": 6
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 6
         },
         "second": {
-          "row": 2,
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
           "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 8
         }
       },
@@ -28307,11 +29480,88 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 4,
+          "column": 2
         },
         "second": {
-          "row": 2,
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
           "column": 1
         }
       },
@@ -28319,66 +29569,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
           "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 0,
+          "row": 1,
           "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
         }
       },
       {
@@ -28388,8 +29638,41 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -28657,40 +29940,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
         },
         "second": {
           "row": 8,
@@ -28701,66 +29951,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 7
         }
       },
       {
@@ -28770,15 +29976,15 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 8,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 5
         },
         "second": {
           "row": 7,
@@ -28788,34 +29994,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
-          "row": 2,
+          "row": 7,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
         }
       },
       {
@@ -28826,18 +30010,106 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 5
         }
       },
       {
@@ -28846,67 +30118,56 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
+          "row": 6,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 3
+          "row": 7,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 5
+          "row": 6,
+          "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 7,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 1
         },
         "second": {
-          "row": 6,
+          "row": 7,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -28916,6 +30177,50 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
         },
         "second": {
@@ -28926,30 +30231,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 1,
+          "column": 3
         },
         "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 4,
-          "column": 1
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 6,
@@ -28959,88 +30264,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
+          "row": 2,
+          "column": 6
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 6
         },
         "second": {
-          "row": 2,
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
           "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 8
         }
       },
@@ -29050,11 +30322,88 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 4,
+          "column": 2
         },
         "second": {
-          "row": 2,
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
           "column": 1
         }
       },
@@ -29062,66 +30411,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
           "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 0,
+          "row": 1,
           "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
         }
       },
       {
@@ -29131,8 +30480,41 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -29400,40 +30782,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
         },
         "second": {
           "row": 8,
@@ -29444,66 +30793,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 7
         }
       },
       {
@@ -29513,15 +30818,15 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 8,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 5
         },
         "second": {
           "row": 7,
@@ -29531,34 +30836,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
-          "row": 2,
+          "row": 7,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
         }
       },
       {
@@ -29569,18 +30852,106 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 5
         }
       },
       {
@@ -29589,67 +30960,56 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
+          "row": 6,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 3
+          "row": 7,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 5
+          "row": 6,
+          "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 7,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 1
         },
         "second": {
-          "row": 6,
+          "row": 7,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -29659,6 +31019,50 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
         },
         "second": {
@@ -29669,30 +31073,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 1,
+          "column": 3
         },
         "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 4,
-          "column": 1
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 6,
@@ -29702,88 +31106,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
+          "row": 2,
+          "column": 6
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 6
         },
         "second": {
-          "row": 2,
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
           "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 8
         }
       },
@@ -29793,11 +31164,88 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 4,
+          "column": 2
         },
         "second": {
-          "row": 2,
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
           "column": 1
         }
       },
@@ -29805,66 +31253,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
           "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 0,
+          "row": 1,
           "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
         }
       },
       {
@@ -29874,8 +31322,41 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -30143,40 +31624,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 0
-        },
-        "second": {
-          "row": 8,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
         },
         "second": {
           "row": 8,
@@ -30187,66 +31635,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 8
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 5
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
         },
         "second": {
-          "row": 2,
+          "row": 8,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 1
+        },
+        "second": {
+          "row": 8,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 7
         }
       },
       {
@@ -30256,15 +31660,15 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 8,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 6
+          "row": 6,
+          "column": 5
         },
         "second": {
           "row": 7,
@@ -30274,34 +31678,12 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
+          "column": 4
         },
         "second": {
-          "row": 2,
+          "row": 7,
           "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 7
         }
       },
       {
@@ -30312,18 +31694,106 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 3
+        },
+        "second": {
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 2
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
         },
         "second": {
           "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
           "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 3,
+          "column": 5
         }
       },
       {
@@ -30332,67 +31802,56 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 3
+          "row": 6,
+          "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 3
+          "row": 7,
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 4
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 5,
+          "row": 6,
           "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 5
+          "row": 6,
+          "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 6
+          "row": 7,
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 1
         },
         "second": {
-          "row": 6,
+          "row": 7,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 5
-        },
-        "second": {
-          "row": 5,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 2
-        },
-        "second": {
-          "row": 5,
+          "row": 6,
           "column": 4
+        },
+        "second": {
+          "row": 7,
+          "column": 3
         }
       },
       {
@@ -30402,6 +31861,50 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
           "column": 7
         },
         "second": {
@@ -30412,30 +31915,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 6
+          "row": 1,
+          "column": 3
         },
         "second": {
-          "row": 3,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 4,
-          "column": 1
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 6,
@@ -30445,88 +31948,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
+          "row": 2,
+          "column": 6
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 0
+          "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 4
+          "column": 6
         },
         "second": {
-          "row": 2,
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
           "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 7
+          "row": 3,
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 6
+          "row": 3,
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 3,
+          "column": 8
         },
         "second": {
-          "row": 1,
+          "row": 4,
           "column": 8
         }
       },
@@ -30536,11 +32006,88 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 4,
+          "column": 2
         },
         "second": {
-          "row": 2,
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 5,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 8
+        },
+        "second": {
+          "row": 6,
           "column": 1
         }
       },
@@ -30548,66 +32095,66 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 2
+          "column": 5
         },
         "second": {
-          "row": 2,
-          "column": 4
+          "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
           "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 7
         },
         "second": {
           "row": 3,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 1,
           "column": 0
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 0,
-          "column": 1
-        },
-        "second": {
-          "row": 0,
+          "row": 1,
           "column": 2
+        },
+        "second": {
+          "row": 3,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
         }
       },
       {
@@ -30617,22 +32164,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
+          "row": 1,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
           "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       }
     ],
-    "bestKnownSolutionLength": 71,
+    "bestKnownSolutionLength": 80,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 71,
+    "nodesExpanded": 80,
     "averageBranching": 7.3,
     "maximumBranching": 21,
     "forcedMoveRatio": 0.0704,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 10,
+    "maximumRowsDuringSolution": 11,
     "phaseDifficulty": {
       "early": 84,
       "middle": 66,
@@ -31093,7 +32673,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.035, P=0.0533, Row=0.2467, D2=0.7625, nearMiss=0.3684210526315789.",
-      "Successful simple-AI additions mean=4.2265625, median=4."
+      "Successful simple-AI additions mean=4.2265625, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "b0da5eda",
@@ -31106,7 +32687,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_142_79622583",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -31405,143 +32986,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
           "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
+          "column": 0
         },
         "second": {
           "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
           "column": 6
         }
       },
@@ -31549,33 +33009,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 3
         },
         "second": {
           "row": 8,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 8
+          "row": 9,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 5
+          "column": 3
         },
         "second": {
           "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 4
         }
       },
       {
@@ -31585,19 +33122,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
           "row": 7,
-          "column": 7
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
+          "column": 2
         },
         "second": {
           "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
         }
       },
       {
@@ -31606,67 +33187,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 3
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 7,
+          "row": 6,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 6,
-          "column": 8
+          "column": 1
         }
       },
       {
@@ -31676,19 +33213,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 4
+          "column": 8
         },
         "second": {
           "row": 7,
-          "column": 3
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
         }
       },
       {
@@ -31697,122 +33278,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 0,
+          "column": 0
         },
         "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
           "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 4
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 7
         }
       },
       {
@@ -31833,7 +33326,62 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 6,
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
           "column": 5
         }
       },
@@ -31841,21 +33389,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 4
         },
         "second": {
-          "row": 3,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
+          "row": 2,
           "column": 3
         }
       },
@@ -31863,7 +33400,29 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
         },
         "second": {
           "row": 2,
@@ -31874,18 +33433,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 8
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 2
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 1,
@@ -31896,44 +33477,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 2
         },
         "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
         },
         "second": {
           "row": 1,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -31943,22 +33513,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 6
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 6
         }
       },
       {
@@ -31968,8 +33538,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       },
       {
@@ -31980,7 +33572,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 0
         }
       }
     ],
@@ -32225,143 +33817,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
           "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
+          "column": 0
         },
         "second": {
           "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
           "column": 6
         }
       },
@@ -32369,33 +33840,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 3
         },
         "second": {
           "row": 8,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 8
+          "row": 9,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 5
+          "column": 3
         },
         "second": {
           "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 4
         }
       },
       {
@@ -32405,19 +33953,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
           "row": 7,
-          "column": 7
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
+          "column": 2
         },
         "second": {
           "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
         }
       },
       {
@@ -32426,67 +34018,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 3
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 7,
+          "row": 6,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 6,
-          "column": 8
+          "column": 1
         }
       },
       {
@@ -32496,19 +34044,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 4
+          "column": 8
         },
         "second": {
           "row": 7,
-          "column": 3
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
         }
       },
       {
@@ -32517,122 +34109,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 0,
+          "column": 0
         },
         "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
           "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 4
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 7
         }
       },
       {
@@ -32653,7 +34157,62 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 6,
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
           "column": 5
         }
       },
@@ -32661,21 +34220,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 4
         },
         "second": {
-          "row": 3,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
+          "row": 2,
           "column": 3
         }
       },
@@ -32683,7 +34231,29 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
         },
         "second": {
           "row": 2,
@@ -32694,18 +34264,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 8
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 2
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 1,
@@ -32716,44 +34308,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 2
         },
         "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
         },
         "second": {
           "row": 1,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -32763,22 +34344,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 6
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 6
         }
       },
       {
@@ -32788,8 +34369,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       },
       {
@@ -32800,7 +34403,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 0
         }
       }
     ],
@@ -33045,143 +34648,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
           "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
+          "column": 0
         },
         "second": {
           "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
           "column": 6
         }
       },
@@ -33189,33 +34671,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 3
         },
         "second": {
           "row": 8,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 8
+          "row": 9,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 5
+          "column": 3
         },
         "second": {
           "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 4
         }
       },
       {
@@ -33225,19 +34784,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
           "row": 7,
-          "column": 7
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
+          "column": 2
         },
         "second": {
           "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
         }
       },
       {
@@ -33246,67 +34849,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 3
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 7,
+          "row": 6,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 6,
-          "column": 8
+          "column": 1
         }
       },
       {
@@ -33316,19 +34875,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 4
+          "column": 8
         },
         "second": {
           "row": 7,
-          "column": 3
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
         }
       },
       {
@@ -33337,122 +34940,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 0,
+          "column": 0
         },
         "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
           "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 4
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 7
         }
       },
       {
@@ -33473,7 +34988,62 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 6,
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
           "column": 5
         }
       },
@@ -33481,21 +35051,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 4
         },
         "second": {
-          "row": 3,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
+          "row": 2,
           "column": 3
         }
       },
@@ -33503,7 +35062,29 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
         },
         "second": {
           "row": 2,
@@ -33514,18 +35095,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 8
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 2
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 1,
@@ -33536,44 +35139,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 2
         },
         "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
         },
         "second": {
           "row": 1,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -33583,22 +35175,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 6
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 6
         }
       },
       {
@@ -33608,8 +35200,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       },
       {
@@ -33620,7 +35234,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 0
         }
       }
     ],
@@ -33865,143 +35479,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
           "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
+          "column": 0
         },
         "second": {
           "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
           "column": 6
         }
       },
@@ -34009,33 +35502,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 3
         },
         "second": {
           "row": 8,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 8
+          "row": 9,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 5
+          "column": 3
         },
         "second": {
           "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 4
         }
       },
       {
@@ -34045,19 +35615,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
           "row": 7,
-          "column": 7
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
+          "column": 2
         },
         "second": {
           "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
         }
       },
       {
@@ -34066,67 +35680,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 3
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 7,
+          "row": 6,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 6,
-          "column": 8
+          "column": 1
         }
       },
       {
@@ -34136,19 +35706,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 4
+          "column": 8
         },
         "second": {
           "row": 7,
-          "column": 3
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
         }
       },
       {
@@ -34157,122 +35771,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 0,
+          "column": 0
         },
         "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
           "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 4
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 7
         }
       },
       {
@@ -34293,7 +35819,62 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 6,
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
           "column": 5
         }
       },
@@ -34301,21 +35882,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 4
         },
         "second": {
-          "row": 3,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
+          "row": 2,
           "column": 3
         }
       },
@@ -34323,7 +35893,29 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
         },
         "second": {
           "row": 2,
@@ -34334,18 +35926,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 8
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 2
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 1,
@@ -34356,44 +35970,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 2
         },
         "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
         },
         "second": {
           "row": 1,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -34403,22 +36006,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 6
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 6
         }
       },
       {
@@ -34428,8 +36031,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       },
       {
@@ -34440,7 +36065,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 0
         }
       }
     ],
@@ -34685,143 +36310,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 0
-        },
-        "second": {
-          "row": 9,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 7
-        },
-        "second": {
-          "row": 1,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 4
-        },
-        "second": {
-          "row": 9,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 2
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
           "row": 2,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
+          "column": 0
         },
         "second": {
           "row": 7,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 6
+        },
+        "second": {
+          "row": 8,
           "column": 6
         }
       },
@@ -34829,33 +36333,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 7,
-          "column": 1
+          "column": 3
         },
         "second": {
           "row": 8,
-          "column": 0
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
+          "row": 7,
+          "column": 8
+        },
+        "second": {
+          "row": 8,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 7
+        },
+        "second": {
+          "row": 9,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 8,
           "column": 3
         },
         "second": {
-          "row": 6,
-          "column": 8
+          "row": 9,
+          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 4,
-          "column": 5
+          "column": 3
         },
         "second": {
           "row": 7,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 7,
+          "column": 4
+        },
+        "second": {
+          "row": 8,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
           "column": 8
+        },
+        "second": {
+          "row": 7,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 9,
+          "column": 4
         }
       },
       {
@@ -34865,19 +36446,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
+          "row": 8,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 1
+        },
+        "second": {
           "row": 7,
-          "column": 7
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
+          "column": 2
         },
         "second": {
           "row": 6,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 6
+        },
+        "second": {
+          "row": 4,
+          "column": 5
         }
       },
       {
@@ -34886,67 +36511,23 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 3
+          "row": 5,
+          "column": 8
         },
         "second": {
-          "row": 7,
+          "row": 6,
           "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 8
+          "row": 1,
+          "column": 1
         },
         "second": {
           "row": 6,
-          "column": 8
+          "column": 1
         }
       },
       {
@@ -34956,19 +36537,63 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 7
         },
         "second": {
-          "row": 6,
-          "column": 1
+          "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 7,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 6,
-          "column": 4
+          "column": 8
         },
         "second": {
           "row": 7,
-          "column": 3
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 6,
+          "column": 5
+        },
+        "second": {
+          "row": 7,
+          "column": 4
         }
       },
       {
@@ -34977,122 +36602,34 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 5
+          "row": 0,
+          "column": 0
         },
         "second": {
-          "row": 8,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 8,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
+          "column": 5
+        },
+        "second": {
+          "row": 6,
           "column": 0
-        },
-        "second": {
-          "row": 7,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 6
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 3
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 2,
-          "column": 4
+          "column": 7
         },
         "second": {
           "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
           "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 7
         }
       },
       {
@@ -35113,7 +36650,62 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 8
         },
         "second": {
-          "row": 6,
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
+          "row": 3,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
           "column": 5
         }
       },
@@ -35121,21 +36713,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 8
+          "column": 4
         },
         "second": {
-          "row": 3,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 8
-        },
-        "second": {
-          "row": 1,
+          "row": 2,
           "column": 3
         }
       },
@@ -35143,7 +36724,29 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 1
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
+        },
+        "second": {
+          "row": 2,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
         },
         "second": {
           "row": 2,
@@ -35154,18 +36757,40 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 8
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 7
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 2
+          "column": 4
+        },
+        "second": {
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 5
+        },
+        "second": {
+          "row": 1,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
         },
         "second": {
           "row": 1,
@@ -35176,44 +36801,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 3
+          "column": 2
         },
         "second": {
+          "row": 2,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
           "row": 1,
           "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 0
-        },
-        "second": {
-          "row": 0,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 6
-        },
-        "second": {
-          "row": 1,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 0
         },
         "second": {
           "row": 1,
           "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
+        },
+        "second": {
+          "row": 2,
+          "column": 1
         }
       },
       {
@@ -35223,22 +36837,22 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 7
+          "column": 6
         },
         "second": {
           "row": 1,
-          "column": 7
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 6
+          "row": 0,
+          "column": 7
         },
         "second": {
           "row": 1,
-          "column": 8
+          "column": 6
         }
       },
       {
@@ -35248,8 +36862,30 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 4
         },
         "second": {
-          "row": 2,
-          "column": 0
+          "row": 1,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 2
+        },
+        "second": {
+          "row": 1,
+          "column": 8
         }
       },
       {
@@ -35260,15 +36896,15 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 1,
-          "column": 1
+          "column": 0
         }
       }
     ],
-    "bestKnownSolutionLength": 78,
+    "bestKnownSolutionLength": 79,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 78,
+    "nodesExpanded": 79,
     "averageBranching": 9.29,
     "maximumBranching": 21,
     "forcedMoveRatio": 0.0641,
@@ -35737,7 +37373,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.02, P=0.12, Row=0.2467, D2=0.7375, nearMiss=0.35355029585798814.",
-      "Successful simple-AI additions mean=4.25531914893617, median=4."
+      "Successful simple-AI additions mean=4.25531914893617, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "b0da5eda",
@@ -35750,7 +37387,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_185_79622581",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -36098,7 +37735,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 3
+          "column": 1
         }
       },
       {
@@ -36108,18 +37745,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
-          "column": 1
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
         },
         "second": {
-          "row": 7,
+          "row": 5,
           "column": 0
         }
       },
@@ -36130,41 +37767,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
         }
       },
       {
@@ -36181,11 +37785,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
           "row": 4,
-          "column": 7
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
         },
         "second": {
           "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
@@ -36195,22 +37898,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
+          "row": 4,
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 4
         },
         "second": {
-          "row": 9,
+          "row": 5,
           "column": 3
         }
       },
@@ -36218,66 +37932,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
+          "row": 5,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 8
+          "row": 2,
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 7
+          "row": 3,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 8
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 8,
+          "row": 2,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 0,
+          "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 1,
+          "column": 2
         }
       },
       {
@@ -36287,230 +37990,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
           "column": 4
         }
       },
@@ -36520,121 +38003,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 1,
+          "row": 2,
           "column": 4
         }
       },
@@ -36642,7 +38015,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
@@ -36653,7 +38037,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
         },
         "second": {
           "row": 0,
@@ -36664,11 +38059,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
+          "column": 6
         },
         "second": {
           "row": 0,
-          "column": 7
+          "column": 8
         }
       }
     ],
@@ -36962,7 +38357,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 3
+          "column": 1
         }
       },
       {
@@ -36972,18 +38367,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
-          "column": 1
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
         },
         "second": {
-          "row": 7,
+          "row": 5,
           "column": 0
         }
       },
@@ -36994,41 +38389,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
         }
       },
       {
@@ -37045,11 +38407,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
           "row": 4,
-          "column": 7
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
         },
         "second": {
           "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
@@ -37059,22 +38520,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
+          "row": 4,
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 4
         },
         "second": {
-          "row": 9,
+          "row": 5,
           "column": 3
         }
       },
@@ -37082,66 +38554,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
+          "row": 5,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 8
+          "row": 2,
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 7
+          "row": 3,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 8
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 8,
+          "row": 2,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 0,
+          "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 1,
+          "column": 2
         }
       },
       {
@@ -37151,230 +38612,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
           "column": 4
         }
       },
@@ -37384,121 +38625,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 1,
+          "row": 2,
           "column": 4
         }
       },
@@ -37506,7 +38637,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
@@ -37517,7 +38659,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
         },
         "second": {
           "row": 0,
@@ -37528,11 +38681,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
+          "column": 6
         },
         "second": {
           "row": 0,
-          "column": 7
+          "column": 8
         }
       }
     ],
@@ -37826,7 +38979,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 3
+          "column": 1
         }
       },
       {
@@ -37836,18 +38989,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
-          "column": 1
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
         },
         "second": {
-          "row": 7,
+          "row": 5,
           "column": 0
         }
       },
@@ -37858,41 +39011,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
         }
       },
       {
@@ -37909,11 +39029,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
           "row": 4,
-          "column": 7
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
         },
         "second": {
           "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
@@ -37923,22 +39142,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
+          "row": 4,
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 4
         },
         "second": {
-          "row": 9,
+          "row": 5,
           "column": 3
         }
       },
@@ -37946,66 +39176,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
+          "row": 5,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 8
+          "row": 2,
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 7
+          "row": 3,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 8
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 8,
+          "row": 2,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 0,
+          "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 1,
+          "column": 2
         }
       },
       {
@@ -38015,230 +39234,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
           "column": 4
         }
       },
@@ -38248,121 +39247,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 1,
+          "row": 2,
           "column": 4
         }
       },
@@ -38370,7 +39259,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
@@ -38381,7 +39281,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
         },
         "second": {
           "row": 0,
@@ -38392,11 +39303,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
+          "column": 6
         },
         "second": {
           "row": 0,
-          "column": 7
+          "column": 8
         }
       }
     ],
@@ -38690,7 +39601,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 3
+          "column": 1
         }
       },
       {
@@ -38700,18 +39611,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
-          "column": 1
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
         },
         "second": {
-          "row": 7,
+          "row": 5,
           "column": 0
         }
       },
@@ -38722,41 +39633,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
         }
       },
       {
@@ -38773,11 +39651,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
           "row": 4,
-          "column": 7
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
         },
         "second": {
           "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
@@ -38787,22 +39764,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
+          "row": 4,
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 4
         },
         "second": {
-          "row": 9,
+          "row": 5,
           "column": 3
         }
       },
@@ -38810,66 +39798,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
+          "row": 5,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 8
+          "row": 2,
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 7
+          "row": 3,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 8
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 8,
+          "row": 2,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 0,
+          "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 1,
+          "column": 2
         }
       },
       {
@@ -38879,230 +39856,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
           "column": 4
         }
       },
@@ -39112,121 +39869,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 1,
+          "row": 2,
           "column": 4
         }
       },
@@ -39234,7 +39881,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
@@ -39245,7 +39903,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
         },
         "second": {
           "row": 0,
@@ -39256,11 +39925,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
+          "column": 6
         },
         "second": {
           "row": 0,
-          "column": 7
+          "column": 8
         }
       }
     ],
@@ -39554,7 +40223,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         },
         "second": {
           "row": 6,
-          "column": 3
+          "column": 1
         }
       },
       {
@@ -39564,18 +40233,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 1
         },
         "second": {
-          "row": 5,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 6,
-          "column": 1
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 3
         },
         "second": {
-          "row": 7,
+          "row": 5,
           "column": 0
         }
       },
@@ -39586,41 +40255,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 0
         },
         "second": {
-          "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
           "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
           "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
         }
       },
       {
@@ -39637,11 +40273,110 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
+          "row": 2,
+          "column": 6
+        },
+        "second": {
           "row": 4,
-          "column": 7
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 8
         },
         "second": {
           "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 4
+        },
+        "second": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 6
+        },
+        "second": {
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 3,
           "column": 5
         }
       },
@@ -39651,22 +40386,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
-          "column": 0
+          "row": 4,
+          "column": 7
         },
         "second": {
-          "row": 9,
-          "column": 0
+          "row": 5,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 8,
+          "row": 5,
+          "column": 0
+        },
+        "second": {
+          "row": 6,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
           "column": 4
         },
         "second": {
-          "row": 9,
+          "row": 5,
           "column": 3
         }
       },
@@ -39674,66 +40420,55 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 3,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 8,
-          "column": 3
-        },
-        "second": {
-          "row": 9,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
+          "row": 5,
           "column": 6
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 8
+          "row": 2,
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 7
+          "row": 3,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 7,
-          "column": 8
+          "row": 1,
+          "column": 4
         },
         "second": {
-          "row": 8,
+          "row": 2,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 1,
           "column": 1
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 5
+          "row": 0,
+          "column": 3
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 1,
+          "column": 2
         }
       },
       {
@@ -39743,230 +40478,10 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
-          "row": 8,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 4
-        },
-        "second": {
-          "row": 8,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 2
-        },
-        "second": {
-          "row": 10,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
-        },
-        "second": {
-          "row": 5,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 0
-        },
-        "second": {
-          "row": 5,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 4
-        },
-        "second": {
-          "row": 5,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
           "column": 5
         },
         "second": {
-          "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 2,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 0,
-          "column": 4
-        },
-        "second": {
-          "row": 4,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 6
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 2
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 5
-        },
-        "second": {
-          "row": 7,
           "column": 4
         }
       },
@@ -39976,121 +40491,11 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 7
-        },
-        "second": {
-          "row": 7,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 7,
-          "column": 3
-        },
-        "second": {
-          "row": 7,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 3
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 5,
-          "column": 1
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 5,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 8
-        },
-        "second": {
-          "row": 4,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 5
-        },
-        "second": {
-          "row": 4,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 3
-        },
-        "second": {
-          "row": 4,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 0,
-          "column": 3
+          "column": 4
         },
         "second": {
-          "row": 1,
+          "row": 2,
           "column": 4
         }
       },
@@ -40098,7 +40503,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 7
+        },
+        "second": {
+          "row": 1,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 1
         },
         "second": {
           "row": 1,
@@ -40109,7 +40525,18 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
+          "column": 0
+        },
+        "second": {
+          "row": 0,
           "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 3
         },
         "second": {
           "row": 0,
@@ -40120,25 +40547,25 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 1
+          "column": 6
         },
         "second": {
           "row": 0,
-          "column": 7
+          "column": 8
         }
       }
     ],
-    "bestKnownSolutionLength": 82,
+    "bestKnownSolutionLength": 60,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 82,
+    "nodesExpanded": 60,
     "averageBranching": 8.98,
     "maximumBranching": 22,
     "forcedMoveRatio": 0.061,
     "trapMoveCount": 0,
     "estimatedSolutionCount": 1,
-    "maximumRowsDuringSolution": 13,
+    "maximumRowsDuringSolution": 8,
     "phaseDifficulty": {
       "early": 82,
       "middle": 95,
@@ -40571,7 +40998,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.025, P=0.06, Row=0.5733, D2=0.65, nearMiss=0.38023450586264657.",
-      "Successful simple-AI additions mean=3.6991150442477876, median=4."
+      "Successful simple-AI additions mean=3.6991150442477876, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "bd8ce0fb",
@@ -40584,7 +41012,7 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "difficultyTier": "HARD",
     "designFamily": "timing-crossroads",
     "seed": "master_v8_056_79622583",
-    "ruleVersion": "2.0.0",
+    "ruleVersion": "2.1.0",
     "generatorVersion": "3.0.0",
     "difficultyVersion": "3.0.0",
     "initialBoard": {
@@ -41084,99 +41512,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 4
         },
         "second": {
           "row": 6,
@@ -41186,22 +41534,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 6,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 6
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -41209,98 +41568,32 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 5
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
           "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 1
         },
         "second": {
           "row": 6,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
           "row": 5,
           "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
         },
         "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 7
         }
       },
@@ -41310,78 +41603,235 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
+          "row": 5,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 0
         },
         "second": {
           "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 7
         }
       },
       {
@@ -41391,8 +41841,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -41838,99 +42288,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 4
         },
         "second": {
           "row": 6,
@@ -41940,22 +42310,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 6,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 6
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -41963,98 +42344,32 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 5
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
           "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 1
         },
         "second": {
           "row": 6,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
           "row": 5,
           "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
         },
         "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 7
         }
       },
@@ -42064,78 +42379,235 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
+          "row": 5,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 0
         },
         "second": {
           "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 7
         }
       },
       {
@@ -42145,8 +42617,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -42592,99 +43064,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 4
         },
         "second": {
           "row": 6,
@@ -42694,22 +43086,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 6,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 6
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -42717,98 +43120,32 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 5
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
           "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 1
         },
         "second": {
           "row": 6,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
           "row": 5,
           "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
         },
         "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 7
         }
       },
@@ -42818,78 +43155,235 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
+          "row": 5,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 0
         },
         "second": {
           "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 7
         }
       },
       {
@@ -42899,8 +43393,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -43346,99 +43840,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 4
         },
         "second": {
           "row": 6,
@@ -43448,22 +43862,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 6,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 6
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -43471,98 +43896,32 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 5
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
           "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 1
         },
         "second": {
           "row": 6,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
           "row": 5,
           "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
         },
         "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 7
         }
       },
@@ -43572,78 +43931,235 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
+          "row": 5,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 0
         },
         "second": {
           "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 7
         }
       },
       {
@@ -43653,8 +44169,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 8
         }
       }
     ],
@@ -44100,99 +44616,19 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 6,
-          "column": 1
-        },
-        "second": {
-          "row": 7,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 7
-        },
-        "second": {
           "row": 5,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 4
-        },
-        "second": {
-          "row": 6,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
           "column": 8
         },
         "second": {
-          "row": 5,
-          "column": 7
+          "row": 6,
+          "column": 8
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 7
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 6,
-          "column": 8
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 6,
-          "column": 0
-        },
-        "second": {
-          "row": 6,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 0
-        }
-      },
-      {
-        "type": "ADD_NUMBERS"
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 3
+          "column": 4
         },
         "second": {
           "row": 6,
@@ -44202,22 +44638,33 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 3,
-          "column": 0
+          "row": 5,
+          "column": 6
         },
         "second": {
-          "row": 7,
-          "column": 4
+          "row": 6,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 0
+          "column": 6
         },
         "second": {
-          "row": 7,
+          "row": 6,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 5,
+          "column": 7
+        },
+        "second": {
+          "row": 6,
           "column": 0
         }
       },
@@ -44225,98 +44672,32 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
         "type": "PAIR",
         "first": {
           "row": 5,
-          "column": 5
+          "column": 2
         },
         "second": {
-          "row": 7,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 3,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
+          "row": 6,
           "column": 2
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 5,
-          "column": 6
-        },
-        "second": {
           "row": 6,
-          "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 4,
-          "column": 7
-        },
-        "second": {
-          "row": 8,
-          "column": 3
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
           "column": 1
         },
         "second": {
           "row": 6,
-          "column": 5
+          "column": 4
         }
       },
       {
         "type": "PAIR",
         "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
-          "row": 6,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 1
-        },
-        "second": {
           "row": 5,
           "column": 5
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 6
         },
         "second": {
-          "row": 3,
-          "column": 6
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 8
-        },
-        "second": {
-          "row": 3,
+          "row": 6,
           "column": 7
         }
       },
@@ -44326,78 +44707,235 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
       {
         "type": "PAIR",
         "first": {
-          "row": 2,
-          "column": 2
-        },
-        "second": {
-          "row": 4,
-          "column": 2
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
           "row": 1,
           "column": 1
         },
         "second": {
-          "row": 4,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 0
-        },
-        "second": {
-          "row": 3,
-          "column": 1
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 2,
-          "column": 1
-        },
-        "second": {
-          "row": 3,
-          "column": 0
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 7
-        },
-        "second": {
-          "row": 2,
-          "column": 4
-        }
-      },
-      {
-        "type": "PAIR",
-        "first": {
-          "row": 1,
-          "column": 8
-        },
-        "second": {
-          "row": 2,
-          "column": 7
+          "row": 5,
+          "column": 5
         }
       },
       {
         "type": "PAIR",
         "first": {
           "row": 0,
-          "column": 6
+          "column": 0
         },
         "second": {
           "row": 1,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 7
+        },
+        "second": {
+          "row": 2,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 8
+        },
+        "second": {
+          "row": 5,
+          "column": 8
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 1
+        },
+        "second": {
+          "row": 3,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 1
+        },
+        "second": {
+          "row": 4,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 7
+        },
+        "second": {
+          "row": 4,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "ADD_NUMBERS"
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 3
+        },
+        "second": {
+          "row": 5,
+          "column": 7
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 6
+        },
+        "second": {
+          "row": 5,
+          "column": 6
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 2
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
+          "column": 4
+        },
+        "second": {
+          "row": 4,
+          "column": 4
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 3,
           "column": 5
+        },
+        "second": {
+          "row": 4,
+          "column": 5
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 1
+        },
+        "second": {
+          "row": 5,
+          "column": 1
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 4,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 2
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 2,
+          "column": 0
+        },
+        "second": {
+          "row": 5,
+          "column": 0
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 1,
+          "column": 0
+        },
+        "second": {
+          "row": 4,
+          "column": 3
+        }
+      },
+      {
+        "type": "PAIR",
+        "first": {
+          "row": 0,
+          "column": 8
+        },
+        "second": {
+          "row": 1,
+          "column": 7
         }
       },
       {
@@ -44407,16 +44945,16 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
           "column": 3
         },
         "second": {
-          "row": 0,
-          "column": 6
+          "row": 1,
+          "column": 8
         }
       }
     ],
-    "bestKnownSolutionLength": 72,
+    "bestKnownSolutionLength": 74,
     "provenOptimal": false,
     "minimumAdditions": 5,
     "minimumAdditionsProven": false,
-    "nodesExpanded": 72,
+    "nodesExpanded": 74,
     "averageBranching": 7.25,
     "maximumBranching": 19,
     "forcedMoveRatio": 0.0833,
@@ -44875,7 +45413,8 @@ export const PUZZLES: readonly VerifiedPuzzle[] = [
     "acceptanceNotes": [
       "V8-Lite HARD; ranked from the existing bounded 250-candidate search.",
       "Final rates R=0.04, P=0.0267, Row=0.4133, D2=0.7375, nearMiss=0.3888888888888889.",
-      "Successful simple-AI additions mean=3.891156462585034, median=4."
+      "Successful simple-AI additions mean=3.891156462585034, median=4.",
+      "Rule 2.1.0 exact-5 route repaired; stored Human AI metrics predate the rule and require recalibration."
     ],
     "difficultyScore": 83,
     "structureSignature": "20a9bb98",

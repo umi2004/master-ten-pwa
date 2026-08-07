@@ -14,6 +14,7 @@ import { V5_LITE_PLAYTEST_CANDIDATE } from '../src/generator/v5LiteCandidate';
 import { V6_LITE_HARD_SAMPLE } from '../src/generator/v6LiteCandidate';
 import { V7_LITE_HARDER_SAMPLE } from '../src/generator/v7LiteCandidate';
 import { V8_LITE_BATCH_CANDIDATES } from '../src/generator/v8BatchCandidates.generated';
+import type { EncodedV3Candidate } from '../src/generator/v3Candidates';
 import type { DifficultyTier, HumanStrategyId } from '../src/puzzles/types';
 import { applySearchMove, countSolutionAdditions, solveWithDfs } from '../src/solver';
 
@@ -314,7 +315,9 @@ for (const candidateIndex of candidateIndexes) {
   let minimumSolutionKeys: readonly string[] | undefined;
   let minimumAdditions = 5;
   let minimumAdditionsProven = false;
-  const existingMinimum = candidateIndex === 158 ? V8_LITE_BATCH_CANDIDATES[0] : undefined;
+  const existingMinimum: EncodedV3Candidate | undefined = candidateIndex === 158
+    ? V8_LITE_BATCH_CANDIDATES[0]
+    : undefined;
   if (rankedExisting && existingMinimum?.minimumSolutionKeys) {
     minimumSolutionKeys = existingMinimum.minimumSolutionKeys;
     minimumAdditions = existingMinimum.minimumAdditions;

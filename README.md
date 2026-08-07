@@ -52,6 +52,16 @@ npm run preview
 
 ## 問題生成と検証
 
+### MASTER候補の自動進化探索
+
+数字追加は、途中の削除穴を維持したまま最後の生存数字の直後へ追加し、末尾の連続した空所だけを取り除きます。HARD候補から未公開のMASTER候補を探索するには次を実行します。
+
+```bash
+npm run search:master -- --generations=10 --parents=4 --children=8 --max-minutes=25
+```
+
+主なoptionは`--generations`、`--parents`、`--children`、`--seed`、`--max-minutes`、`--output-dir`、`--resume`です。結果は既定で`artifacts/master-search/`の`ledger.jsonl`、`best.json`、`checkpoint.json`へ保存され、同じ条件に`--resume`を加えると再開します。出力は探索候補であり、正式なMASTER認定や公開登録ではありません。
+
 問題は通常のアプリ起動時には生成・探索しません。開発時に独自テンプレートとseedから候補を作り、ソルバー、難易度特徴量、重複、保存解、安全ヒントを検証した固定データだけを公開します。
 
 ```bash

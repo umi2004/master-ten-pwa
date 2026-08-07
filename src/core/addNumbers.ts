@@ -15,14 +15,16 @@ export function appendAliveNumbers(board: Board): Board {
     throw new InvalidMoveError('盤面の高さ上限を超えるため数字を追加できません。');
   }
 
-  const nextCells = [...board.cells];
-  nextCells.splice(additionStartIndex, 0, ...alive);
+  const nextCells = [...board.cells.slice(0, additionStartIndex), ...alive];
   return createBoard(nextCells);
 }
 
-/** Addition always starts after the logical tail, never after the last alive digit. */
+/** Addition starts immediately after the last alive digit, trimming only trailing holes. */
 export function getAdditionStartIndex(board: Board): number {
-  return board.logicalLength;
+  for (let index = board.cells.length - 1; index >= 0; index -= 1) {
+    if (board.cells[index] !== 0) return index + 1;
+  }
+  return 0;
 }
 
 export function canAddNumbers(state: GameState): boolean {
@@ -35,7 +37,7 @@ export function canAppendAliveNumbers(board: Board, additionsRemaining: number):
 
   const aliveCount = board.cells.filter((cell) => cell !== 0).length;
   const rowsAfterAddition = Math.ceil(
-    (board.logicalLength + aliveCount) / board.width,
+    (getAdditionStartIndex(board) + aliveCount) / board.width,
   );
   return rowsAfterAddition <= MAX_BOARD_ROWS;
 }

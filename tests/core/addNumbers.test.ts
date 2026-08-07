@@ -38,18 +38,43 @@ describe('数字追加', () => {
     expect({ row: Math.floor(44 / 9), column: 44 % 9 }).toEqual({ row: 4, column: 8 });
   });
 
-  it('途中の削除穴を埋めずlogicalLengthの後ろへ追加する', () => {
+  it('途中の削除穴を維持して最後の生存数字の直後へ追加する', () => {
     const board = createBoard([1, 2, 0, 4, 5, 0, 7, 8, 9]);
     const result = appendAliveNumbers(board);
     expect(result.cells.slice(0, 9)).toEqual(board.cells);
     expect(result.cells.slice(9)).toEqual([1, 2, 4, 5, 7, 8, 9]);
   });
 
-  it('論理末尾が削除済みでも最後の生存数字まで巻き戻らない', () => {
+  it('末尾の削除穴だけを取り除いて最後の生存数字の直後へ追加する', () => {
     const board = createBoard([1, 2, 3, 0, 0]);
     const result = appendAliveNumbers(board);
+    expect(getAdditionStartIndex(board)).toBe(3);
+    expect(result.cells).toEqual([1, 2, 3, 1, 2, 3]);
+  });
+
+  it('部分最終行のtrailing zeroを取り除き内部穴は維持する', () => {
+    const board = createBoard([0, 2, 0, 0, 4, 0, 0, 0, 0]);
+    const result = appendAliveNumbers(board);
     expect(getAdditionStartIndex(board)).toBe(5);
-    expect(result.cells).toEqual([1, 2, 3, 0, 0, 1, 2, 3]);
+    expect(result.cells).toEqual([0, 2, 0, 0, 4, 2, 4]);
+  });
+
+  it('trailing zeroを除いた実際の追加結果で高さ上限を判定する', () => {
+    const board = createBoard([
+      ...Array.from({ length: 214 }, () => 1),
+      ...Array.from({ length: 218 }, () => 0),
+    ]);
+    const state = createGameState(board, 1);
+    expect(canAddNumbers(state)).toBe(true);
+    expect(appendAliveNumbers(state.board).logicalLength).toBe(428);
+  });
+
+  it('すべて0の盤面には追加できない', () => {
+    const board = createBoard([0, 0, 0]);
+    const state = createGameState(board, 1);
+    expect(getAdditionStartIndex(board)).toBe(0);
+    expect(canAddNumbers(state)).toBe(false);
+    expect(() => appendAliveNumbers(board)).toThrow(InvalidMoveError);
   });
 
   it('合法手がある場合も任意に追加できる', () => {
