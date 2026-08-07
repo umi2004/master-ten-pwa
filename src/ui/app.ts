@@ -550,11 +550,7 @@ export class MasterTenApp {
     }
   }
 
-  #startPuzzle(
-    puzzle: VerifiedPuzzle,
-    replay = false,
-    updatedCycleIds?: readonly string[],
-  ): void {
+  #startPuzzle(puzzle: VerifiedPuzzle, replay = false): void {
     if (
       !replay &&
       this.#saved?.completionStatus === 'PLAYING' &&
@@ -564,7 +560,6 @@ export class MasterTenApp {
       this.#progress = recordPuzzleStart(
         this.#progress,
         puzzle.puzzleId,
-        updatedCycleIds,
         false,
       );
       this.#repository.saveProgress(this.#progress);
@@ -649,14 +644,14 @@ export class MasterTenApp {
   }
 
   #choosePuzzle(tier?: VerifiedPuzzle['difficultyTier']): void {
-    const currentId = this.#session?.puzzle.puzzleId ?? this.#saved?.puzzleId;
+    const currentPuzzle = this.#session?.puzzle ?? this.#saved;
     const selection = pickNextPuzzle(PUZZLES, {
       difficultyTier: tier,
-      currentPuzzleId: currentId,
-      recentPuzzleCycleIds: this.#progress.recentPuzzleCycleIds,
+      currentPuzzleId: currentPuzzle?.puzzleId,
+      currentInitialBoardHash: currentPuzzle?.initialBoardHash,
     });
     if (selection) {
-      this.#startPuzzle(selection.selectedPuzzle, false, selection.updatedCycleIds);
+      this.#startPuzzle(selection.selectedPuzzle);
     }
   }
 
