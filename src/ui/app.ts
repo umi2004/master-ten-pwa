@@ -16,6 +16,7 @@ import {
 import { GameSession } from './gameSession';
 import { getGameOverCopy } from './gameOver';
 import { applyBoardScroll } from './boardScroll';
+import { pickNextPuzzle, recordPuzzleStart } from './puzzleSelection';
 
 type Screen = 'home' | 'game' | 'puzzles' | 'how-to' | 'settings' | 'clear';
 
@@ -549,20 +550,23 @@ export class MasterTenApp {
     }
   }
 
-  #startPuzzle(puzzle: VerifiedPuzzle, replay = false): void {
+  #startPuzzle(
+    puzzle: VerifiedPuzzle,
+    replay = false,
+    updatedCycleIds?: readonly string[],
+  ): void {
     if (
       !replay &&
       this.#saved?.completionStatus === 'PLAYING' &&
       !window.confirm('進行中の問題を終了して、別の問題を始めますか？ 現在の盤面は上書きされます。')
     ) return;
     if (!replay) {
-      this.#progress = {
-        ...this.#progress,
-        playedProblemIds: [...new Set([
-          ...(this.#progress.playedProblemIds ?? []),
-          puzzle.puzzleId,
-        ])],
-      };
+      this.#progress = recordPuzzleStart(
+        this.#progress,
+        puzzle.puzzleId,
+        updatedCycleIds,
+        false,
+      );
       this.#repository.saveProgress(this.#progress);
     }
     this.#session = GameSession.create(
@@ -645,17 +649,15 @@ export class MasterTenApp {
   }
 
   #choosePuzzle(tier?: VerifiedPuzzle['difficultyTier']): void {
-    const pool = tier ? PUZZLES.filter((puzzle) => puzzle.difficultyTier === tier) : [...PUZZLES];
-    const played = new Set(this.#progress.playedProblemIds ?? []);
-    const completed = new Set(this.#progress.completedPuzzles);
-    const unplayed = pool.filter((puzzle) => !played.has(puzzle.puzzleId));
-    const uncleared = pool.filter((puzzle) => !completed.has(puzzle.puzzleId));
-    let candidates = unplayed.length > 0 ? unplayed : uncleared.length > 0 ? uncleared : pool;
     const currentId = this.#session?.puzzle.puzzleId ?? this.#saved?.puzzleId;
-    const withoutCurrent = candidates.filter((puzzle) => puzzle.puzzleId !== currentId);
-    if (withoutCurrent.length > 0) candidates = withoutCurrent;
-    const puzzle = candidates[Math.floor(Math.random() * candidates.length)];
-    if (puzzle) this.#startPuzzle(puzzle, completed.has(puzzle.puzzleId));
+    const selection = pickNextPuzzle(PUZZLES, {
+      difficultyTier: tier,
+      currentPuzzleId: currentId,
+      recentPuzzleCycleIds: this.#progress.recentPuzzleCycleIds,
+    });
+    if (selection) {
+      this.#startPuzzle(selection.selectedPuzzle, false, selection.updatedCycleIds);
+    }
   }
 
   #go(screen: Screen): void {

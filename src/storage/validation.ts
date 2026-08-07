@@ -181,18 +181,22 @@ export function parseProgress(
   if (!isRecord(value) || value.schemaVersion !== SAVE_SCHEMA_VERSION) {
     return undefined;
   }
-  void puzzles;
   const completedPuzzles = parseStoredIdList(value.completedPuzzles);
   const noAssistCompletions = parseStoredIdList(value.noAssistCompletions);
   const playedProblemIds = value.playedProblemIds === undefined
     ? completedPuzzles
     : parseStoredIdList(value.playedProblemIds);
+  const recentPuzzleCycleIds = value.recentPuzzleCycleIds === undefined
+    ? []
+    : parseStoredIdList(value.recentPuzzleCycleIds);
   if (
     !completedPuzzles ||
     !noAssistCompletions ||
     !playedProblemIds ||
+    !recentPuzzleCycleIds ||
     noAssistCompletions.some((id) => !completedPuzzles.includes(id))
   ) return undefined;
+  const currentPuzzleIds = new Set(puzzles.map((puzzle) => puzzle.puzzleId));
   const numericKeys = [
     'totalClears',
     'currentClearStreak',
@@ -215,6 +219,7 @@ export function parseProgress(
     completedPuzzles,
     noAssistCompletions,
     playedProblemIds,
+    recentPuzzleCycleIds: recentPuzzleCycleIds.filter((id) => currentPuzzleIds.has(id)),
     totalClears,
     currentClearStreak,
     bestClearStreak,

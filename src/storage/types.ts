@@ -19,6 +19,7 @@ export interface ProgressData {
   readonly completedPuzzles: readonly string[];
   readonly noAssistCompletions: readonly string[];
   readonly playedProblemIds?: readonly string[];
+  readonly recentPuzzleCycleIds?: readonly string[];
   readonly totalClears?: number;
   readonly currentClearStreak?: number;
   readonly bestClearStreak?: number;

@@ -30,6 +30,7 @@ export function createEmptyProgress(): ProgressData {
     completedPuzzles: [],
     noAssistCompletions: [],
     playedProblemIds: [],
+    recentPuzzleCycleIds: [],
     totalClears: 0,
     currentClearStreak: 0,
     bestClearStreak: 0,
