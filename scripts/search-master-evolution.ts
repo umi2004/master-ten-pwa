@@ -215,6 +215,7 @@ function writeCheckpoint(
 
 const options = parseOptions();
 const store = new MasterSearchStore(options.outputDirectory);
+process.once('beforeExit', () => { store.flushCache(); });
 const startedAt = Date.now();
 const expired = (): boolean => Date.now() - startedAt >= options.maxMinutes * 60_000;
 let interrupted = false;
@@ -341,6 +342,7 @@ for (; generation <= options.generations && !expired() && !interrupted; generati
   const best = beam[0];
   const masterCandidates = beam.filter((candidate) => candidate.metrics && isMasterCandidate(candidate.metrics)).length;
   store.writeBest({ version: masterSearchVersion(), generation, tested, candidate: best });
+  store.flushCache();
   writeCheckpoint(store, options, generation + 1, 0, 0, tested, beam, []);
   console.log(
     `Generation ${generation}/${options.generations} tested=${tested} beam=${beam.length} `
@@ -351,6 +353,8 @@ for (; generation <= options.generations && !expired() && !interrupted; generati
   );
   if (masterCandidates > 0) break;
 }
+
+store.flushCache();
 
 if (interrupted || expired()) {
   console.log(`Search paused: tested=${tested}; resume with the same options plus --resume.`);

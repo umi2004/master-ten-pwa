@@ -1,7 +1,7 @@
-import { mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, renameSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import { createBoard, createGameState } from '../../src/core';
 import { simulateHumanStrategy } from '../../src/generator/humanPlayers';
@@ -44,7 +44,7 @@ describe('MASTER evolution scoring and persistence', () => {
   it('appends ledger entries, resumes checkpoints, and caches identical evaluations', () => {
     const directory = mkdtempSync(join(tmpdir(), 'master-ten-search-'));
     try {
-      const store = new MasterSearchStore(directory);
+      const store = new MasterSearchStore(directory, { cacheFlushEntryThreshold: 10 });
       store.appendLedger({ candidateId: 'one' });
       expect(store.readLedger<{ candidateId: string }>()).toEqual([{ candidateId: 'one' }]);
       store.writeCheckpoint({ generation: 3 });
@@ -60,8 +60,42 @@ describe('MASTER evolution scoring and persistence', () => {
       expect(store.getOrComputeEvaluation(key, compute).cacheHit).toBe(false);
       expect(store.getOrComputeEvaluation(key, compute).cacheHit).toBe(true);
       expect(simulations).toBe(1);
+      expect(existsSync(join(directory, 'cache.json'))).toBe(false);
+      expect(store.flushCache()).toBe(true);
+      expect(() => JSON.parse(readFileSync(join(directory, 'cache.json'), 'utf8'))).not.toThrow();
+
+      const resumed = new MasterSearchStore(directory);
+      expect(resumed.getOrComputeEvaluation(key, () => {
+        simulations += 1;
+        return simulateHumanStrategy(state, 'seed', 'proximity', 2);
+      }).cacheHit).toBe(true);
+      expect(simulations).toBe(1);
     } finally {
       rmSync(directory, { recursive: true, force: true });
+    }
+  });
+
+  it('keeps memory cache usable when a disk flush has a transient filesystem error', () => {
+    const directory = mkdtempSync(join(tmpdir(), 'master-ten-cache-error-'));
+    const movedDirectory = `${directory}-moved`;
+    const warning = vi.spyOn(console, 'warn').mockImplementation(() => undefined);
+    try {
+      const store = new MasterSearchStore(directory, { cacheFlushEntryThreshold: 1 });
+      renameSync(directory, movedDirectory);
+      const state = createGameState(createBoard([1, 1]), 0);
+      let simulations = 0;
+      const compute = () => {
+        simulations += 1;
+        return simulateHumanStrategy(state, 'transient', 'proximity', 1);
+      };
+      expect(store.getOrComputeEvaluation('transient', compute).cacheHit).toBe(false);
+      expect(store.cacheFlushError).toBeDefined();
+      expect(store.getOrComputeEvaluation('transient', compute).cacheHit).toBe(true);
+      expect(simulations).toBe(1);
+    } finally {
+      warning.mockRestore();
+      rmSync(directory, { recursive: true, force: true });
+      rmSync(movedDirectory, { recursive: true, force: true });
     }
   });
 });
