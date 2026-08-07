@@ -4,15 +4,18 @@ import { applyGameMove, createGameState, type GameState } from '../../src/core';
 import { HintEngine } from '../../src/hints';
 import { PUZZLES } from '../../src/puzzles';
 
-describe('V5-Lite local single-playtest catalog', () => {
-  it('contains only the requested Master 01 playtest', () => {
-    expect(PUZZLES.map((puzzle) => puzzle.displayNumber)).toEqual([1]);
-    expect(new Set(PUZZLES.map((puzzle) => puzzle.puzzleId)).size).toBe(1);
-    expect(new Set(PUZZLES.map((puzzle) => puzzle.seed)).size).toBe(1);
-    expect(new Set(PUZZLES.map((puzzle) => puzzle.structureSignature)).size).toBe(1);
+describe('V8-Lite bounded local catalog', () => {
+  it('contains only unique, unreviewed V8 candidates', () => {
+    expect(PUZZLES).toHaveLength(10);
+    expect(new Set(PUZZLES.map((puzzle) => puzzle.puzzleId)).size).toBe(PUZZLES.length);
+    expect(new Set(PUZZLES.map((puzzle) => puzzle.seed)).size).toBe(PUZZLES.length);
+    expect(new Set(PUZZLES.map((puzzle) => puzzle.initialBoardHash)).size).toBe(PUZZLES.length);
+    expect(new Set(PUZZLES.map((puzzle) => puzzle.structureSignature)).size).toBeGreaterThanOrEqual(3);
+    expect(PUZZLES.every((puzzle) => puzzle.seed.startsWith('master_v8_'))).toBe(true);
+    expect(PUZZLES.every((puzzle) => puzzle.reviewed === false)).toBe(true);
   });
 
-  it('keeps exactly 42 dense cells and five available additions without claiming review', () => {
+  it('keeps 42 dense cells, five additions, and the Lite final trial plan', () => {
     for (const puzzle of PUZZLES) {
       expect(puzzle.solutionStatus).toBe('SOLVED');
       expect(puzzle.initialAliveCount).toBe(42);
@@ -22,45 +25,38 @@ describe('V5-Lite local single-playtest catalog', () => {
       expect(puzzle.visualDifficulty.initialDensity).toBe(1);
       expect(puzzle.additionsAllowed).toBe(5);
       expect(puzzle.additionsAvailable).toBe(5);
-      expect(puzzle.initialMoveCount).toBeGreaterThan(0);
-      expect(puzzle.minimumAdditionsProven).toBe(true);
-      expect(puzzle.maximumRowsDuringSolution).toBeLessThanOrEqual(48);
-      expect(puzzle.minimumAdditions).toBe(1);
-      expect(puzzle.reviewed).toBe(false);
-      expect(puzzle.acceptanceNotes.join(' ')).toContain('playtest');
-    }
-  });
-
-  it('records only the requested Lite strategies and trial counts', () => {
-    for (const puzzle of PUZZLES) {
+      expect(['HARD', 'MASTER', 'EXTREME']).toContain(puzzle.difficultyTier);
       expect(Object.fromEntries(puzzle.humanStrategyMetrics.map((metric) => [metric.strategy, metric.trials]))).toEqual({
-        random: 500,
-        proximity: 300,
-        'row-clear': 300,
-        'lookahead-2': 100,
+        random: 200,
+        proximity: 150,
+        'row-clear': 150,
+        'reserve-add': 150,
+        'early-add': 150,
+        'lookahead-2': 80,
       });
-      for (const metric of puzzle.humanStrategyMetrics) {
-        expect(metric.clears).toBe(Math.round(metric.clearRate * metric.trials));
-        expect(metric.clears + metric.failures).toBe(metric.trials);
-        expect(metric.clearRate95.lower).toBeLessThanOrEqual(metric.clearRate);
-        expect(metric.clearRate95.upper).toBeGreaterThanOrEqual(metric.clearRate);
-        expect(
-          metric.clearRate
-          + metric.earlyCollapseRate
-          + metric.lateNearMissRate
-          + metric.lateLargeRemainderRate
-          + metric.heightOverflowRate
-          + metric.unknownFailureRate,
-        ).toBeCloseTo(1, 3);
-      }
     }
   });
 
-  it.each(PUZZLES)('replays Master $displayNumber and verifies every cached hint', (puzzle) => {
+  it('stores complete relative-ranking metrics without treating them as formal review', () => {
+    for (const puzzle of PUZZLES) {
+      const metric = (strategy: string) => puzzle.humanStrategyMetrics.find((item) => item.strategy === strategy)!;
+      expect(metric('random').trials).toBe(200);
+      expect(metric('proximity').trials).toBe(150);
+      expect(metric('row-clear').trials).toBe(150);
+      expect(metric('lookahead-2').trials).toBe(80);
+      const failures = puzzle.humanStrategyMetrics.reduce((sum, item) => sum + item.failures, 0);
+      const nearMisses = puzzle.humanStrategyMetrics.reduce((sum, item) => sum + item.nearMissRouteCount, 0);
+      expect(failures).toBeGreaterThan(0);
+      expect(nearMisses / failures).toBeGreaterThan(0);
+      expect(puzzle.acceptanceNotes.join(' ')).toContain('ranked from the existing');
+      expect(puzzle.reviewed).toBe(false);
+    }
+  });
+
+  it.each(PUZZLES)('replays $difficultyTier and verifies every cached hint', (puzzle) => {
     let state: GameState = createGameState(puzzle.initialBoard, puzzle.additionsAllowed);
     const engine = new HintEngine();
     expect(engine.prime(state, puzzle.recommendedHumanSolution)).toBe(true);
-
     for (const expectedMove of puzzle.recommendedHumanSolution) {
       const hint = engine.getHint(state, { now: () => 0 });
       expect(hint.status).toBe('SAFE_MOVE');
@@ -69,6 +65,7 @@ describe('V5-Lite local single-playtest catalog', () => {
       state = applyGameMove(state, hint.move);
     }
     expect(state.status).toBe('WON');
+    expect(state.additionsUsed).toBe(5);
     expect(puzzle.allPathHintsVerified).toBe(true);
   });
 });

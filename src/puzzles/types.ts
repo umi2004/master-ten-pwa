@@ -1,6 +1,7 @@
 import type { Board, DifficultyVersion, GameMove, GeneratorVersion, RuleVersion } from '../core';
 
 export type PuzzleSolutionStatus = 'SOLVED' | 'UNSOLVABLE' | 'UNKNOWN';
+export type DifficultyTier = 'HARD' | 'MASTER' | 'EXTREME';
 export type DesignFamily =
   | 'distributed-weave'
   | 'timing-crossroads'
@@ -38,6 +39,9 @@ export interface StrategyTrialMetrics {
   };
   readonly averageMoves: number;
   readonly averageAdditions: number;
+  readonly averageAdditionsOnSuccess: number;
+  readonly medianAdditionsOnSuccess: number;
+  readonly successfulAdditionsDistribution: Readonly<Record<string, number>>;
   readonly averageMaximumRows: number;
   readonly failures: number;
   readonly earlyCollapseRate: number;
@@ -80,6 +84,7 @@ export interface VerifiedPuzzle {
   readonly puzzleId: string;
   readonly displayNumber: number;
   readonly mode: 'master';
+  readonly difficultyTier: DifficultyTier;
   readonly designFamily: DesignFamily;
   readonly seed: string;
   readonly ruleVersion: RuleVersion;

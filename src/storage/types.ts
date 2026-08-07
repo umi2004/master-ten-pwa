@@ -18,6 +18,13 @@ export interface ProgressData {
   readonly schemaVersion: typeof SAVE_SCHEMA_VERSION;
   readonly completedPuzzles: readonly string[];
   readonly noAssistCompletions: readonly string[];
+  readonly playedProblemIds?: readonly string[];
+  readonly totalClears?: number;
+  readonly currentClearStreak?: number;
+  readonly bestClearStreak?: number;
+  readonly hardClears?: number;
+  readonly masterClears?: number;
+  readonly extremeClears?: number;
 }
 
 export interface SavedSession {
@@ -44,6 +51,7 @@ export interface SavedSession {
   readonly settings: AppSettings;
   readonly completedPuzzles: readonly string[];
   readonly noAssistCompletions: readonly string[];
+  readonly practiceMode: boolean;
 }
 
 export type SessionLoadResult =

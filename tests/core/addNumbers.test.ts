@@ -6,6 +6,7 @@ import {
   canAddNumbers,
   createBoard,
   createGameState,
+  getAdditionStartIndex,
   InvalidMoveError,
 } from '../../src/core';
 
@@ -19,6 +20,36 @@ describe('数字追加', () => {
     const result = appendAliveNumbers(createBoard([1, 0, 2]));
     expect(result.cells).toEqual([1, 0, 2, 1, 2]);
     expect(result.logicalLength).toBe(5);
+  });
+
+  it('42セルでは最初の追加位置を5行目7列目にする', () => {
+    const board = createBoard(Array.from({ length: 42 }, (_, index) => (index % 9) + 1));
+    const result = appendAliveNumbers(board);
+    expect(getAdditionStartIndex(board)).toBe(42);
+    expect(result.cells[42]).toBe(board.cells[0]);
+    expect({ row: Math.floor(42 / 9), column: 42 % 9 }).toEqual({ row: 4, column: 6 });
+  });
+
+  it('論理長44の部分行でも改行せずindex 44から追加する', () => {
+    const board = createBoard(Array.from({ length: 44 }, (_, index) => (index % 9) + 1));
+    const result = appendAliveNumbers(board);
+    expect(getAdditionStartIndex(board)).toBe(44);
+    expect(result.cells[44]).toBe(board.cells[0]);
+    expect({ row: Math.floor(44 / 9), column: 44 % 9 }).toEqual({ row: 4, column: 8 });
+  });
+
+  it('途中の削除穴を埋めずlogicalLengthの後ろへ追加する', () => {
+    const board = createBoard([1, 2, 0, 4, 5, 0, 7, 8, 9]);
+    const result = appendAliveNumbers(board);
+    expect(result.cells.slice(0, 9)).toEqual(board.cells);
+    expect(result.cells.slice(9)).toEqual([1, 2, 4, 5, 7, 8, 9]);
+  });
+
+  it('論理末尾が削除済みでも最後の生存数字まで巻き戻らない', () => {
+    const board = createBoard([1, 2, 3, 0, 0]);
+    const result = appendAliveNumbers(board);
+    expect(getAdditionStartIndex(board)).toBe(5);
+    expect(result.cells).toEqual([1, 2, 3, 0, 0, 1, 2, 3]);
   });
 
   it('合法手がある場合も任意に追加できる', () => {

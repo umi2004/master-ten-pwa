@@ -165,7 +165,55 @@ describe('保存データ', () => {
       noAssistCompletions: [puzzle.puzzleId],
     } as const;
     repository.saveProgress(progress);
-    expect(repository.loadProgress(PUZZLES)).toEqual(progress);
+    expect(repository.loadProgress(PUZZLES)).toMatchObject({
+      ...progress,
+      totalClears: 1,
+      currentClearStreak: 0,
+      bestClearStreak: 0,
+    });
+  });
+
+  it('クリア記録を再読込後も維持する', () => {
+    const storage = new MemoryStorage();
+    const repository = new SaveRepository(storage);
+    repository.saveProgress({
+      schemaVersion: SAVE_SCHEMA_VERSION,
+      completedPuzzles: [puzzle.puzzleId],
+      noAssistCompletions: [],
+      playedProblemIds: [puzzle.puzzleId],
+      totalClears: 12,
+      currentClearStreak: 4,
+      bestClearStreak: 9,
+      hardClears: 3,
+      masterClears: 8,
+      extremeClears: 1,
+    });
+    expect(repository.loadProgress(PUZZLES)).toMatchObject({
+      totalClears: 12,
+      currentClearStreak: 4,
+      bestClearStreak: 9,
+      hardClears: 3,
+      masterClears: 8,
+      extremeClears: 1,
+      playedProblemIds: [puzzle.puzzleId],
+    });
+  });
+
+  it('保存なしと破損した進捗は安全に0へ初期化する', () => {
+    const storage = new MemoryStorage();
+    const repository = new SaveRepository(storage);
+    expect(repository.loadProgress(PUZZLES).totalClears).toBe(0);
+    storage.setItem(`${STORAGE_PREFIX}progress:v1`, JSON.stringify({
+      schemaVersion: 1,
+      completedPuzzles: [],
+      noAssistCompletions: [],
+      totalClears: -3,
+    }));
+    expect(repository.loadProgress(PUZZLES)).toMatchObject({
+      totalClears: 0,
+      currentClearStreak: 0,
+      bestClearStreak: 0,
+    });
   });
 
   it('データ削除はMaster Ten所有キーだけを対象にする', () => {

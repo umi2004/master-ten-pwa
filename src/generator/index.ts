@@ -4,6 +4,8 @@ export * from './failureAnalysis';
 export * from './v4Analysis';
 export * from './v4Candidate';
 export * from './v5LiteCandidate';
+export * from './v6LiteCandidate';
+export * from './v7LiteCandidate';
 export * from './postHocAnalysis';
 export * from './prng';
 export * from './templates';

@@ -1,13 +1,15 @@
 import { indexToPosition, type Cell, type GameMove } from '../core';
-import type { DesignFamily, VerifiedPuzzle } from '../puzzles/types';
+import type { DesignFamily, DifficultyTier, VerifiedPuzzle } from '../puzzles/types';
 import { V3_COMPARATIVE_CANDIDATES } from './v3Candidates';
-import { V5_LITE_PLAYTEST_CANDIDATE } from './v5LiteCandidate';
+import { V7_LITE_HARDER_SAMPLE } from './v7LiteCandidate';
+import { V8_LITE_BATCH_CANDIDATES } from './v8BatchCandidates.generated';
 
 export interface PuzzleCandidate {
   readonly displayNumber: number;
   readonly seed: string;
   readonly designFamily: DesignFamily;
   readonly prototypeBand: VerifiedPuzzle['prototypeBand'];
+  readonly difficultyTier: DifficultyTier;
   readonly cells: readonly Cell[];
   readonly additionsAllowed: 5;
   readonly solution: readonly GameMove[];
@@ -26,6 +28,7 @@ interface EncodedPrototype {
   readonly seed: string;
   readonly designFamily: DesignFamily;
   readonly prototypeBand: VerifiedPuzzle['prototypeBand'];
+  readonly difficultyTier?: DifficultyTier;
   readonly cells: readonly Cell[];
   readonly solutionKeys: readonly string[];
   readonly minimumSolutionKeys?: readonly string[];
@@ -213,10 +216,11 @@ export const V2_PROTOTYPES: readonly EncodedPrototype[] = [
   },
 ];
 
-// V3 remains imported and exported as a comparison corpus. Only the single
-// V5-Lite playtest is exposed in the local catalog for this iteration.
+// Earlier candidates remain comparison-only; only bounded V8 candidates are
+// exposed in the local catalog.
 void V3_COMPARATIVE_CANDIDATES;
-const PROTOTYPES: readonly EncodedPrototype[] = [V5_LITE_PLAYTEST_CANDIDATE];
+void V7_LITE_HARDER_SAMPLE;
+const PROTOTYPES: readonly EncodedPrototype[] = V8_LITE_BATCH_CANDIDATES;
 
 export const PROTOTYPE_DISPLAY_NUMBERS = PROTOTYPES.map((prototype) => prototype.displayNumber);
 
@@ -232,6 +236,7 @@ export function generateCandidate(index: number): PuzzleCandidate {
     seed: prototype.seed,
     designFamily: prototype.designFamily,
     prototypeBand: prototype.prototypeBand,
+    difficultyTier: prototype.difficultyTier ?? 'MASTER',
     cells: prototype.cells,
     additionsAllowed: 5,
     solution,

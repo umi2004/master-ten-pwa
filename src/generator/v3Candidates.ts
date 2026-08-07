@@ -1,11 +1,12 @@
 import type { Cell } from '../core';
-import type { DesignFamily, VerifiedPuzzle } from '../puzzles/types';
+import type { DesignFamily, DifficultyTier, VerifiedPuzzle } from '../puzzles/types';
 
 export interface EncodedV3Candidate {
   readonly displayNumber: number;
   readonly seed: string;
   readonly designFamily: DesignFamily;
   readonly prototypeBand: VerifiedPuzzle['prototypeBand'];
+  readonly difficultyTier?: DifficultyTier;
   readonly cells: readonly Cell[];
   readonly solutionKeys: readonly string[];
   readonly minimumSolutionKeys?: readonly string[];

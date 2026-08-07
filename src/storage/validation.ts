@@ -67,16 +67,9 @@ function parseSnapshot(value: unknown): GameSnapshot | undefined {
   };
 }
 
-function parseIdList(
-  value: unknown,
-  knownPuzzleIds: ReadonlySet<string>,
-): readonly string[] | undefined {
-  if (!Array.isArray(value) || value.some((id) => typeof id !== 'string')) {
-    return undefined;
-  }
-  const ids = value as string[];
-  if (ids.some((id) => !knownPuzzleIds.has(id))) return undefined;
-  return [...new Set(ids)];
+function parseStoredIdList(value: unknown): readonly string[] | undefined {
+  if (!Array.isArray(value) || value.some((id) => typeof id !== 'string')) return undefined;
+  return [...new Set(value as string[])];
 }
 
 export function migrateSaveData(value: unknown): unknown {
@@ -88,6 +81,7 @@ export function migrateSaveData(value: unknown): unknown {
     completedAt: value.completedAt ?? null,
     completedPuzzles: value.completedPuzzles ?? [],
     noAssistCompletions: value.noAssistCompletions ?? [],
+    practiceMode: value.practiceMode ?? false,
     settings: value.settings ?? {
       fontSize: 'standard',
       soundEnabled: true,
@@ -111,9 +105,8 @@ export function parseSavedSession(
   const puzzle = puzzles.find((candidate) => candidate.puzzleId === value.puzzleId);
   const currentBoard = parseBoard(value.currentBoard);
   const settings = parseSettings(value.settings);
-  const knownIds = new Set(puzzles.map((candidate) => candidate.puzzleId));
-  const completedPuzzles = parseIdList(value.completedPuzzles, knownIds);
-  const noAssistCompletions = parseIdList(value.noAssistCompletions, knownIds);
+  const completedPuzzles = parseStoredIdList(value.completedPuzzles);
+  const noAssistCompletions = parseStoredIdList(value.noAssistCompletions);
   if (
     !puzzle ||
     !currentBoard ||
@@ -177,6 +170,7 @@ export function parseSavedSession(
     settings,
     completedPuzzles,
     noAssistCompletions,
+    practiceMode: value.practiceMode === true,
   };
 }
 
@@ -187,17 +181,45 @@ export function parseProgress(
   if (!isRecord(value) || value.schemaVersion !== SAVE_SCHEMA_VERSION) {
     return undefined;
   }
-  const knownIds = new Set(puzzles.map((puzzle) => puzzle.puzzleId));
-  const completedPuzzles = parseIdList(value.completedPuzzles, knownIds);
-  const noAssistCompletions = parseIdList(value.noAssistCompletions, knownIds);
+  void puzzles;
+  const completedPuzzles = parseStoredIdList(value.completedPuzzles);
+  const noAssistCompletions = parseStoredIdList(value.noAssistCompletions);
+  const playedProblemIds = value.playedProblemIds === undefined
+    ? completedPuzzles
+    : parseStoredIdList(value.playedProblemIds);
   if (
     !completedPuzzles ||
     !noAssistCompletions ||
+    !playedProblemIds ||
     noAssistCompletions.some((id) => !completedPuzzles.includes(id))
   ) return undefined;
+  const numericKeys = [
+    'totalClears',
+    'currentClearStreak',
+    'bestClearStreak',
+    'hardClears',
+    'masterClears',
+    'extremeClears',
+  ] as const;
+  if (numericKeys.some((key) => value[key] !== undefined && !isNonNegativeInteger(value[key]))) {
+    return undefined;
+  }
+  const totalClears = (value.totalClears as number | undefined) ?? completedPuzzles.length;
+  const currentClearStreak = (value.currentClearStreak as number | undefined) ?? 0;
+  const bestClearStreak = Math.max(
+    (value.bestClearStreak as number | undefined) ?? 0,
+    currentClearStreak,
+  );
   return {
     schemaVersion: SAVE_SCHEMA_VERSION,
     completedPuzzles,
     noAssistCompletions,
+    playedProblemIds,
+    totalClears,
+    currentClearStreak,
+    bestClearStreak,
+    hardClears: (value.hardClears as number | undefined) ?? 0,
+    masterClears: (value.masterClears as number | undefined) ?? 0,
+    extremeClears: (value.extremeClears as number | undefined) ?? 0,
   };
 }

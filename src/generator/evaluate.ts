@@ -244,6 +244,7 @@ export function evaluateCandidate(
     puzzleId: `master-r2-g3-d3-${candidate.seed}`,
     displayNumber: candidate.displayNumber,
     mode: 'master',
+    difficultyTier: candidate.difficultyTier,
     designFamily: candidate.designFamily,
     seed: candidate.seed,
     ruleVersion: RULE_VERSION,

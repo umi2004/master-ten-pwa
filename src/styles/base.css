@@ -317,6 +317,16 @@ button:disabled {
   box-shadow: var(--shadow);
 }
 
+.record-summary {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
 .card-kicker,
 .progress-meter { grid-column: 1 / -1; }
 .progress-number { font-family: Georgia, serif; font-size: 2.25rem; }
@@ -543,6 +553,28 @@ button.number-cell:hover { background: #fff; }
 }
 
 .state-banner.is-lost { color: #612313; background: #f7cfbd; border: 2px solid var(--coral); }
+
+.board-stage { position: relative; }
+
+.game-over-panel {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  z-index: 2;
+  width: min(calc(100% - 2rem), 22rem);
+  padding: 1.15rem;
+  color: #612313;
+  text-align: center;
+  background: rgb(255 247 240 / 96%);
+  border: 2px solid var(--coral);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transform: translate(-50%, -50%);
+}
+
+.game-over-title { margin: 0; font-size: 1.55rem; font-weight: 950; letter-spacing: 0.08em; }
+.game-over-message { margin: 0.35rem 0 0; font-weight: 850; }
+.game-over-residual { margin: 0.35rem 0 0.9rem; }
+.game-over-actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.55rem; }
 
 .clear-panel {
   width: min(100%, 34rem);

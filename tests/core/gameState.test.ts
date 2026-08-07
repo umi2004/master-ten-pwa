@@ -4,6 +4,9 @@ import {
   applyGameMove,
   createBoard,
   createGameState,
+  determineGameStatus,
+  getLegalPairMoves,
+  type Board,
   type PairMove,
   undoLastMove,
 } from '../../src/core';
@@ -22,6 +25,36 @@ describe('ゲーム状態', () => {
 
   it('合法手0かつ追加残数0で敗北する', () => {
     expect(createGameState(createBoard([1, 2]), 0).status).toBe('LOST');
+  });
+
+  it('追加可能なら合法ペアがなくても敗北しない', () => {
+    expect(createGameState(createBoard([1, 2]), 1).status).toBe('PLAYING');
+  });
+
+  it('合法ペアがあれば追加不能でも敗北しない', () => {
+    const state = createGameState(createBoard([1, 9]), 0);
+    expect(getLegalPairMoves(state.board)).toHaveLength(1);
+    expect(state.status).toBe('PLAYING');
+  });
+
+  it('数字0なら追加不能より勝利を優先する', () => {
+    expect(createGameState(createBoard([0]), 0).status).toBe('WON');
+  });
+
+  it('高さ上限で追加不能かつ合法ペアなしなら敗北する', () => {
+    const board: Board = {
+      width: 9,
+      cells: [...Array.from({ length: 431 }, () => 0 as const), 1],
+      logicalLength: 432,
+    };
+    expect(determineGameStatus(board, 1)).toBe('LOST');
+  });
+
+  it('敗北直前へUndoできる', () => {
+    const initial = createGameState(createBoard([1, 1, 2]), 0);
+    const lost = applyGameMove(initial, onlyPair);
+    expect(lost.status).toBe('LOST');
+    expect(undoLastMove(lost).status).toBe('PLAYING');
   });
 
   it('Undoで直前の盤面とカウンターを復元する', () => {

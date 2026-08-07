@@ -1,5 +1,5 @@
 import { countAlive } from './board';
-import { appendAliveNumbers, canAddNumbers } from './addNumbers';
+import { appendAliveNumbers, canAddNumbers, canAppendAliveNumbers } from './addNumbers';
 import { applyPairMove, getLegalPairMoves, InvalidMoveError } from './moves';
 import { normalizeBoard } from './normalize';
 import type {
@@ -11,11 +11,14 @@ import type {
 } from './types';
 import { RULE_VERSION } from './version';
 
-function determineStatus(board: Board, additionsRemaining: number): GameStatus {
+export function determineGameStatus(board: Board, additionsRemaining: number): GameStatus {
   if (countAlive(board) === 0) {
     return 'WON';
   }
-  if (getLegalPairMoves(board).length === 0 && additionsRemaining === 0) {
+  if (
+    getLegalPairMoves(board).length === 0
+    && !canAppendAliveNumbers(board, additionsRemaining)
+  ) {
     return 'LOST';
   }
   return 'PLAYING';
@@ -42,7 +45,7 @@ export function createGameState(board: Board, additionsRemaining = 3): GameState
     additionsRemaining,
     additionsUsed: 0,
     moveCount: 0,
-    status: determineStatus(normalizedBoard, additionsRemaining),
+    status: determineGameStatus(normalizedBoard, additionsRemaining),
     ruleVersion: RULE_VERSION,
     history: [],
     hintCount: 0,
@@ -66,7 +69,7 @@ export function applyGameMove(state: GameState, move: GameMove): GameState {
     };
     return {
       ...nextState,
-      status: determineStatus(board, nextState.additionsRemaining),
+      status: determineGameStatus(board, nextState.additionsRemaining),
     };
   }
 
@@ -86,7 +89,7 @@ export function applyGameMove(state: GameState, move: GameMove): GameState {
   };
   return {
     ...nextState,
-    status: determineStatus(board, additionsRemaining),
+    status: determineGameStatus(board, additionsRemaining),
   };
 }
 

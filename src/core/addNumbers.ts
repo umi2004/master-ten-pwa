@@ -9,26 +9,33 @@ export function appendAliveNumbers(board: Board): Board {
     throw new InvalidMoveError('空の盤面には数字を追加できません。');
   }
 
-  const nextLength = board.logicalLength + alive.length;
+  const additionStartIndex = getAdditionStartIndex(board);
+  const nextLength = additionStartIndex + alive.length;
   if (Math.ceil(nextLength / board.width) > MAX_BOARD_ROWS) {
     throw new InvalidMoveError('盤面の高さ上限を超えるため数字を追加できません。');
   }
 
-  return createBoard([...board.cells, ...alive]);
+  const nextCells = [...board.cells];
+  nextCells.splice(additionStartIndex, 0, ...alive);
+  return createBoard(nextCells);
+}
+
+/** Addition always starts after the logical tail, never after the last alive digit. */
+export function getAdditionStartIndex(board: Board): number {
+  return board.logicalLength;
 }
 
 export function canAddNumbers(state: GameState): boolean {
-  if (
-    state.status !== 'PLAYING' ||
-    state.additionsRemaining <= 0 ||
-    !state.board.cells.some((cell) => cell !== 0)
-  ) {
-    return false;
-  }
+  return state.status === 'PLAYING'
+    && canAppendAliveNumbers(state.board, state.additionsRemaining);
+}
 
-  const aliveCount = state.board.cells.filter((cell) => cell !== 0).length;
+export function canAppendAliveNumbers(board: Board, additionsRemaining: number): boolean {
+  if (additionsRemaining <= 0 || !board.cells.some((cell) => cell !== 0)) return false;
+
+  const aliveCount = board.cells.filter((cell) => cell !== 0).length;
   const rowsAfterAddition = Math.ceil(
-    (state.board.logicalLength + aliveCount) / state.board.width,
+    (board.logicalLength + aliveCount) / board.width,
   );
   return rowsAfterAddition <= MAX_BOARD_ROWS;
 }

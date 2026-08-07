@@ -1,4 +1,4 @@
-import { canAddNumbers, countAlive, getLegalPairMoves, type GameState } from '../core';
+import { canAppendAliveNumbers, countAlive, getLegalPairMoves, type GameState } from '../core';
 import type { HumanFailureClassification } from '../puzzles/types';
 
 export function isNearMissState(state: GameState): boolean {
@@ -25,7 +25,12 @@ export function classifyHumanFailure(
   ) {
     return 'LATE_LARGE_REMAINDER';
   }
-  if (state.status === 'PLAYING' && !canAddNumbers(state) && getLegalPairMoves(state.board).length === 0) {
+  if (
+    state.status === 'LOST'
+    && state.additionsRemaining > 0
+    && !canAppendAliveNumbers(state.board, state.additionsRemaining)
+    && getLegalPairMoves(state.board).length === 0
+  ) {
     return 'HEIGHT_OVERFLOW';
   }
   return 'EARLY_COLLAPSE';

@@ -24,6 +24,21 @@ const SESSION_KEY = `${STORAGE_PREFIX}session:v1`;
 const SETTINGS_KEY = `${STORAGE_PREFIX}settings:v1`;
 const PROGRESS_KEY = `${STORAGE_PREFIX}progress:v1`;
 
+export function createEmptyProgress(): ProgressData {
+  return {
+    schemaVersion: SAVE_SCHEMA_VERSION,
+    completedPuzzles: [],
+    noAssistCompletions: [],
+    playedProblemIds: [],
+    totalClears: 0,
+    currentClearStreak: 0,
+    bestClearStreak: 0,
+    hardClears: 0,
+    masterClears: 0,
+    extremeClears: 0,
+  };
+}
+
 export interface SessionTiming {
   readonly startedAt: number;
   readonly elapsedTime: number;
@@ -61,6 +76,7 @@ export class SaveRepository {
     settings: AppSettings,
     progress: ProgressData,
     timing: SessionTiming,
+    practiceMode = false,
   ): SavedSession {
     const session: SavedSession = {
       schemaVersion: SAVE_SCHEMA_VERSION,
@@ -86,6 +102,7 @@ export class SaveRepository {
       settings,
       completedPuzzles: progress.completedPuzzles,
       noAssistCompletions: progress.noAssistCompletions,
+      practiceMode,
     };
     this.#storage.setItem(SESSION_KEY, JSON.stringify(session));
     return session;
@@ -112,16 +129,12 @@ export class SaveRepository {
   public loadProgress(puzzles: readonly VerifiedPuzzle[]): ProgressData {
     const raw = this.#storage.getItem(PROGRESS_KEY);
     if (raw === null) {
-      return { schemaVersion: SAVE_SCHEMA_VERSION, completedPuzzles: [], noAssistCompletions: [] };
+      return createEmptyProgress();
     }
     try {
-      return parseProgress(JSON.parse(raw) as unknown, puzzles) ?? {
-        schemaVersion: SAVE_SCHEMA_VERSION,
-        completedPuzzles: [],
-        noAssistCompletions: [],
-      };
+      return parseProgress(JSON.parse(raw) as unknown, puzzles) ?? createEmptyProgress();
     } catch {
-      return { schemaVersion: SAVE_SCHEMA_VERSION, completedPuzzles: [], noAssistCompletions: [] };
+      return createEmptyProgress();
     }
   }
 

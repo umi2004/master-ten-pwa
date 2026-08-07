@@ -2,7 +2,7 @@ import {
   applyGameMove,
   applyKnownLegalPairMove,
   canAddNumbers,
-  countAlive,
+  determineGameStatus,
   getLegalPairMoves,
   type GameMove,
   type GameState,
@@ -37,11 +37,7 @@ export function applySearchMove(state: GameState, move: GameMove): GameState {
   // Search callers only pass moves returned by getSearchMoves. Avoid repeating the
   // full legality scan already performed to obtain that move.
   const board = applyKnownLegalPairMove(state.board, move);
-  const status = countAlive(board) === 0
-    ? 'WON'
-    : state.additionsRemaining === 0 && getLegalPairMoves(board).length === 0
-      ? 'LOST'
-      : 'PLAYING';
+  const status = determineGameStatus(board, state.additionsRemaining);
   return {
     ...stateWithoutHistory,
     board,

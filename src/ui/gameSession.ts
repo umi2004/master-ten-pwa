@@ -54,6 +54,7 @@ export class GameSession {
   #elapsedTime: number;
   #lastTick: number;
   #completedAt: number | null;
+  readonly #practiceMode: boolean;
 
   private constructor(options: {
     puzzle: VerifiedPuzzle;
@@ -66,6 +67,7 @@ export class GameSession {
     startedAt: number;
     elapsedTime: number;
     completedAt: number | null;
+    practiceMode: boolean;
   }) {
     this.puzzle = options.puzzle;
     this.#state = options.state;
@@ -78,6 +80,7 @@ export class GameSession {
     this.#elapsedTime = options.elapsedTime;
     this.#lastTick = options.now();
     this.#completedAt = options.completedAt;
+    this.#practiceMode = options.practiceMode;
   }
 
   public static create(
@@ -85,7 +88,7 @@ export class GameSession {
     settings: AppSettings,
     progress: ProgressData,
     repository: SaveRepository,
-    options: { hintEngine?: HintEngine; now?: () => number } = {},
+    options: { hintEngine?: HintEngine; now?: () => number; practice?: boolean } = {},
   ): GameSession {
     const now = options.now ?? Date.now;
     const startedAt = now();
@@ -103,6 +106,7 @@ export class GameSession {
       startedAt,
       elapsedTime: 0,
       completedAt: null,
+      practiceMode: options.practice === true || progress.completedPuzzles.includes(puzzle.puzzleId),
     });
     session.persist();
     return session;
@@ -132,6 +136,7 @@ export class GameSession {
       startedAt: saved.startedAt,
       elapsedTime: saved.elapsedTime,
       completedAt: saved.completedAt,
+      practiceMode: saved.practiceMode || progress.completedPuzzles.includes(puzzle.puzzleId),
     });
   }
 
@@ -149,6 +154,10 @@ export class GameSession {
 
   public get progress(): ProgressData {
     return this.#progress;
+  }
+
+  public get practiceMode(): boolean {
+    return this.#practiceMode;
   }
 
   public get elapsedTime(): number {
@@ -276,6 +285,7 @@ export class GameSession {
         elapsedTime: this.#elapsedTime,
         completedAt: this.#completedAt,
       },
+      this.#practiceMode,
     );
   }
 
@@ -291,15 +301,37 @@ export class GameSession {
     if (this.#state.status === 'WON') {
       this.#completedAt = this.#now();
       const completed = new Set(this.#progress.completedPuzzles);
+      const firstTrackedClear = !this.#practiceMode && !completed.has(this.puzzle.puzzleId);
       completed.add(this.puzzle.puzzleId);
       const noAssist = new Set(this.#progress.noAssistCompletions);
       if (this.#state.hintCount === 0 && this.#state.undoCount === 0) {
         noAssist.add(this.puzzle.puzzleId);
       }
       this.#progress = {
+        ...this.#progress,
         schemaVersion: SAVE_SCHEMA_VERSION,
         completedPuzzles: [...completed],
         noAssistCompletions: [...noAssist],
+        totalClears: (this.#progress.totalClears ?? 0) + (firstTrackedClear ? 1 : 0),
+        currentClearStreak: (this.#progress.currentClearStreak ?? 0) + (firstTrackedClear ? 1 : 0),
+        bestClearStreak: firstTrackedClear
+          ? Math.max(
+              this.#progress.bestClearStreak ?? 0,
+              (this.#progress.currentClearStreak ?? 0) + 1,
+            )
+          : this.#progress.bestClearStreak ?? 0,
+        hardClears: (this.#progress.hardClears ?? 0) +
+          (firstTrackedClear && this.puzzle.difficultyTier === 'HARD' ? 1 : 0),
+        masterClears: (this.#progress.masterClears ?? 0) +
+          (firstTrackedClear && this.puzzle.difficultyTier === 'MASTER' ? 1 : 0),
+        extremeClears: (this.#progress.extremeClears ?? 0) +
+          (firstTrackedClear && this.puzzle.difficultyTier === 'EXTREME' ? 1 : 0),
+      };
+      this.#repository.saveProgress(this.#progress);
+    } else if (this.#state.status === 'LOST' && !this.#practiceMode) {
+      this.#progress = {
+        ...this.#progress,
+        currentClearStreak: 0,
       };
       this.#repository.saveProgress(this.#progress);
     }

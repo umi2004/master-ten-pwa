@@ -262,6 +262,7 @@ export function simulateHumanStrategy(
   let totalMoves = 0;
   let totalAdditions = 0;
   let totalMaximumRows = 0;
+  const successfulAdditions: number[] = [];
   const failureCounts: Record<string, number> = {
     EARLY_COLLAPSE: 0,
     LATE_NEAR_MISS: 0,
@@ -272,6 +273,7 @@ export function simulateHumanStrategy(
   const residualAlive: number[] = [];
   const residualHistogram: Record<string, number> = {};
   const remainingAdditionsHistogram: Record<string, number> = {};
+  const successfulAdditionsHistogram: Record<string, number> = {};
   for (let trial = 0; trial < trials; trial += 1) {
     const prng = createPrng(humanTrialSeed(seed, strategy, trial));
     let state = initialState;
@@ -285,6 +287,9 @@ export function simulateHumanStrategy(
     }
     if (state.status === 'WON') {
       cleared += 1;
+      successfulAdditions.push(state.additionsUsed);
+      const additions = String(state.additionsUsed);
+      successfulAdditionsHistogram[additions] = (successfulAdditionsHistogram[additions] ?? 0) + 1;
     } else {
       const failure = classifyHumanFailure(state, steps >= maxSteps);
       failureCounts[failure] = (failureCounts[failure] ?? 0) + 1;
@@ -311,6 +316,16 @@ export function simulateHumanStrategy(
   const meanResidual = failures === 0
     ? 0
     : residualAlive.reduce((sum, alive) => sum + alive, 0) / failures;
+  const sortedSuccessfulAdditions = [...successfulAdditions].sort((a, b) => a - b);
+  const medianSuccessfulAdditions = sortedSuccessfulAdditions.length === 0
+    ? 0
+    : sortedSuccessfulAdditions.length % 2 === 1
+      ? sortedSuccessfulAdditions[Math.floor(sortedSuccessfulAdditions.length / 2)] ?? 0
+      : ((sortedSuccessfulAdditions[sortedSuccessfulAdditions.length / 2 - 1] ?? 0)
+        + (sortedSuccessfulAdditions[sortedSuccessfulAdditions.length / 2] ?? 0)) / 2;
+  const meanSuccessfulAdditions = cleared === 0
+    ? 0
+    : successfulAdditions.reduce((sum, additions) => sum + additions, 0) / cleared;
   return {
     strategy,
     trials,
@@ -322,6 +337,9 @@ export function simulateHumanStrategy(
     },
     averageMoves: round(totalMoves / trials),
     averageAdditions: round(totalAdditions / trials),
+    averageAdditionsOnSuccess: round(meanSuccessfulAdditions),
+    medianAdditionsOnSuccess: round(medianSuccessfulAdditions),
+    successfulAdditionsDistribution: successfulAdditionsHistogram,
     averageMaximumRows: round(totalMaximumRows / trials),
     failures,
     earlyCollapseRate: round((failureCounts.EARLY_COLLAPSE ?? 0) / trials),
