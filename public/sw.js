@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'master-ten-shell-';
-const CACHE_NAME = `${CACHE_PREFIX}v8-ranked-10-rule-2-1`;
+const CACHE_NAME = `${CACHE_PREFIX}master-1000-catalog-v1-rule-2-1`;
 
 function scopeUrl(path = './') {
   return new URL(path, self.registration.scope).href;

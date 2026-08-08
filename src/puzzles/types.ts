@@ -85,6 +85,7 @@ export interface VerifiedPuzzle {
   readonly displayNumber: number;
   readonly mode: 'master';
   readonly difficultyTier: DifficultyTier;
+  readonly internalBand?: 'normal-master' | 'elite-master';
   readonly designFamily: DesignFamily;
   readonly seed: string;
   readonly ruleVersion: RuleVersion;

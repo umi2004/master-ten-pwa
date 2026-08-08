@@ -173,6 +173,36 @@ describe('保存データ', () => {
     });
   });
 
+  it('旧10問catalogのIDが消えても累計・連続の進捗を維持する', () => {
+    const storage = new MemoryStorage();
+    const repository = new SaveRepository(storage);
+    repository.saveProgress({
+      schemaVersion: SAVE_SCHEMA_VERSION,
+      completedPuzzles: ['legacy-hard-01', 'legacy-extreme-02'],
+      noAssistCompletions: ['legacy-hard-01'],
+      playedProblemIds: ['legacy-hard-01', 'legacy-extreme-02'],
+      recentPuzzleCycleIds: ['legacy-hard-01'],
+      totalClears: 27,
+      currentClearStreak: 6,
+      bestClearStreak: 11,
+      hardClears: 8,
+      masterClears: 15,
+      extremeClears: 4,
+    });
+    expect(repository.loadProgress(PUZZLES)).toMatchObject({
+      completedPuzzles: ['legacy-hard-01', 'legacy-extreme-02'],
+      noAssistCompletions: ['legacy-hard-01'],
+      playedProblemIds: ['legacy-hard-01', 'legacy-extreme-02'],
+      recentPuzzleCycleIds: [],
+      totalClears: 27,
+      currentClearStreak: 6,
+      bestClearStreak: 11,
+      hardClears: 8,
+      masterClears: 15,
+      extremeClears: 4,
+    });
+  });
+
   it('クリア記録を再読込後も維持する', () => {
     const storage = new MemoryStorage();
     const repository = new SaveRepository(storage);

@@ -1,0 +1,21 @@
+{
+  "sourceLedgerEntries": 18244,
+  "publicPoolCount": 3000,
+  "selectedCount": 1000,
+  "counts": {
+    "stageNotTwo": 15244,
+    "wrongRuleVersion": 0,
+    "wrongInitialLength": 0,
+    "invalidInitialCell": 0,
+    "notSolved": 0,
+    "notKnownExactFive": 0,
+    "missingKnownRoute": 0,
+    "boardHashMismatch": 0,
+    "brokenRoute": 0,
+    "duplicateBoardHash": 0,
+    "duplicateInitialCells": 0,
+    "incompleteMetrics": 0,
+    "playabilityGuard": 0,
+    "diversityNotSelected": 2000
+  }
+}

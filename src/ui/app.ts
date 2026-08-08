@@ -18,7 +18,7 @@ import { getGameOverCopy } from './gameOver';
 import { applyBoardScroll } from './boardScroll';
 import { pickNextPuzzle, recordPuzzleStart } from './puzzleSelection';
 
-type Screen = 'home' | 'game' | 'puzzles' | 'how-to' | 'settings' | 'clear';
+type Screen = 'home' | 'game' | 'how-to' | 'settings' | 'clear';
 
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
@@ -45,8 +45,8 @@ function moveContains(move: GameMove | undefined, position: Position): boolean {
   );
 }
 
-function tierLabel(puzzle: VerifiedPuzzle): string {
-  return puzzle.difficultyTier;
+function tierLabel(): 'MASTER' {
+  return 'MASTER';
 }
 
 export class MasterTenApp {
@@ -90,9 +90,6 @@ export class MasterTenApp {
     switch (this.#screen) {
       case 'game':
         this.#renderGame();
-        break;
-      case 'puzzles':
-        this.#renderPuzzleList();
         break;
       case 'how-to':
         this.#renderHowTo();
@@ -156,7 +153,7 @@ export class MasterTenApp {
     const main = this.#main();
     const hero = el('section', 'hero');
     hero.append(
-      el('p', 'eyebrow', 'HARD・MASTER・EXTREME'),
+      el('p', 'eyebrow', 'MASTER'),
       el('h1', 'hero-title', 'MASTER TEN'),
       el('p', 'hero-copy', '同じ数字、または合計10になる数字を見つけて、盤面を空にする高難易度パズルです。'),
     );
@@ -168,13 +165,11 @@ export class MasterTenApp {
         'primary-button',
         () => this.#resumeSaved(),
       );
-      const savedPuzzle = PUZZLES.find((puzzle) => puzzle.puzzleId === this.#saved?.puzzleId);
-      continueButton.append(el('span', 'button-detail', `${savedPuzzle?.difficultyTier ?? 'MASTER'}・${this.#saved.moveCount}手`));
+      continueButton.append(el('span', 'button-detail', `MASTER・${this.#saved.moveCount}手`));
       actions.append(continueButton);
     }
     actions.append(
       this.#button('新しいゲーム', 'accent-button', () => this.#choosePuzzle()),
-      this.#button('難易度を選ぶ', 'menu-button', () => this.#go('puzzles')),
       this.#button('遊び方', 'menu-button', () => this.#go('how-to')),
       this.#button('設定', 'menu-button', () => this.#go('settings')),
     );
@@ -198,28 +193,6 @@ export class MasterTenApp {
     this.#root.append(main);
   }
 
-  #renderPuzzleList(): void {
-    this.#root.append(this.#brandHeader(() => this.#go('home')));
-    const main = this.#main('難易度を選ぶ');
-    main.append(el('p', 'screen-intro', '未クリアの盤面を優先して選びます。番号は表示されません。'));
-    const grid = el('div', 'puzzle-grid');
-    const tiers = [...new Set(PUZZLES.map((puzzle) => puzzle.difficultyTier))];
-    for (const tier of tiers) {
-      const tierPuzzles = PUZZLES.filter((puzzle) => puzzle.difficultyTier === tier);
-      const remaining = tierPuzzles.filter((puzzle) => !this.#progress.completedPuzzles.includes(puzzle.puzzleId)).length;
-      const card = el('article', `puzzle-card${remaining === 0 ? ' is-complete' : ''}`);
-      card.append(
-        el('h2', 'puzzle-title', tier),
-        el('p', 'puzzle-meta', '42数字・追加5回'),
-        el('p', 'puzzle-status', remaining > 0 ? '未クリアあり' : '練習プレイ'),
-        this.#button('新しいゲーム', 'small-button', () => this.#choosePuzzle(tier), `${tier}を開始`),
-      );
-      grid.append(card);
-    }
-    main.append(grid);
-    this.#root.append(main);
-  }
-
   #renderGame(): void {
     const session = this.#session;
     if (!session) {
@@ -238,11 +211,9 @@ export class MasterTenApp {
     const headingText = el('div');
     headingText.append(
       el('p', 'eyebrow', 'MASTER TEN'),
-      el('h1', 'game-title', tierLabel(session.puzzle)),
-      el('p', 'playtest-label', 'LOCAL CANDIDATE'),
+      el('h1', 'game-title', tierLabel()),
     );
-    const difficulty = el('span', 'difficulty-badge', `難度 ${session.puzzle.difficultyScore}`);
-    gameHeading.append(headingText, difficulty);
+    gameHeading.append(headingText);
 
     const stats = el('dl', 'stats-grid');
     const statItems = [
@@ -264,7 +235,7 @@ export class MasterTenApp {
     const boardViewport = el('div', 'board-viewport');
     const board = el('div', 'number-board');
     board.setAttribute('role', 'grid');
-    board.setAttribute('aria-label', `${tierLabel(session.puzzle)}の9列盤面`);
+    board.setAttribute('aria-label', `${tierLabel()}の9列盤面`);
     const hintMove = session.hint?.status === 'SAFE_MOVE' ? session.hint.move : undefined;
     let firstFocusable = true;
     const displayLength = Math.max(session.state.board.logicalLength, 9 * 11);
@@ -402,7 +373,7 @@ export class MasterTenApp {
     seal.setAttribute('aria-hidden', 'true');
     panel.append(
       seal,
-      el('p', 'eyebrow', tierLabel(session.puzzle)),
+      el('p', 'eyebrow', tierLabel()),
       el('h1', 'clear-title', '盤面クリア'),
       el('p', 'clear-copy', session.state.hintCount === 0 && session.state.undoCount === 0
         ? 'ノーアシストで解き切りました。見事です。'
@@ -425,7 +396,7 @@ export class MasterTenApp {
       results.append(item);
     }
     const actions = el('div', 'clear-actions');
-    actions.append(this.#button('新しいゲーム', 'accent-button', () => this.#choosePuzzle(session.puzzle.difficultyTier)));
+    actions.append(this.#button('新しいゲーム', 'accent-button', () => this.#choosePuzzle()));
     actions.append(
       this.#button('同じ問題を再プレイ', 'menu-button', () => this.#startPuzzle(session.puzzle, true)),
       this.#button('ホームへ戻る', 'menu-button', () => this.#go('home')),
@@ -571,7 +542,7 @@ export class MasterTenApp {
       this.#repository,
       { practice: replay || this.#progress.completedPuzzles.includes(puzzle.puzzleId) },
     );
-    this.#notice = `${tierLabel(puzzle)}を開始しました`;
+    this.#notice = `${tierLabel()}を開始しました`;
     this.#boardScrollTop = 0;
     this.#syncSaved();
     this.#screen = 'game';
@@ -643,10 +614,9 @@ export class MasterTenApp {
     }
   }
 
-  #choosePuzzle(tier?: VerifiedPuzzle['difficultyTier']): void {
+  #choosePuzzle(): void {
     const currentPuzzle = this.#session?.puzzle ?? this.#saved;
     const selection = pickNextPuzzle(PUZZLES, {
-      difficultyTier: tier,
       currentPuzzleId: currentPuzzle?.puzzleId,
       currentInitialBoardHash: currentPuzzle?.initialBoardHash,
     });

@@ -1,4 +1,5 @@
 import {
+  applyGameMove,
   canAddNumbers,
   createBoard,
   createGameState,
@@ -212,7 +213,10 @@ export function selectDiverseBeam(
 function replay(initial: GameState, solution: readonly GameMove[]): GameState | undefined {
   try {
     let state = initial;
-    for (const move of solution) state = applySearchMove(state, move);
+    // Candidate certification must use the production transition. applySearchMove
+    // intentionally trusts pair moves obtained from getSearchMoves and therefore
+    // is unsafe for replaying an arbitrary cached route.
+    for (const move of solution) state = applyGameMove(state, move);
     return state;
   } catch {
     return undefined;

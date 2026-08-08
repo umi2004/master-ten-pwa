@@ -2,13 +2,13 @@
 
 [Master Tenをプレイ](https://umi2004.github.io/master-ten-pwa/) · [GitHubリポジトリ](https://github.com/umi2004/master-ten-pwa)
 
-Master Tenは、同じ数字または合計10になる数字を消し、盤面を空にする日本語の高難易度数字パズルです。広告、課金、ログイン、ランキング、分析、外部ゲームサーバーはありません。現在はV4のMaster 01単独試作をローカル評価中で、追加5回必須・Critical Decision・人間向けゲート不合格のため未公開です。
+Master Tenは、同じ数字または合計10になる数字を消し、盤面を空にする日本語の高難易度数字パズルです。広告、課金、ログイン、ランキング、分析、外部ゲームサーバーはありません。公開catalogはすべてMASTERで、検証済み1000問を収録しています。
 
 名称、ルール詳細、問題、コード、文章、配色、画面、アイコン、効果音は本プロジェクト用の独自実装です。既存ゲームのコード、内部データ、画像、音声、問題配置は使用していません。
 
 ## 主な機能
 
-- 固定Master 01単独試作（V2/V3の5候補は比較資料として保持）
+- 公開難易度をMASTERへ統一した固定1000問catalog
 - 同じ数字または合計10、水平・垂直・斜め・読み順接続
 - 合法ペアが残っていても選べる数字追加（全問5回）
 - 検証済み完走経路上だけを示す安全ヒント
@@ -23,7 +23,7 @@ Master Tenは、同じ数字または合計10になる数字を消し、盤面�
 ## 技術構成
 
 - Vite 7、TypeScript 5、HTML、CSS、Vanilla TypeScript
-- Vitest（10ファイル、163テスト）
+- Vitestによるルール・catalog・route・保存・UI・PWA検証
 - 外部実行時依存0、UIフレームワーク0
 - localStorage、Web Audio、Vibration API
 - Web App Manifest、独自Service Worker、独自SVG/PNGアイコン
@@ -48,19 +48,19 @@ npm run build
 npm run preview
 ```
 
-`npm test`は、ルール、正規化、数字追加、勝敗、三状態・多目的ソルバー、4分類、安全ヒント、単独試作、保存検証、移行、ゲームセッション、PWA資産を検査します。`npm run build`はTypeScript検査後に`dist/`を生成します。`npm run validate:puzzles`は追加5回必須と人間戦略ゲートも検査し、現候補では意図どおり不合格になります。
+`npm test`は、ルール、正規化、数字追加、勝敗、三状態・多目的ソルバー、安全ヒント、1000問catalog、保存検証、移行、ゲームセッション、PWA資産を検査します。`npm run build`はTypeScript検査後に`dist/`を生成します。`npm run validate:puzzles`は1000問すべてのRULE 2.1.0 routeがWONかつexactly 5 ADDであることを再検証します。
 
 ## 問題生成と検証
 
-### MASTER候補の自動進化探索
+### 既存探索結果からのMASTER catalog選抜
 
-数字追加は、途中の削除穴を維持したまま最後の生存数字の直後へ追加し、末尾の連続した空所だけを取り除きます。HARD候補から未公開のMASTER候補を探索するには次を実行します。
+公開catalogは`master-evolution-v1-b`の既存60分探索ledgerとcacheからdeterministicに選抜します。selectorはStage 2のexact-five成功traceをproduction transitionで再生し、hardness・playability・Hamming・canonical pattern・legal pair structure・solution prefix・root lineageを使って1000問を固定します。
 
 ```bash
-npm run search:master -- --generations=10 --parents=4 --children=8 --max-minutes=25
+npm run select:master-catalog -- --input=C:\master-ten-search-seed-b-60m
 ```
 
-主なoptionは`--generations`、`--parents`、`--children`、`--seed`、`--max-minutes`、`--output-dir`、`--resume`です。結果は既定で`artifacts/master-search/`の`ledger.jsonl`、`best.json`、`checkpoint.json`へ保存され、同じ条件に`--resume`を加えると再開します。出力は探索候補であり、正式なMASTER認定や公開登録ではありません。
+selectorは`artifacts/master-catalog-selection/`へ`report.json`、`selected.json`、`rejected-summary.json`を出力し、compact production tableを更新します。raw ledger、cache、tracesはrepositoryへコピーしません。
 
 問題は通常のアプリ起動時には生成・探索しません。開発時に独自テンプレートとseedから候補を作り、ソルバー、難易度特徴量、重複、保存解、安全ヒントを検証した固定データだけを公開します。
 
@@ -69,7 +69,7 @@ npm run generate:puzzles
 npm run validate:puzzles
 ```
 
-生成は[`src/puzzles/catalog.generated.ts`](src/puzzles/catalog.generated.ts)を更新します。生成後は必ずテストと検証を通し、`UNKNOWN`を公開データへ入れないでください。品質結果は[`docs/puzzle-validation.md`](docs/puzzle-validation.md)にあります。
+生成はcompact tableとselection artifactを更新します。生成後は必ずテストと検証を通し、`UNKNOWN`や未検証routeを公開データへ入れないでください。
 
 アイコンも外部素材ではなく、次のスクリプトで再生成できます。
 
@@ -114,7 +114,7 @@ src/core       純粋なルールエンジン
 src/solver     基準BFSと実用メモ化DFS
 src/hints      解経路限定ヒント
 src/generator  決定論的問題生成・評価
-src/puzzles    検証済み固定Master 01単独試作（公開ゲート未通過）
+src/puzzles    検証済み固定1000問MASTER catalog
 src/storage    保存、検証、移行、隔離
 src/ui         ゲームセッションとDOM UI
 src/pwa        Service Worker登録

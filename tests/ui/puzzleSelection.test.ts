@@ -59,9 +59,9 @@ describe('random puzzle selection', () => {
     }
   });
 
-  it('can select all 10 puzzles over time', () => {
-    const selected = selectSequence(100);
-    expect(new Set(selected.map((puzzle) => puzzle.puzzleId)).size).toBe(10);
+  it('draws broadly from the 1000-puzzle MASTER pool', () => {
+    const selected = selectSequence(1_000);
+    expect(new Set(selected.map((puzzle) => puzzle.puzzleId)).size).toBeGreaterThan(500);
   });
 
   it('keeps an explicit replay on the same puzzle without changing progress', () => {
@@ -76,14 +76,10 @@ describe('random puzzle selection', () => {
     expect(replayProgress).toBe(progress);
   });
 
-  it('shuffles only within the selected difficulty pool', () => {
-    const puzzles = PUZZLES.slice(0, 6).map((puzzle, index): VerifiedPuzzle => ({
-      ...puzzle,
-      difficultyTier: index < 3 ? 'HARD' : 'MASTER',
-    }));
+  it('treats every production puzzle as one MASTER pool', () => {
+    const puzzles = PUZZLES.slice(0, 6);
     const current = puzzles[3]!;
     const selection = pickNextPuzzle(puzzles, {
-      difficultyTier: 'MASTER',
       currentPuzzleId: current.puzzleId,
       currentInitialBoardHash: current.initialBoardHash,
       random: () => 0,

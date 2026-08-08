@@ -201,22 +201,17 @@ try {
   await navigate(firstOfflinePage.cdp, targetUrl);
   const offlineHome = await evaluate(firstOfflinePage.cdp, `({
     title: document.title,
-    hasHome: document.body.innerText.includes('新しいMaster問題'),
+    hasHome: document.body.innerText.includes('新しいゲーム'),
     controlled: Boolean(navigator.serviceWorker.controller)
   })`);
   assert(offlineHome.hasHome && offlineHome.controlled, 'オフラインでホーム画面を起動できません');
 
-  await evaluate(firstOfflinePage.cdp, `(() => {
-    [...document.querySelectorAll('button')].find((button) => button.textContent?.trim() === '問題一覧')?.click();
-  })()`);
-  const offlineListCount = await evaluate(firstOfflinePage.cdp, `document.querySelectorAll('.puzzle-card').length`);
-  assert(offlineListCount === 5, `オフライン試作問題一覧が${offlineListCount}件です`);
-
-  await evaluate(firstOfflinePage.cdp, `document.querySelector('.puzzle-card button')?.click()`);
+  await evaluate(firstOfflinePage.cdp, `[...document.querySelectorAll('button')]
+    .find((button) => button.textContent?.trim() === '新しいゲーム')?.click()`);
   const initialCells = await evaluate(firstOfflinePage.cdp, `document.querySelectorAll('button.number-cell').length`);
   assert(initialCells > 0, 'オフラインで問題を開始できません');
-  await evaluate(firstOfflinePage.cdp, `document.querySelector('[aria-label="行1 列1 数字1"]')?.click()`);
-  await evaluate(firstOfflinePage.cdp, `document.querySelector('[aria-label="行1 列2 数字1"]')?.click()`);
+  await evaluate(firstOfflinePage.cdp, `[...document.querySelectorAll('button')]
+    .find((button) => button.textContent?.trim() === '数字追加')?.click()`);
   const savedMoveCount = await evaluate(firstOfflinePage.cdp, `[...document.querySelectorAll('.stat-item')]
     .find((item) => item.querySelector('dt')?.textContent === '手数')?.querySelector('dd')?.textContent`);
   assert(savedMoveCount === '1', 'オフライン操作を自動保存できません');
@@ -258,7 +253,6 @@ try {
     targetUrl,
     onlinePwa,
     offlineHome,
-    offlineListCount,
     initialCells,
     savedMoveCount,
     persistedElapsedTime,

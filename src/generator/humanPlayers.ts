@@ -67,6 +67,7 @@ export interface SuccessfulHumanTrace {
 export interface HumanSimulationAnalysisOptions {
   readonly analysis: true;
   readonly maxSuccessfulTraces?: number;
+  readonly successfulAdditionsFilter?: number;
 }
 
 export interface HumanStrategyAnalysisResult {
@@ -352,7 +353,14 @@ export function simulateHumanStrategy(
       successfulAdditions.push(state.additionsUsed);
       const additions = String(state.additionsUsed);
       successfulAdditionsHistogram[additions] = (successfulAdditionsHistogram[additions] ?? 0) + 1;
-      if (trialTrace && successfulTraces.length < traceLimit) {
+      if (
+        trialTrace
+        && successfulTraces.length < traceLimit
+        && (
+          options?.successfulAdditionsFilter === undefined
+          || state.additionsUsed === options.successfulAdditionsFilter
+        )
+      ) {
         successfulTraces.push({ strategy, trial, steps: trialTrace });
       }
     } else {

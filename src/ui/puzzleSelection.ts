@@ -2,7 +2,6 @@ import type { VerifiedPuzzle } from '../puzzles';
 import type { ProgressData } from '../storage';
 
 export interface PickNextPuzzleOptions {
-  readonly difficultyTier?: VerifiedPuzzle['difficultyTier'];
   readonly currentPuzzleId?: string;
   readonly currentInitialBoardHash?: string;
   readonly random?: () => number;
@@ -16,9 +15,7 @@ export function pickNextPuzzle(
   puzzles: readonly VerifiedPuzzle[],
   options: PickNextPuzzleOptions = {},
 ): PuzzleSelectionResult | undefined {
-  const pool = options.difficultyTier
-    ? puzzles.filter((puzzle) => puzzle.difficultyTier === options.difficultyTier)
-    : [...puzzles];
+  const pool = [...puzzles];
   if (pool.length === 0) return undefined;
 
   const shuffled = [...pool];
